@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638211135255155721
-    m_Hash: 3237966592
+      ticks: 638210883486476413
+    m_Hash: 111668099
   m_LockFileStatus:
     m_FilePath: D:/Unity Projects/Project_Shootey/Project_ShooteyShoot/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638211135255160729
-    m_Hash: 3092597306
+      ticks: 638210884418635135
+    m_Hash: 1276373798
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -424,7 +424,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -459,7 +459,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637800255360000000
   documentationUrl: 
@@ -2852,7 +2852,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: 
+  type: asset
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
   status: 0
@@ -2886,7 +2886,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
   documentationUrl: 
@@ -2913,7 +2913,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
@@ -2945,7 +2945,7 @@ m_ResolvedPackages:
     isDefault: 1
     capabilities: 7
     configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
   documentationUrl: 
