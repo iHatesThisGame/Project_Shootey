@@ -4743,6 +4743,7 @@ MonoBehaviour:
   playerSpeed: 5
   jumpHeight: 12
   gravityValue: 25
+  jumpMax: 2
 --- !u!143 &1837806717
 CharacterController:
   m_ObjectHideFlags: 0
