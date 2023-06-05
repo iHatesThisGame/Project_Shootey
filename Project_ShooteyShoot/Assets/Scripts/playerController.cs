@@ -24,6 +24,7 @@ public class playerController : MonoBehaviour
     private bool groundedPlayer;
     private Vector3 move;
     bool isShooting;
+    private bool isSprinting;
 
     private void Start()
     {
@@ -42,6 +43,8 @@ public class playerController : MonoBehaviour
 
     private void movement()
     {
+        float tempSpeed = playerSpeed;
+
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
@@ -57,6 +60,17 @@ public class playerController : MonoBehaviour
         {
             jumpedTimes++;
             playerVelocity.y = jumpHeight;
+        }
+
+        // Sprint functionality
+        if (Input.GetButtonDown("Sprint"))
+        {
+            playerSpeed = tempSpeed * 2;
+        }
+
+        if (Input.GetButtonUp("Sprint"))
+        {
+            playerSpeed = tempSpeed / 2;
         }
 
         playerVelocity.y -= gravityValue * Time.deltaTime;
