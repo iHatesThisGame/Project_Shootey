@@ -56,7 +56,7 @@ MonoBehaviour:
   jumpMax: 2
   meleeRange: 3
   meleeDamage: 5
-  meleeCooldown: 1000
+  meleeCooldown: 0.1
   sprintToggle: 0
   shootRate: 0
   shootDamage: 0
