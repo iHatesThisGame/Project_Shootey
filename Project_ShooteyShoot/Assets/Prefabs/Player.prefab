@@ -54,6 +54,10 @@ MonoBehaviour:
   jumpHeight: 12
   gravityValue: 25
   jumpMax: 2
+  meleeRange: 3
+  meleeDamage: 5
+  meleeCooldown: 1000
+  sprintToggle: 0
   shootRate: 0
   shootDamage: 0
   shootDist: 0

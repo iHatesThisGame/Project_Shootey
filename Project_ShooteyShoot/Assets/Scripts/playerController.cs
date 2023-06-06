@@ -12,6 +12,9 @@ public class playerController : MonoBehaviour
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
     [SerializeField] int jumpMax;
+    [SerializeField] int meleeRange;
+    [SerializeField] int meleeDamage;
+    [SerializeField] float meleeCooldown;
     [SerializeField] bool sprintToggle;     // true means toggle mode, false means not toggle mode
 
     [Header("----- Gun Stats -----")]
@@ -26,6 +29,7 @@ public class playerController : MonoBehaviour
     private bool groundedPlayer;
     private Vector3 move;
     bool isShooting;
+    bool playerMelee;
     float sprintSpeed;
     float playerSpeedOrig;
 
@@ -42,6 +46,10 @@ public class playerController : MonoBehaviour
         if (Input.GetButton("Shoot") && isShooting == false)
         {
             StartCoroutine(shoot());
+        }
+        if (Input.GetButton("Melee") && playerMelee == false)
+        {
+            StartCoroutine(melee());
         }
     }
 
@@ -119,5 +127,22 @@ public class playerController : MonoBehaviour
 
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
+    }
+
+    IEnumerator melee()
+    {
+        playerMelee = true;
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, meleeRange))
+        {
+            IDamage damageable = hit.collider.GetComponent<IDamage>();
+
+            if (damageable != null)
+            {
+                damageable.takeDamage(meleeDamage);
+            }
+        }
+        yield return new WaitForSeconds(meleeCooldown);
+        playerMelee = false;
     }
 }
