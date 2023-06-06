@@ -20,11 +20,11 @@ public class playerController : MonoBehaviour
     [SerializeField] GameObject hitEffect;
 
     private int jumpedTimes;
+    private bool isSprinting;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private Vector3 move;
     bool isShooting;
-    private bool isSprinting;
 
     private void Start()
     {
