@@ -69,7 +69,7 @@ public class playerController : MonoBehaviour
         }
     }
 
-    private void movement()
+    void movement()
     {
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
