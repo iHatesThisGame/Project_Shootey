@@ -5,11 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< Updated upstream
-      ticks: 638216806380347456
-=======
       ticks: 638216805307015737
->>>>>>> Stashed changes
     m_Hash: 3655456945
   m_LockFileStatus:
     m_FilePath: D:/Unity Projects/Project_Shootey/Project_ShooteyShoot/Packages/packages-lock.json
@@ -17,11 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< Updated upstream
-      ticks: 638216806380347456
-=======
       ticks: 638216805307025750
->>>>>>> Stashed changes
     m_Hash: 2901544001
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -487,7 +479,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.2.2
   source: 1
-  resolvedPath: C:\Users\heckc\Documents\GitHub\Project_Shootey\Project_ShooteyShoot\Library\PackageCache\com.unity.postprocessing@3.2.2
+  resolvedPath: D:\Unity Projects\Project_Shootey\Project_ShooteyShoot\Library\PackageCache\com.unity.postprocessing@3.2.2
   assetPath: Packages/com.unity.postprocessing
   name: com.unity.postprocessing
   displayName: Post Processing
