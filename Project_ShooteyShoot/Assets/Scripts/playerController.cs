@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
+    [SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
     [Range(3, 8)][SerializeField] float playerSpeed;
@@ -23,6 +24,12 @@ public class playerController : MonoBehaviour
     [Range(25, 1000)][SerializeField] int shootDist;
     [SerializeField] GameObject hitEffect;
 
+    [Header("----- Grenade Stats -----")]
+    [SerializeField] int grenadeThrowRange;
+    [SerializeField] int grenadeDamage;
+    [SerializeField] float grenadeCooldown;
+    [SerializeField] GameObject grenade;
+
     private int jumpedTimes;
     private bool isSprinting;
     private Vector3 playerVelocity;
@@ -30,6 +37,7 @@ public class playerController : MonoBehaviour
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
+    bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
 
@@ -50,6 +58,10 @@ public class playerController : MonoBehaviour
         if (Input.GetButton("Melee") && playerMelee == false)
         {
             StartCoroutine(melee());
+        }
+        if (Input.GetButtonDown("Throw") && isThrowing == false)
+        {
+            StartCoroutine(throwGrenade());
         }
     }
 
@@ -144,5 +156,23 @@ public class playerController : MonoBehaviour
         }
         yield return new WaitForSeconds(meleeCooldown);
         playerMelee = false;
+    }
+
+    IEnumerator throwGrenade()
+    {
+        isThrowing = true;
+        Instantiate(grenade, throwPos.position, transform.rotation);
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, grenadeThrowRange))
+        {
+            IDamage damageable = hit.collider.GetComponent<IDamage>();
+
+            if (damageable != null)
+            {
+                damageable.takeDamage(grenadeDamage);
+            }
+        }
+        yield return new WaitForSeconds(grenadeCooldown);
+        isThrowing = false;
     }
 }
