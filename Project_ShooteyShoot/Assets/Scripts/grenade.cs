@@ -29,6 +29,7 @@ public class grenade : MonoBehaviour
         {
             explode();
             hasExploded = true;
+            Destroy(explosionEffect);
         }
     }
 

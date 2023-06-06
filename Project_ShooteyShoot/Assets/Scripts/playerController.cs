@@ -26,7 +26,7 @@ public class playerController : MonoBehaviour
     [SerializeField] GameObject hitEffect;
 
     [Header("----- Grenade Stats -----")]
-    [SerializeField] int throwForce;
+    [SerializeField] float throwForce;
     [SerializeField] GameObject grenade;
 
     private int jumpedTimes;
@@ -36,17 +36,16 @@ public class playerController : MonoBehaviour
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
-    bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
     int playerHPOrig;
 
     private void Start()
     {
-        playerHPOrig = HP;
-        spawnPlayer();
         playerSpeedOrig = playerSpeed;
         sprintSpeed = playerSpeed * 2;
+        playerHPOrig = HP;
+        spawnPlayer();
     }
 
     void Update()
@@ -61,7 +60,7 @@ public class playerController : MonoBehaviour
         {
             StartCoroutine(melee());
         }
-        if (Input.GetButtonDown("Throw") && isThrowing == false)
+        if (Input.GetButtonDown("Throw"))
         {
             throwGrenade();
         }
