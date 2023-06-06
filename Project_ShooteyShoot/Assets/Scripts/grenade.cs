@@ -8,6 +8,7 @@ public class grenade : MonoBehaviour
     [SerializeField] int speed;
     [SerializeField] float delay;
     [SerializeField] float force;
+    [SerializeField] int grenadeDamage;
     public GameObject explosionEffect;
 
     [SerializeField] Rigidbody rb;
@@ -19,8 +20,6 @@ public class grenade : MonoBehaviour
     void Start()
     {
         countdown = delay;
-        //Destroy(gameObject, delay);
-        //rb.velocity = transform.forward * speed;
     }
 
     private void Update()
@@ -37,9 +36,8 @@ public class grenade : MonoBehaviour
     {
         // show explosion
         Instantiate(explosionEffect, transform.position, transform.rotation);
-
         // get nearby objects to deal damage and add force
-        Collider [] colliders = Physics.OverlapSphere(transform.position, radius);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider nearbyObject in colliders)
         {
@@ -48,11 +46,13 @@ public class grenade : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(force, transform.position, radius);
+                IDamage damageble = rb.GetComponent<IDamage>();
+                if (damageble != null)
+                {
+                    damageble.takeDamage(grenadeDamage);
+                }
             }
-
-            // add damage
         }
-
-        // remove grenade
+        Destroy(gameObject);
     }
 }

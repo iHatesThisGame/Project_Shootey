@@ -26,9 +26,7 @@ public class playerController : MonoBehaviour
     [SerializeField] GameObject hitEffect;
 
     [Header("----- Grenade Stats -----")]
-    [SerializeField] int grenadeThrowRange;
-    [SerializeField] int grenadeDamage;
-    [SerializeField] float grenadeCooldown;
+    [SerializeField] int throwForce;
     [SerializeField] GameObject grenade;
 
     private int jumpedTimes;
@@ -65,7 +63,7 @@ public class playerController : MonoBehaviour
         }
         if (Input.GetButtonDown("Throw") && isThrowing == false)
         {
-            StartCoroutine(throwGrenade());
+            throwGrenade();
         }
     }
 
@@ -162,22 +160,11 @@ public class playerController : MonoBehaviour
         playerMelee = false;
     }
 
-    IEnumerator throwGrenade()
+    void throwGrenade()
     {
-        isThrowing = true;
         Instantiate(grenade, throwPos.position, transform.rotation);
-        RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, grenadeThrowRange))
-        {
-            IDamage damageable = hit.collider.GetComponent<IDamage>();
-
-            if (damageable != null)
-            {
-                damageable.takeDamage(grenadeDamage);
-            }
-        }
-        yield return new WaitForSeconds(grenadeCooldown);
-        isThrowing = false;
+        Rigidbody rb = grenade.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
     }
 
     public void updatePlayerUI()
