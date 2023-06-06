@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class gameManager : MonoBehaviour
 {
@@ -10,11 +12,15 @@ public class gameManager : MonoBehaviour
     [Header("----- Player -----")]
     public GameObject player;
     public playerController playerController;
+    public GameObject playerSpawnPos;
 
     [Header("----- UI -----")]
     public GameObject activeMenu;
     public GameObject pauseMenu;
     public GameObject winMenu;
+    public GameObject loseMenu;
+    public Image playerHPBar;
+    public GameObject playerFlashUI;
 
     [Header("----- Objective -----")]
     int enemiesRemaining;
@@ -29,6 +35,7 @@ public class gameManager : MonoBehaviour
         timescaleOrig = Time.timeScale;
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<playerController>();
+        playerSpawnPos = GameObject.FindGameObjectWithTag("Player Spawn Pos");
     }
 
     // Update is called once per frame
@@ -77,5 +84,12 @@ public class gameManager : MonoBehaviour
         activeMenu = winMenu;
         activeMenu.SetActive(true);
         statePaused();
+    }
+
+    public void youLose()
+    {
+        statePaused();
+        activeMenu = loseMenu;
+        activeMenu.SetActive(true);
     }
 }

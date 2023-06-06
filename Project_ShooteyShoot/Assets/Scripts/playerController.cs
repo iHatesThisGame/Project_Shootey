@@ -9,6 +9,7 @@ public class playerController : MonoBehaviour
     [SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
+    [SerializeField] int HP;
     [Range(3, 8)][SerializeField] float playerSpeed;
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
@@ -40,9 +41,12 @@ public class playerController : MonoBehaviour
     bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
+    int playerHPOrig;
 
     private void Start()
     {
+        playerHPOrig = HP;
+        spawnPlayer();
         playerSpeedOrig = playerSpeed;
         sprintSpeed = playerSpeed * 2;
     }
@@ -174,5 +178,38 @@ public class playerController : MonoBehaviour
         }
         yield return new WaitForSeconds(grenadeCooldown);
         isThrowing = false;
+    }
+
+    public void updatePlayerUI()
+    {
+        gameManager.instance.playerHPBar.fillAmount = (float)HP / playerHPOrig;
+    }
+
+    public void takeDamage(int amount)
+    {
+        HP -= amount;
+        updatePlayerUI();
+        StartCoroutine(playerFlashDamage());
+
+        if(HP <= 0)
+        {
+            gameManager.instance.youLose();
+        }
+    }
+
+    IEnumerator playerFlashDamage()
+    {
+        gameManager.instance.playerFlashUI.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        gameManager.instance.playerFlashUI.SetActive(false);
+    }
+
+    public void spawnPlayer()
+    {
+        controller.enabled = false;
+        transform.position = gameManager.instance.playerSpawnPos.transform.position;
+        controller.enabled = true;
+        HP = playerHPOrig;
+        updatePlayerUI();
     }
 }

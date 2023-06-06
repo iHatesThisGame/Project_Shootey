@@ -10,6 +10,12 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.stateUnpaused();
     }
 
+    public void respawnPlayer()
+    {
+        gameManager.instance.stateUnpaused();
+        gameManager.instance.playerController.spawnPlayer();
+    }
+
     public void Restart()
     {
         gameManager.instance.stateUnpaused();
