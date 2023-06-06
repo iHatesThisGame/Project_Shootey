@@ -12,6 +12,7 @@ public class playerController : MonoBehaviour
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
     [SerializeField] int jumpMax;
+    [SerializeField] bool sprintToggle;     // true means toggle mode, false means not toggle mode
 
     [Header("----- Gun Stats -----")]
     [Range(0.1f, 3)][SerializeField] float shootRate;
@@ -25,10 +26,13 @@ public class playerController : MonoBehaviour
     private bool groundedPlayer;
     private Vector3 move;
     bool isShooting;
+    float sprintSpeed;
+    float playerSpeedOrig;
 
     private void Start()
     {
-
+        playerSpeedOrig = playerSpeed;
+        sprintSpeed = playerSpeed * 2;
     }
 
     void Update()
@@ -43,8 +47,6 @@ public class playerController : MonoBehaviour
 
     private void movement()
     {
-        float tempSpeed = playerSpeed;
-
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
@@ -62,19 +64,43 @@ public class playerController : MonoBehaviour
             playerVelocity.y = jumpHeight;
         }
 
-        // Sprint functionality
-        if (Input.GetButtonDown("Sprint"))
-        {
-            playerSpeed = tempSpeed * 2;
-        }
-
-        if (Input.GetButtonUp("Sprint"))
-        {
-            playerSpeed = tempSpeed / 2;
-        }
+        sprint();
 
         playerVelocity.y -= gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+    private void sprint()
+    {
+        if (isSprinting)
+        {
+            playerSpeed = sprintSpeed;
+        }
+        if (!isSprinting)
+        {
+            playerSpeed = playerSpeedOrig;
+        }
+
+        if (!sprintToggle)
+        {
+            if (Input.GetButton("Sprint"))
+            {
+                isSprinting = true;
+            }
+            else
+            {
+                isSprinting = false;
+            }
+        }
+
+        if (sprintToggle)
+        {
+            // Sprint functionality
+            if (Input.GetButtonDown("Sprint"))
+            {
+                isSprinting = !isSprinting;
+            }
+        }
     }
 
     IEnumerator shoot()
