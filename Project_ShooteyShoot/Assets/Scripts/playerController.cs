@@ -7,7 +7,7 @@ public class playerController : MonoBehaviour, IDamage
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
-    [SerializeField] Transform throwPos;
+    //[SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
     [SerializeField] int HP;
