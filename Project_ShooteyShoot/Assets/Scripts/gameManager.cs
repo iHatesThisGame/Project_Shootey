@@ -21,6 +21,7 @@ public class gameManager : MonoBehaviour
     public GameObject loseMenu;
     public Image playerHPBar;
     public GameObject playerFlashUI;
+    public TextMeshProUGUI enemiesRemainingText;
 
     [Header("----- Objective -----")]
     int enemiesRemaining;
@@ -70,6 +71,7 @@ public class gameManager : MonoBehaviour
     public void updateGameGoal(int enemyCount)
     {
         enemiesRemaining += enemyCount;
+        enemiesRemainingText.text = enemiesRemaining.ToString("F0");
 
         if(enemiesRemaining <= 0)
         {
