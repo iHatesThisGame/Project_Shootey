@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour, IDamage
 {
@@ -207,5 +208,13 @@ public class playerController : MonoBehaviour, IDamage
         controller.enabled = true;
         HP = playerHPOrig;
         updatePlayerUI();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Level Exit")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
