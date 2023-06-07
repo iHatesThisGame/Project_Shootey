@@ -25,9 +25,10 @@ public class playerController : MonoBehaviour
     [Range(25, 1000)][SerializeField] int shootDist;
     [SerializeField] GameObject hitEffect;
 
-    [Header("----- Grenade Stats -----")]
-    [SerializeField] float throwForce;
-    [SerializeField] GameObject grenade;
+    //[Header("----- Grenade Stats -----")]
+    //[SerializeField] float throwForce;
+    //[SerializeField] float grenadeCooldown;
+    //[SerializeField] GameObject grenade;
 
     private int jumpedTimes;
     private bool isSprinting;
@@ -36,6 +37,7 @@ public class playerController : MonoBehaviour
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
+    //bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
     int playerHPOrig;
@@ -60,10 +62,11 @@ public class playerController : MonoBehaviour
         {
             StartCoroutine(melee());
         }
-        if (Input.GetButtonDown("Throw"))
-        {
-            throwGrenade();
-        }
+        //if (Input.GetButtonDown("Throw") && isThrowing == false)
+        //{
+        //    //throwGrenade();
+        //    StartCoroutine(throwGrenade());
+        //}
     }
 
     void movement()
@@ -137,7 +140,6 @@ public class playerController : MonoBehaviour
                 damageable.takeDamage(shootDamage);
             }
         }
-
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
@@ -159,12 +161,20 @@ public class playerController : MonoBehaviour
         playerMelee = false;
     }
 
-    void throwGrenade()
-    {
-        Instantiate(grenade, throwPos.position, transform.rotation);
-        Rigidbody rb = grenade.GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
-    }
+    #region throwGrenade attempt
+
+    //IEnumerator throwGrenade()
+    //{
+    //    isThrowing = true;
+
+    //    Instantiate(grenade, throwPos.position, transform.rotation);
+    //    Rigidbody rb = grenade.GetComponent<Rigidbody>();
+    //    rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
+    //    yield return new WaitForSeconds(shootRate);
+    //    isThrowing = false;
+    //}
+
+    #endregion
 
     public void updatePlayerUI()
     {

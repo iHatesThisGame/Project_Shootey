@@ -5,15 +5,13 @@ using UnityEngine;
 public class grenade : MonoBehaviour
 {
     [SerializeField] int radius;
-    [SerializeField] int speed;
     [SerializeField] float delay;
     [SerializeField] float force;
     [SerializeField] int grenadeDamage;
+    [SerializeField] float countdown;
     public GameObject explosionEffect;
 
     [SerializeField] Rigidbody rb;
-
-    float countdown;
     bool hasExploded = false;
 
     // Start is called before the first frame update
