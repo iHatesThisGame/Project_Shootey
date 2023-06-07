@@ -1724,7 +1724,7 @@ GameObject:
   - component: {fileID: 707910129689987834}
   - component: {fileID: 1089396243165378525}
   m_Layer: 5
-  m_Name: Resume
+  m_Name: Respawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1835,7 +1835,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: resume
+        m_MethodName: respawnPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

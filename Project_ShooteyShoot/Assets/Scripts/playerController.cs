@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerController : MonoBehaviour
+public class playerController : MonoBehaviour, IDamage
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
@@ -181,9 +181,9 @@ public class playerController : MonoBehaviour
         gameManager.instance.playerHPBar.fillAmount = (float)HP / playerHPOrig;
     }
 
-    public void takeDamage(int amount)
+    public void takeDamage(int dmg)
     {
-        HP -= amount;
+        HP -= dmg;
         updatePlayerUI();
         StartCoroutine(playerFlashDamage());
 
