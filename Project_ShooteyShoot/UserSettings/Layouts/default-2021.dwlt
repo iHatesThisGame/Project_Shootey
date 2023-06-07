@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 109
+  controlID: 102
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 401
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: -279
+    m_CachedPref: 151
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -579,9 +579,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 85.72, y: 3, z: -199.95}
+    m_Target: {x: -17.648804, y: 1.0676184, z: 83.705536}
     speed: 2
-    m_Value: {x: 85.72, y: 3, z: -199.95}
+    m_Value: {x: -17.648804, y: 1.0676184, z: 83.705536}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -628,13 +628,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.16185565, y: 0.8020783, z: -0.2510239, w: -0.5171669}
+    m_Target: {x: 0.4797975, y: 0.2710283, z: -0.158732, w: 0.81924075}
     speed: 2
-    m_Value: {x: -0.16185553, y: 0.8020777, z: -0.2510237, w: -0.51716655}
+    m_Value: {x: 0.47979435, y: 0.27102652, z: -0.15873095, w: 0.8192354}
   m_Size:
-    m_Target: 54.126587
+    m_Target: 12.392646
     speed: 2
-    m_Value: 54.126587
+    m_Value: 12.392646
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -784,9 +784,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: baf1ffffe2740000ec740000
+      m_SelectedIDs: 9047ffff
+      m_LastClickedID: -47216
+      m_ExpandedIDs: 5e6fffff7c95ffff4ac5ffffb8dbffff10e1ffff0afbffff4c590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -852,22 +852,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/Enemies
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs/Enemies
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\heckc\Documents\GitHub\Project_Shootey\Project_ShooteyShoot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 567e0000
-    m_LastClickedID: 32342
-    m_ExpandedIDs: 00000000387e00003a7e00003c7e00003e7e0000407e0000427e0000487e0000
+    m_SelectedIDs: 7ae40000
+    m_LastClickedID: 58490
+    m_ExpandedIDs: 00000000126700001467000016670000186700001a6700001c6700001e670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -895,7 +895,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000387e00003a7e00003c7e00003e7e0000407e0000427e0000
+    m_ExpandedIDs: 00000000126700001467000016670000186700001a6700001c6700001e670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -922,22 +922,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: d2740000e4a70100eaa70100f0a70100f6a70100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: enemyAI2
-      m_OriginalName: enemyAI2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 6234
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -974,14 +974,14 @@ MonoBehaviour:
     x: 1519
     y: 73
     width: 400
-    height: 918
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 40.54286, y: 81}
+  m_PosRight: {x: 40.54286, y: 73}
   m_Scope: 1
   m_SplitterFlex: 0.2
   m_SearchText: 

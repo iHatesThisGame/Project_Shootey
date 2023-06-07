@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player Spawn Pos
   - Level Exit
+  - Enemy Shooter Pos
   layers:
   - Default
   - TransparentFX

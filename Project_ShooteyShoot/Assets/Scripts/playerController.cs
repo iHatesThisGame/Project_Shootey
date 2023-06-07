@@ -10,7 +10,7 @@ public class playerController : MonoBehaviour, IDamage
     //[SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
-    [SerializeField] int HP;
+    [Range(1, 10)][SerializeField] int HP;
     [Range(3, 8)][SerializeField] float playerSpeed;
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
@@ -215,6 +215,7 @@ public class playerController : MonoBehaviour, IDamage
         if (other.tag == "Level Exit")
         {
             SceneManager.LoadScene(1);
+
         }
     }
 }
