@@ -55,17 +55,17 @@ MonoBehaviour:
   agent: {fileID: 4087072269519749828}
   headPos: {fileID: 4087072269829027449}
   meleePos: {fileID: 4087072270122494407}
-  HP: 6
+  HP: 4
   speed: 1
   playerFaceSpeed: 6
   viewConeAngle: 90
   roamDist: 10
   roamTimer: 4
-  meleeRange: 3
-  meleeDamage: 10
-  meleeCooldown: 3
-  Melee: {fileID: 0}
-  playerInRange: 0
+  meleePunchRate: 1
+  meleePunchRange: 2
+  meleePunchDamage: 1
+  punch: {fileID: 1620743323248292662, guid: ef4000b57810f0c4588504f772c1f40e, type: 3}
+  playerInRange: 1
 --- !u!195 &4087072269519749828
 NavMeshAgent:
   m_ObjectHideFlags: 0

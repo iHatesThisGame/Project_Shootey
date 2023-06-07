@@ -22,10 +22,11 @@ public class enemyAI2 : MonoBehaviour, IDamage
     
 
     [Header("----- Weapon Stats -----")]
-    [SerializeField] int meleeRange;
-    [SerializeField] int meleeDamage;
-    [SerializeField] float meleeCooldown;
-    [SerializeField] GameObject Melee;
+    [SerializeField] float meleePunchRate;
+    [SerializeField] float meleePunchRange;
+    [SerializeField] int meleePunchDamage;
+    [SerializeField] GameObject punch;
+
 
 
     Vector3 playerDir;
@@ -81,7 +82,6 @@ public class enemyAI2 : MonoBehaviour, IDamage
     bool canSeePlayer()
     {
         agent.stoppingDistance = stoppingDistanceOrig;
-
         playerDir = gameManager.instance.player.transform.position - headPos.position;
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, 0, playerDir.z), transform.forward);
 
@@ -117,8 +117,16 @@ public class enemyAI2 : MonoBehaviour, IDamage
     {
         enemyMelee = true;
 
-        Instantiate(Melee, meleePos.position, transform.rotation);
-        yield return new WaitForSeconds(meleeCooldown);
+        GameObject punchObject = Instantiate(punch, meleePos.position, transform.rotation);
+
+        Punch punchComponent = punchObject.GetComponent<Punch>();
+
+        if (punchComponent != null)
+        {
+            punchComponent.ApplyPunch(gameManager.instance.player);
+        }
+
+        yield return new WaitForSeconds(meleePunchRate);
         enemyMelee = false;
     }
 

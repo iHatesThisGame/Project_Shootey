@@ -1,5 +1,21 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Main Level.unity
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+- path: Assets/Scenes/Jesse Test.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/keyonte Test.unity
+=======
+- path: Assets/Scenes/Jesse Test.unity
+>>>>>>> 11ea2dde1f567bd09fd5f922f23116f55b9674fc
+>>>>>>> Stashed changes
+=======
+- path: Assets/Scenes/Main Level.unity
+>>>>>>> 654e7c34eea9346996b569551b93d046b0084ba2
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
