@@ -60,14 +60,10 @@ MonoBehaviour:
   meleeDamage: 5
   meleeCooldown: 0.1
   sprintToggle: 0
-  shootRate: 0
-  shootDamage: 0
-  shootDist: 0
+  shootRate: 0.5
+  shootDamage: 1
+  shootDist: 50
   hitEffect: {fileID: 0}
-  grenadeThrowRange: 0
-  grenadeDamage: 0
-  grenadeCooldown: 0
-  grenade: {fileID: 0}
 --- !u!143 &4221211289611459326
 CharacterController:
   m_ObjectHideFlags: 0
