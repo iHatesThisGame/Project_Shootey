@@ -937,7 +937,7 @@ Transform:
   - {fileID: 183693615}
   - {fileID: 183713495}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &183655745
 Transform:
@@ -2305,13 +2305,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemyAI
       objectReference: {fileID: 0}
+    - target: {fileID: 4106304102632919563, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 114.18596
+      value: 82.03
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2319,7 +2323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -210.5025
+      value: -203.76
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2639,7 +2643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8476050264084728822, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8476050264084728822, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4655,7 +4659,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8588889909692528609, guid: 5fb1d55452d82554a8069d53e5924f16, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8588889909692528609, guid: 5fb1d55452d82554a8069d53e5924f16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5250,7 +5254,7 @@ Transform:
   - {fileID: 1132053511}
   - {fileID: 1781426202}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1332512175 stripped
 Transform:
@@ -5404,7 +5408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4106304102632919565, guid: 0752dc12dfe951a4f96f9002ff9e516d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6987,7 +6991,7 @@ BoxCollider:
   m_GameObject: {fileID: 1940318821}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -6998,7 +7002,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940318821}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12696,7 +12700,7 @@ Transform:
   - {fileID: 8543533353540869080}
   - {fileID: 1940318822}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8543533353540854898
 Transform:
@@ -13339,7 +13343,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -13364,11 +13368,11 @@ MonoBehaviour:
   headPos: {fileID: 8543533353540786640}
   shootPos: {fileID: 1940318822}
   HP: 10
-  speed: 2.86
+  speed: 1
   playerFaceSpeed: 4
   viewConeAngle: 100
   roamDist: 30
-  roamTimer: 1
+  roamTimer: 3
   shootRate: 1
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0
