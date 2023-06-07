@@ -61,7 +61,7 @@ MonoBehaviour:
   sprintToggle: 0
   shootRate: 0.5
   shootDamage: 1
-  shootDist: 50
+  shootDist: 35
   hitEffect: {fileID: 0}
 --- !u!143 &4221211289611459326
 CharacterController:
