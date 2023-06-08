@@ -11,10 +11,11 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform headPos;
     [SerializeField] Transform shootPos;
+    [SerializeField] Animator anim;
 
     [Header("----- Enemy Stats -----")]
     [Range(1, 10)] [SerializeField] int HP;
-    [Range(1, 10)] [SerializeField] float speed;
+    //[Range(1, 10)] [SerializeField] float speed;
     [Range(1, 10)] [SerializeField] int playerFaceSpeed;
     [Range(1, 360)] [SerializeField] int viewConeAngle;
     [Range(1, 100)] [SerializeField] int roamDist;
@@ -43,13 +44,17 @@ public class enemyAI : MonoBehaviour, IDamage
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && !canSeePlayer()) 
+        if (agent.isActiveAndEnabled)
         {
-            StartCoroutine(roam());
-        }
-        else if (agent.destination != gameManager.instance.player.transform.position)
-        {
-            StartCoroutine(roam());
+            anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
+            if (playerInRange && !canSeePlayer())
+            {
+                StartCoroutine(roam());
+            }
+            else if (agent.destination != gameManager.instance.player.transform.position)
+            {
+                StartCoroutine(roam());
+            }
         }
     }
 
@@ -113,7 +118,7 @@ public class enemyAI : MonoBehaviour, IDamage
     IEnumerator shoot()
     {
         isShooting = true;
-
+        anim.SetTrigger("Shoot");
         Instantiate(bullet, shootPos.position, transform.rotation);
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
@@ -144,16 +149,20 @@ public class enemyAI : MonoBehaviour, IDamage
     public void takeDamage(int dmg)
     {
         HP -= dmg;
-        agent.SetDestination(gameManager.instance.player.transform.position);
-        StartCoroutine(flashColor());
 
         if (HP <= 0)
         {
             gameManager.instance.updateGameGoal(-1);
-            Destroy(gameObject);
+            anim.SetBool("Death", true);
+            agent.enabled = false;
 
             gameManager.instance.killCount += 1;
             gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
+        }
+        else
+        {
+            agent.SetDestination(gameManager.instance.player.transform.position);
+            StartCoroutine(flashColor());
         }
     }
 

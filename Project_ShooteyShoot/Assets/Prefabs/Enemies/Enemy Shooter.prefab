@@ -363,8 +363,8 @@ MonoBehaviour:
   agent: {fileID: 8371942296977501112}
   headPos: {fileID: 8371942296977928219}
   shootPos: {fileID: 198061042872943533}
+  anim: {fileID: 8371942296986948255}
   HP: 3
-  speed: 1
   playerFaceSpeed: 6
   viewConeAngle: 90
   roamDist: 10
@@ -382,7 +382,7 @@ Animator:
   m_GameObject: {fileID: 8371942296977501115}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f1da4a48383bb1b41b40a46c94a9e4fb, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dcddd3666c9913e4fb997448e1d71147, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
