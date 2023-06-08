@@ -357,7 +357,7 @@ MonoBehaviour:
   agent: {fileID: 203925279763693071}
   headPos: {fileID: 203925279773529636}
   meleePos: {fileID: 1495485458207275519}
-  HP: 4
+  HP: 2
   speed: 1
   playerFaceSpeed: 6
   viewConeAngle: 90
