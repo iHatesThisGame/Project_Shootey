@@ -151,6 +151,9 @@ public class enemyAI : MonoBehaviour, IDamage
         {
             gameManager.instance.updateGameGoal(-1);
             Destroy(gameObject);
+
+            gameManager.instance.killCount += 1;
+            gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
         }
     }
 

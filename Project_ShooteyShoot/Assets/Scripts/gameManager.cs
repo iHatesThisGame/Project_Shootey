@@ -22,9 +22,11 @@ public class gameManager : MonoBehaviour
     public Image playerHPBar;
     public GameObject playerFlashUI;
     public TextMeshProUGUI enemiesRemainingText;
+    public TextMeshProUGUI killCountText;
 
     [Header("----- Objective -----")]
-    int enemiesRemaining;
+    public int enemiesRemaining;
+    public int killCount;
 
     public bool isPaused;
     float timescaleOrig;
