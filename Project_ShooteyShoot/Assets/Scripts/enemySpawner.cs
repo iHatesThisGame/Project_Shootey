@@ -15,6 +15,7 @@ public class enemySpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(spawnShooter(shooterTimer, enemyShooter));
+        StartCoroutine(spawnMelee(meleeTimer, enemyMelee));
     }
 
     private IEnumerator spawnShooter(float interval, GameObject enemy)
