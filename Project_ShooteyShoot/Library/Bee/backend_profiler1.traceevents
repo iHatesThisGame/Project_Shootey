@@ -1,464 +1,595 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1686196882703923, "dur":1248, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196882705177, "dur":37, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1686196882705223, "dur":11, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1686196882705234, "dur":223, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1686196882705473, "dur":434, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196882705907, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647383, "dur":100, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647483, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647495, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647497, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647501, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647502, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647507, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647508, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647512, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647513, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647516, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647517, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647523, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647524, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647528, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647529, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647533, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647555, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883647568, "dur":1234, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1686196882705785, "dur":155, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882705941, "dur":4276, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882710224, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1686196882710229, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882711201, "dur":489, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1686196882711694, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1686196882711738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882712124, "dur":2286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1686196882714413, "dur":8027, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1686196882722442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882722453, "dur":1076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1686196882723566, "dur":80123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1686196882803693, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882803699, "dur":10466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1686196882814208, "dur":14101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882828312, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882828318, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882829307, "dur":11588, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882840899, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882840908, "dur":1007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882841946, "dur":32638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882874587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882874593, "dur":991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882875617, "dur":29450, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882905069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882905076, "dur":15092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882920202, "dur":22733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882942958, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882942966, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882946665, "dur":14221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882960889, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882960895, "dur":7021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882967953, "dur":21472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882989428, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196882989434, "dur":1327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196882990795, "dur":22841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883013640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883013646, "dur":1779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883015472, "dur":18415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883033891, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883033898, "dur":14824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883048795, "dur":22820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883071620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883071628, "dur":1399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883073060, "dur":16694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883089756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883089762, "dur":6286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883096086, "dur":57717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883153807, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883153815, "dur":8639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883162533, "dur":288804, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883451345, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883451353, "dur":3198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883454593, "dur":160517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883615114, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1686196883615122, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1686196883616021, "dur":31340, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196882706258, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196882706259, "dur":3988, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196882710247, "dur":11603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1686196882721852, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196882721865, "dur":1058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1686196882723122, "dur":520751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883243877, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196883243883, "dur":13339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883257259, "dur":79789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883337052, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196883337060, "dur":2551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883339649, "dur":56334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883395986, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196883395996, "dur":29906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883425938, "dur":48619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883474560, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1686196883474934, "dur":2968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1686196883477935, "dur":169445, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882705836, "dur":107, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882705943, "dur":4390, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882710333, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1686196882710435, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882715324, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1686196882716439, "dur":13547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1686196882729991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882729999, "dur":1193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1686196882731228, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1686196882731331, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882731581, "dur":15882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1686196882747505, "dur":14073, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882761581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882762571, "dur":2893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882765498, "dur":29269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882794772, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882794784, "dur":771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882795590, "dur":79522, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882875115, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882875120, "dur":14428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882889586, "dur":70459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882960064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882960069, "dur":4997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882965106, "dur":27608, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882992720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196882992727, "dur":1225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196882993987, "dur":17678, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883011668, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883011675, "dur":863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883012572, "dur":14884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883027460, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883027467, "dur":776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883028280, "dur":120648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883148933, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883148940, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883150266, "dur":75906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883226175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883226181, "dur":898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883227112, "dur":51094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883278221, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883278226, "dur":2703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883280964, "dur":53100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883334068, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883334076, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883334890, "dur":132715, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883467607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883467612, "dur":1507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1686196883469166, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1686196883469206, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883469212, "dur":789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1686196883470033, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1686196883470127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883470132, "dur":559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1686196883470724, "dur":695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1686196883471422, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883471427, "dur":819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1686196883472278, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1686196883472313, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883472316, "dur":1145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1686196883473493, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1" }}
-,{ "pid":12345, "tid":3, "ts":1686196883473525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883473530, "dur":633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1" }}
-,{ "pid":12345, "tid":3, "ts":1686196883474211, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1686196883474255, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883474259, "dur":1377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1686196883475667, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":3, "ts":1686196883475700, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1686196883475703, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":3, "ts":1686196883476713, "dur":170714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882705878, "dur":93, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882705971, "dur":4361, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882710332, "dur":443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882710777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882714929, "dur":2194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882717161, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882717242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882717248, "dur":1309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882718597, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1686196882718775, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882718831, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1686196882719740, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882719823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882719832, "dur":1867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1686196882721739, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1686196882721827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882721833, "dur":993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1686196882722862, "dur":141360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882864230, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882864352, "dur":3692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882868081, "dur":12595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882880681, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882880689, "dur":788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882881514, "dur":65538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882947055, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882947061, "dur":2507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882949604, "dur":24906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882974513, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882974518, "dur":983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882975541, "dur":13596, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882989144, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196882989153, "dur":943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196882990139, "dur":14613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883004756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883004763, "dur":1009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883005807, "dur":19551, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883025363, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883025371, "dur":4233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883029642, "dur":16938, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883046584, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883046594, "dur":2531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883049156, "dur":14372, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883063531, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883063539, "dur":705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883064345, "dur":25081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883089430, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883089438, "dur":1117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883090598, "dur":90764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883181366, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883181375, "dur":945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883182357, "dur":77213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883259574, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883259598, "dur":989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883260622, "dur":31780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883292406, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883292412, "dur":994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883293460, "dur":170614, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883464078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883464085, "dur":2070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1686196883466189, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1686196883466222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883466256, "dur":842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1686196883467131, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1686196883467163, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883467168, "dur":846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1686196883468047, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1686196883468080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883468084, "dur":4101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1686196883472232, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1686196883472266, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883472270, "dur":3283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1686196883475592, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1686196883475624, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883475629, "dur":855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1686196883476519, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1686196883476621, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1686196883476625, "dur":1845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1686196883478500, "dur":168879, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882705990, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882705990, "dur":4228, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882710224, "dur":39234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":5, "ts":1686196882749463, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882753225, "dur":2267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":5, "ts":1686196882755527, "dur":16774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882772307, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882772387, "dur":1139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882773560, "dur":15043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882788609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882788616, "dur":1464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882790117, "dur":22811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882812930, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882812935, "dur":3035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882816006, "dur":15242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882831253, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882831260, "dur":3168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882834465, "dur":21142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882855611, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882855618, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882856613, "dur":108101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882964717, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196882964724, "dur":7799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196882972558, "dur":36863, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883009425, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883009433, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883010810, "dur":49904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883060719, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883060726, "dur":1021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883061785, "dur":120373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883182161, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883182174, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883183300, "dur":176124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883359428, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883359436, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883360635, "dur":98429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883459068, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883459075, "dur":846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883459955, "dur":35217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883495177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1686196883495185, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1686196883496196, "dur":151176, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882706056, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882706056, "dur":4163, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882710224, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1686196882710351, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882715522, "dur":838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1686196882716405, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1686196882716494, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882716578, "dur":803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1686196882717412, "dur":8715, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1686196882726132, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882726200, "dur":1065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1686196882727302, "dur":32838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot.exe" }}
-,{ "pid":12345, "tid":6, "ts":1686196882760143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882760153, "dur":1159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot.exe" }}
-,{ "pid":12345, "tid":6, "ts":1686196882761349, "dur":31357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882792709, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882792714, "dur":1073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882793821, "dur":18752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882812577, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882812584, "dur":2484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882815112, "dur":12338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882827454, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882827461, "dur":848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882828345, "dur":68983, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882897331, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882897339, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882898336, "dur":10620, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882908961, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882908968, "dur":13624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882922627, "dur":29692, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882952322, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882952328, "dur":2791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882955153, "dur":12362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882967520, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196882967528, "dur":5751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196882973324, "dur":26771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883000098, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883000105, "dur":3018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883003245, "dur":12976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883016223, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883016230, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883018629, "dur":11519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883030151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883030157, "dur":5168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883035359, "dur":18027, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883053390, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883053397, "dur":1087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883054517, "dur":36396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883090915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883090921, "dur":3353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883094308, "dur":47121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883141435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883141443, "dur":983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883142460, "dur":149079, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883291544, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883291552, "dur":1065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883292652, "dur":131444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883424100, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883424110, "dur":9142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883433295, "dur":211797, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883645097, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1686196883645104, "dur":2200, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1686196883647341, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":6, "ts":1686196883647343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882706163, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882706164, "dur":4081, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882710245, "dur":9230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1686196882719478, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882719581, "dur":1386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1686196882721035, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":7, "ts":1686196882721143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882721150, "dur":1616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":7, "ts":1686196882722808, "dur":34275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882757089, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882758806, "dur":938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882759802, "dur":32596, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882792403, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882792409, "dur":3443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882795887, "dur":16887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882812777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882812781, "dur":2153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882814969, "dur":16883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882831855, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882831860, "dur":13859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882845757, "dur":100056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882945818, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882945825, "dur":1219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882947078, "dur":12689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882959771, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882959779, "dur":2210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882962024, "dur":11537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882973579, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882973587, "dur":741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882974359, "dur":16745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882991106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196882991113, "dur":844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196882991992, "dur":97866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883089860, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196883089865, "dur":4347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883094253, "dur":73743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883168000, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196883168083, "dur":2161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883170291, "dur":54472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883224767, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196883224775, "dur":1033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883225846, "dur":109756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883335625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196883335633, "dur":4109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883339775, "dur":139194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883478973, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1686196883478980, "dur":1768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1686196883480783, "dur":166590, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882706363, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882706363, "dur":3883, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882710246, "dur":466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1686196882710714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882715507, "dur":1652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1686196882717199, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1686196882717300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882717572, "dur":1907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1686196882719530, "dur":15205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1686196882734740, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882734751, "dur":988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1686196882735774, "dur":60298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882796074, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882796080, "dur":3054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882799171, "dur":13748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882812922, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882812927, "dur":2978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882815945, "dur":58427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882874378, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882874385, "dur":1149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882875571, "dur":25396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882900971, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882900978, "dur":3879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882904891, "dur":33924, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882938819, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882938827, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882939953, "dur":10946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882950903, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882950910, "dur":934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882951876, "dur":11914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882963795, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882963805, "dur":3800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882967653, "dur":31453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196882999109, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196882999117, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883000284, "dur":12504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883012790, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883012812, "dur":2906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883015751, "dur":13783, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883029538, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883029545, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883030372, "dur":11143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883041519, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883041527, "dur":2176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883043738, "dur":28488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883072228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883072233, "dur":6580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883078848, "dur":33695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883112547, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883112557, "dur":889, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883113478, "dur":164150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883277632, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883277639, "dur":1486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883279159, "dur":124813, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883403976, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883403985, "dur":8800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883412818, "dur":89496, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883502318, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1686196883502325, "dur":1077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":8, "ts":1686196883503444, "dur":143916, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1686196883650131, "dur":1390, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1686197108933523, "dur":1102, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197108934628, "dur":62, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1686197108934701, "dur":12, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1686197108934713, "dur":253, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1686197108934988, "dur":476, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197108935464, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179424, "dur":127, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179551, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179559, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179560, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179563, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179564, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179569, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179570, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179574, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179575, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179579, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179580, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179584, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179585, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179588, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179589, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179593, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179604, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109179619, "dur":1108, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1686197108935508, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108935509, "dur":4787, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108940296, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1686197108940400, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108940511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108969558, "dur":1074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1686197108970669, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108970709, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108970752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108970756, "dur":1288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108972082, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108972120, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108972160, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108972164, "dur":2176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108974378, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108974451, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108974520, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108974524, "dur":4072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108978631, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108978668, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108978751, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108978755, "dur":2205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108980999, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108981033, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108981067, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108981071, "dur":1797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108982899, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108982929, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108982999, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197108983003, "dur":2261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197108985297, "dur":180606, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197109165903, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197109165979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686197109165986, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686197109166935, "dur":12499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108935489, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108935490, "dur":4829, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108940319, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1686197108940401, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108940448, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108969264, "dur":875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1686197108970179, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108970216, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108970424, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108970429, "dur":3643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108974113, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108974148, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108974239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108974244, "dur":4240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108978581, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108978630, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108978682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108978686, "dur":3454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108982176, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108982226, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108982286, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197108982291, "dur":2229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197108984553, "dur":70839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109055392, "dur":4550, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109059950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109059957, "dur":5545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109065546, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109065580, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109065762, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109065769, "dur":2316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109068118, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109068151, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109068184, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109068188, "dur":3171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686197109071420, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1686197109071466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109071470, "dur":2447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1686197109073957, "dur":858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1686197109074816, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109074856, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109074860, "dur":3772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1686197109078677, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1686197109078713, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109078717, "dur":1155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1686197109079909, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1686197109079945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686197109079949, "dur":2529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1686197109082521, "dur":96901, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108935640, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108935640, "dur":4602, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108940243, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108940349, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108940395, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108943732, "dur":1143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108944912, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1686197108944975, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108945015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108945438, "dur":740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1686197108946217, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108946299, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108946350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108946394, "dur":1015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108947457, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108947556, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108947593, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108947599, "dur":1153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1686197108948789, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108948857, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108948893, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108948896, "dur":16853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108965790, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108965827, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108965860, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108965864, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108967243, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108967282, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108967409, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108967413, "dur":1720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108969176, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108969212, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108969249, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108969253, "dur":1203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108970495, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108970531, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108970654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108970658, "dur":1167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108971863, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108971897, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108971936, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108971941, "dur":1557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108973548, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108973606, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108973724, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108973728, "dur":2182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108975981, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108976015, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108976108, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108976112, "dur":3753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108979899, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108979936, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108979991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108979996, "dur":1536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108981588, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108981629, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108981671, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108981675, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108983166, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197108983197, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108983274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197108983278, "dur":55070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109038383, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109038418, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109038455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109038461, "dur":4283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109042782, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109042815, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109042850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109042856, "dur":2451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109045345, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109045379, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109045420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109045428, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109046260, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109046291, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109046335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109046341, "dur":667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109047039, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109047070, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109047102, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109047108, "dur":835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109047976, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109048007, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109048037, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109048043, "dur":1529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109049610, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109049660, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109049694, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109049700, "dur":629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109050358, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109050388, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109050416, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109050420, "dur":666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109051116, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109051157, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109051206, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109051211, "dur":1032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109052277, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109052310, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109052343, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109052351, "dur":773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109053161, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109053192, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109053394, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109053403, "dur":2277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109055717, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109055749, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109055796, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109055801, "dur":7206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063042, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063076, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063121, "dur":671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063825, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063864, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109063951, "dur":4108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109068096, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109068130, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109068163, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109068169, "dur":3213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686197109071420, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1686197109071463, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109071523, "dur":745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1686197109072301, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109072336, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109072341, "dur":1832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109074207, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109074254, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109074258, "dur":3285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109077579, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109077613, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109077619, "dur":1310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1.resS" }}
+,{ "pid":12345, "tid":3, "ts":1686197109078962, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1686197109078999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686197109079003, "dur":1148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1686197109080191, "dur":99242, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108935335, "dur":153, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108935490, "dur":4712, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108940211, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686197108940213, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108940295, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686197108940296, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108940339, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108941113, "dur":1888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686197108943005, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108943081, "dur":546, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108943685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108943865, "dur":772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108944683, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108944769, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108944800, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108944847, "dur":1710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108946594, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108946669, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108946699, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108946703, "dur":1082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1686197108947848, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1686197108947918, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108947989, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108947996, "dur":1900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1686197108949935, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1686197108950023, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108950068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108950322, "dur":17619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1686197108967979, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108968015, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108968051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108968080, "dur":1162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108969280, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108969321, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108969352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108969357, "dur":1476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108970872, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108970911, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108971057, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108971061, "dur":1640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108972794, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108972898, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108972953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108972958, "dur":1557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108974572, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108974612, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108974646, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108974650, "dur":3910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108978601, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108978636, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108978671, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108978675, "dur":2228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108981075, "dur":881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108981956, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108982065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197108982070, "dur":2292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197108984395, "dur":102450, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197109086846, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197109086919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686197109086926, "dur":856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686197109087813, "dur":91610, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108935819, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108935819, "dur":4404, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108940224, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1686197108940327, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108940409, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108943768, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1686197108944679, "dur":244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1686197108944923, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108944954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108944958, "dur":1564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1686197108946597, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1686197108946660, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108946690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108946696, "dur":2290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1686197108949050, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1686197108949161, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108949306, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108949310, "dur":3535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1686197108952894, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108952937, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108952971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108952977, "dur":2314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108955336, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108955384, "dur":391, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108955783, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108955793, "dur":3024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108958853, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108959099, "dur":390, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108959496, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108959503, "dur":1627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108961171, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108961209, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108961244, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108961251, "dur":1987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108963281, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108963320, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108963475, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108963481, "dur":1705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108965228, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108965266, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108965306, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108965328, "dur":1480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108966853, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108966890, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108966946, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108966952, "dur":1296, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108968285, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108968322, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108968359, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108968364, "dur":1295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108969697, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108969731, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108969799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108969804, "dur":5711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108975548, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108975581, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108975620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108975624, "dur":3661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108979337, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108979386, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108979436, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108979442, "dur":1673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108981182, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108981217, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108981303, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108981307, "dur":1255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108982594, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108982629, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108982674, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197108982678, "dur":1619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197108984334, "dur":70127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109054462, "dur":258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109054752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109054758, "dur":5383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109060179, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109060282, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109060338, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109060342, "dur":2761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109063135, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109063165, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109063198, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109063202, "dur":6027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109069268, "dur":37429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109106698, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109106784, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686197109106792, "dur":805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686197109107648, "dur":71776, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108935452, "dur":63, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108935515, "dur":4726, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108940242, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1686197108940344, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108940427, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108947140, "dur":1013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1686197108948188, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108948254, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108948291, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108948621, "dur":922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108949591, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot.exe" }}
+,{ "pid":12345, "tid":6, "ts":1686197108949636, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108949669, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108949673, "dur":1232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot.exe" }}
+,{ "pid":12345, "tid":6, "ts":1686197108950948, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108951002, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108951179, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108951344, "dur":1358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108952745, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108952801, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108952838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108952927, "dur":3664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108956636, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108956689, "dur":370, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108957064, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108957074, "dur":2688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108959803, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108959930, "dur":295, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108960231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108960239, "dur":1071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108961344, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108961395, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108961441, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108961445, "dur":2186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108963665, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108963703, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108963774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108963779, "dur":1570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108965389, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108965427, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108965460, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108965464, "dur":1563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108967063, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108967099, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108967152, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108967158, "dur":1112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108968305, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108968344, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108968378, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108968400, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108969578, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108969619, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108969703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108969707, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108971300, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108971334, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108971416, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108971420, "dur":1690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108973154, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108973186, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108973307, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108973312, "dur":2045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108975390, "dur":417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108975808, "dur":410, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108976222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108976228, "dur":4236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108980499, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108980539, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108980654, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108980658, "dur":1187, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108981879, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108981913, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108982063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108982068, "dur":1454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108983557, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108983597, "dur":350, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108983951, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197108983955, "dur":1178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197108985166, "dur":67856, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109053022, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109053068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109053073, "dur":2059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109055165, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109055196, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109055242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109055247, "dur":10257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109065543, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109065578, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109065763, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109065768, "dur":6543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686197109072343, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1686197109072391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109072395, "dur":1375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1686197109073810, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1686197109073905, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109073978, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109073984, "dur":708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1686197109074724, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1686197109074758, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109074761, "dur":3031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1686197109077824, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1686197109077869, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109077872, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1686197109078866, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1686197109078900, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109078904, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1686197109080187, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1686197109080355, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109082363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686197109082370, "dur":827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1686197109083228, "dur":96198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108935604, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108935605, "dur":4599, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108940211, "dur":227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1686197108940438, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108940513, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108970322, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1686197108971409, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108971446, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108971562, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108971566, "dur":1741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108973355, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108973412, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108973628, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108973632, "dur":1666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108975335, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108975371, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108975428, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108975433, "dur":3054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108978534, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108978583, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108978635, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108978640, "dur":1721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108980398, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108980435, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108980481, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108980485, "dur":1316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108981837, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108981876, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108981928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108981933, "dur":1250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108983328, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108983369, "dur":239, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108983612, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108983616, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108985082, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197108985126, "dur":284, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108985414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197108985420, "dur":52922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197109038379, "dur":139972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197109178351, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197109178413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686197109178468, "dur":910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686197109179411, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1686197109179411, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108935749, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108935749, "dur":4456, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108940211, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1686197108940331, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108940383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108943953, "dur":793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1686197108944783, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1686197108944844, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108944878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108944924, "dur":1524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1686197108946491, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1686197108946562, "dur":236, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108946817, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108946822, "dur":1652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1686197108948510, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108948580, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108948642, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108948687, "dur":6098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108954828, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108954913, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108954956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108954966, "dur":3711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108958732, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108958792, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108958858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108958866, "dur":3611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108962562, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108962613, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108962675, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108962682, "dur":1402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108964122, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108964179, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108964285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108964291, "dur":1153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108965477, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108965518, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108965556, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197108965560, "dur":1958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197108967553, "dur":111994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197109079547, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197109079590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686197109079595, "dur":2798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/heckc/Desktop/ShootyShoot_Prototype(1)/Project_ShooteyShoot_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686197109082470, "dur":96955, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686197109181995, "dur":1643, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

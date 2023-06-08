@@ -25,6 +25,7 @@ public class gameManager : MonoBehaviour
 
     [Header("----- Objective -----")]
     public int enemiesRemaining;
+    [Range(1, 100)] [SerializeField] int killGoal;
     public int killCount;
 
     public bool isPaused;
@@ -74,7 +75,7 @@ public class gameManager : MonoBehaviour
         enemiesRemaining += enemyCount;
         enemiesRemainingText.text = enemiesRemaining.ToString("F0");
 
-        if(enemiesRemaining <= 0)
+        if(killCount >= killGoal)
         {
             //win con met
             StartCoroutine(youWin());
