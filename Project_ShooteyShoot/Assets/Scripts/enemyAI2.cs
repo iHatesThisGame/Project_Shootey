@@ -11,10 +11,11 @@ public class enemyAI2 : MonoBehaviour, IDamage
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform headPos;
     [SerializeField] Transform meleePos;
+    [SerializeField] Animator anim;
 
     [Header("----- Enemy Stats -----")]
     [Range(1, 10)][SerializeField] int HP;
-    [Range(1, 10)][SerializeField] float speed;
+    //[Range(1, 10)][SerializeField] float speed;
     [Range(1, 10)][SerializeField] int playerFaceSpeed;
     [Range(1, 360)][SerializeField] int viewConeAngle;
     [Range(1, 100)][SerializeField] int roamDist;
@@ -47,13 +48,16 @@ public class enemyAI2 : MonoBehaviour, IDamage
     // Update is called once per frame
     void Update()
     {
-        if (playerInRange && !canSeePlayer())
+        if (agent.isActiveAndEnabled)
         {
-            StartCoroutine(roam());
-        }
-        else if (agent.destination != gameManager.instance.player.transform.position)
-        {
-            StartCoroutine(roam());
+            if (playerInRange && !canSeePlayer())
+            {
+                StartCoroutine(roam());
+            }
+            else if (agent.destination != gameManager.instance.player.transform.position)
+            {
+                StartCoroutine(roam());
+            } 
         }
     }
 
@@ -85,13 +89,9 @@ public class enemyAI2 : MonoBehaviour, IDamage
         playerDir = gameManager.instance.player.transform.position - headPos.position;
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, 0, playerDir.z), transform.forward);
 
-        Debug.DrawRay(headPos.position, playerDir);
-        Debug.Log(angleToPlayer);
-
         RaycastHit hit;
         if (Physics.Raycast(headPos.position, playerDir, out hit))
         {
-
             if (hit.collider.CompareTag("Player") && angleToPlayer <= viewConeAngle)
             {
                 agent.SetDestination(gameManager.instance.player.transform.position);
@@ -100,15 +100,12 @@ public class enemyAI2 : MonoBehaviour, IDamage
                 {
                     facePlayer();
                 }
-
                 if (!enemyMelee)
                 {
                     StartCoroutine(melee());
                 }
-
                 return true;
             }
-
         }
         return false;
     }
@@ -116,7 +113,7 @@ public class enemyAI2 : MonoBehaviour, IDamage
     IEnumerator melee()
     {
         enemyMelee = true;
-
+        anim.SetTrigger("Melee");
         GameObject punchObject = Instantiate(punch, meleePos.position, transform.rotation);
 
         Punch punchComponent = punchObject.GetComponent<Punch>();
@@ -129,8 +126,6 @@ public class enemyAI2 : MonoBehaviour, IDamage
         yield return new WaitForSeconds(meleePunchRate);
         enemyMelee = false;
     }
-
-
 
     void OnTriggerEnter(Collider other)
     {

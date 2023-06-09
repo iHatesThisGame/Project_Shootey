@@ -8,18 +8,6 @@ public class Punch : MonoBehaviour
     [Range(1, 100)][SerializeField] float punchForce;
     [Range(1, 100)][SerializeField] float punchRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ApplyPunch(GameObject player)
     {
         Vector3 punchDirection = player.transform.position - transform.position;
