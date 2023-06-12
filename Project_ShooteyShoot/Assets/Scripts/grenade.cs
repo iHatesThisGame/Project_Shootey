@@ -9,6 +9,7 @@ public class grenade : MonoBehaviour
     [SerializeField] float force;
     [SerializeField] int grenadeDamage;
     [SerializeField] float countdown;
+    [SerializeField] float distance;
     public GameObject explosionEffect;
 
     [SerializeField] Rigidbody rb;
@@ -23,6 +24,7 @@ public class grenade : MonoBehaviour
     private void Update()
     {
         countdown -= Time.deltaTime;
+        rb.velocity = transform.forward * distance;
         if (countdown <= 0 && !hasExploded)
         {
             explode();

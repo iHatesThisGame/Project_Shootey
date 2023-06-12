@@ -532,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 735854535}
     - target: {fileID: 2140088572906240707, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
       propertyPath: throwForce
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2140088572906240707, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
       propertyPath: grenadeCooldown
