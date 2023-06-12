@@ -7,7 +7,7 @@ public class playerController : MonoBehaviour, IDamage
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
-    [SerializeField] Transform throwPos;
+    //[SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
     [Range(1, 10)][SerializeField] int HP;
@@ -26,10 +26,10 @@ public class playerController : MonoBehaviour, IDamage
     [Range(25, 1000)][SerializeField] int shootDist;
     [SerializeField] GameObject hitEffect;
 
-    [Header("----- Grenade Stats -----")]
-    [SerializeField] float throwForce;
-    [SerializeField] float grenadeCooldown;
-    [SerializeField] GameObject grenade;
+    //[Header("----- Grenade Stats -----")]
+    //[SerializeField] float throwForce;
+    //[SerializeField] float grenadeCooldown;
+    //[SerializeField] GameObject grenade;
 
     private int jumpedTimes;
     private bool isSprinting;
@@ -38,7 +38,7 @@ public class playerController : MonoBehaviour, IDamage
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
-    bool isThrowing;
+    //bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
     int playerHPOrig;
@@ -63,13 +63,12 @@ public class playerController : MonoBehaviour, IDamage
         {
             StartCoroutine(melee());
         }
-        if (Input.GetButtonDown("Throw") && isThrowing == false)
-        {
-            //throwGrenade();
-            StartCoroutine(throwGrenade());
-        }
+        //if (Input.GetButtonDown("Throw") && isThrowing == false)
+        //{
+        //    //throwGrenade();
+        //    StartCoroutine(throwGrenade());
+        //}
     }
-
     void movement()
     {
         groundedPlayer = controller.isGrounded;
@@ -164,16 +163,15 @@ public class playerController : MonoBehaviour, IDamage
 
     #region throwGrenade attempt
 
-    IEnumerator throwGrenade()
-    {
-        isThrowing = true;
-
-        Instantiate(grenade, throwPos.position, transform.rotation);
-        //Rigidbody rb = grenade.GetComponent<Rigidbody>();
-        //rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
-        yield return new WaitForSeconds(shootRate);
-        isThrowing = false;
-    }
+    //IEnumerator throwGrenade()
+    //{
+    //    isThrowing = true;
+    //    Instantiate(grenade, throwPos.position, transform.rotation);
+    //    Rigidbody rb = grenade.GetComponent<Rigidbody>();
+    //    rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
+    //    yield return new WaitForSeconds(shootRate);
+    //    isThrowing = false;
+    //}
 
     #endregion
 
