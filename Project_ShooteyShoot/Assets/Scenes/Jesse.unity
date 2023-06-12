@@ -407,6 +407,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: dcddd3666c9913e4fb997448e1d71147, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c715950670d360f4bb2cdaa1921fc3ed, type: 3}
+--- !u!4 &735854535 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1170543887836188040, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
+  m_PrefabInstance: {fileID: 1688250755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1117718813 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8371942296986948255, guid: c715950670d360f4bb2cdaa1921fc3ed, type: 3}
@@ -513,6 +518,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1170543887836188040, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140088572906240707, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
+      propertyPath: grenade
+      value: 
+      objectReference: {fileID: 182196564875071995, guid: 068099fcbe64d51449ef0eaba8da4b6d, type: 3}
+    - target: {fileID: 2140088572906240707, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
+      propertyPath: throwPos
+      value: 
+      objectReference: {fileID: 735854535}
     - target: {fileID: 2140088572906240718, guid: db6edf8845cdbd84c9609635a938e21e, type: 3}
       propertyPath: m_Name
       value: Player Soldier
