@@ -89,6 +89,7 @@ public class playerController : MonoBehaviour, IDamage
         }
 
         sprint();
+        crouch();
 
         playerVelocity.y -= gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
@@ -124,6 +125,18 @@ public class playerController : MonoBehaviour, IDamage
             {
                 isSprinting = !isSprinting;
             }
+        }
+    }
+
+    void crouch()
+    {
+        if (Input.GetButtonDown("Crouch"))
+        {
+            controller.height = .5f;
+        }
+        if (Input.GetButtonUp("Crouch"))
+        {
+            controller.height = 2f;
         }
     }
 
