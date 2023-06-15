@@ -8,6 +8,7 @@ public class playerController : MonoBehaviour, IDamage
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
     [SerializeField] Transform throwPos;
+    [SerializeField] Animator anim;
 
     [Header("----- Player Stats -----")]
     [Range(1, 10)][SerializeField] int HP;
@@ -71,6 +72,8 @@ public class playerController : MonoBehaviour, IDamage
     }
     void movement()
     {
+        anim.SetFloat("Speed", move.normalized.magnitude);
+
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
@@ -143,6 +146,7 @@ public class playerController : MonoBehaviour, IDamage
     IEnumerator shoot()
     {
         isShooting = true;
+        anim.SetTrigger("Shoot");
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, shootDist))
         {
