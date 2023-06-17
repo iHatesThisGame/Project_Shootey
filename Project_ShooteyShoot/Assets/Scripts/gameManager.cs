@@ -25,7 +25,7 @@ public class gameManager : MonoBehaviour
 
     [Header("----- Objective -----")]
     public int enemiesRemaining;
-    [Range(1, 100)] [SerializeField] int killGoal;
+    [Range(1, 1000)] [SerializeField] int killGoal = 5;
     public int killCount;
 
     public bool isPaused;
@@ -46,9 +46,9 @@ public class gameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel") && activeMenu == null)
         {
+            statePaused();
             activeMenu = pauseMenu;
             activeMenu.SetActive(isPaused);
-            statePaused();
         }
     }
 
