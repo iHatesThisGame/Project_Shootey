@@ -26,6 +26,7 @@ public class playerController : MonoBehaviour, IDamage
     [Range(1, 10)][SerializeField] int shootDamage;
     [Range(25, 1000)][SerializeField] int shootDist;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] float zoomIn;
 
     [Header("----- Grenade Stats -----")]
     [SerializeField] float throwForce;
@@ -43,6 +44,7 @@ public class playerController : MonoBehaviour, IDamage
     float sprintSpeed;
     float playerSpeedOrig;
     int playerHPOrig;
+    float zoomOrig;
 
     private void Start()
     {
@@ -50,11 +52,13 @@ public class playerController : MonoBehaviour, IDamage
         sprintSpeed = playerSpeed * 2;
         playerHPOrig = HP;
         spawnPlayer();
+        zoomOrig = Camera.main.fieldOfView;
     }
 
     void Update()
     {
         movement();
+        zoomSight();
 
         if (Input.GetButton("Shoot") && isShooting == false)
         {
@@ -69,6 +73,16 @@ public class playerController : MonoBehaviour, IDamage
             //throwGrenade();
             StartCoroutine(throwGrenade());
         }
+    }
+
+    void zoomSight()
+    {
+        if (Input.GetButton("Zoom"))
+        {
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, zoomIn, Time.deltaTime * 3);
+        }
+        else
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, zoomOrig, Time.deltaTime * 8);
     }
     void movement()
     {
