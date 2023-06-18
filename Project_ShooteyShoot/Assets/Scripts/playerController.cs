@@ -13,6 +13,7 @@ public class playerController : MonoBehaviour, IDamage
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
     [Range(3, 8)][SerializeField] float playerSpeed;
+    [Range(15, 40)][SerializeField] float dashSpeed;
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
     [SerializeField] int jumpMax;
@@ -43,6 +44,8 @@ public class playerController : MonoBehaviour, IDamage
     bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
+    public Vector3 dashDir;
+    bool isDashing;
     int playerHPOrig;
     float zoomOrig;
 
@@ -86,6 +89,9 @@ public class playerController : MonoBehaviour, IDamage
     }
     void movement()
     {
+        if (!isDashing && Input.GetButtonDown("Dash"))
+            StartCoroutine(dash());
+
         anim.SetFloat("Speed", move.normalized.magnitude);
 
         groundedPlayer = controller.isGrounded;
@@ -109,7 +115,16 @@ public class playerController : MonoBehaviour, IDamage
         crouch();
 
         playerVelocity.y -= gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        controller.Move((playerVelocity + dashDir) * Time.deltaTime);
+    }
+
+    IEnumerator dash()
+    {
+        isDashing = true;
+        dashDir = Camera.main.transform.forward * dashSpeed;
+        yield return new WaitForSeconds(0.5f);
+        dashDir = Vector3.zero;
+        isDashing = false;
     }
 
     private void sprint()

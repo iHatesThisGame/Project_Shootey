@@ -460,6 +460,7 @@ MonoBehaviour:
   anim: {fileID: 82569358733603118}
   HP: 5
   playerSpeed: 8
+  dashSpeed: 31.3
   jumpHeight: 8
   gravityValue: 25
   jumpMax: 3
@@ -471,8 +472,10 @@ MonoBehaviour:
   shootDamage: 5
   shootDist: 25
   hitEffect: {fileID: 0}
+  zoomIn: 15
   throwForce: 0
   grenade: {fileID: 0}
+  dashDir: {x: 0, y: 0, z: 0}
 --- !u!95 &82569358733603118
 Animator:
   serializedVersion: 5
