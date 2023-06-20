@@ -22,6 +22,7 @@ public class gameManager : MonoBehaviour
     public Image playerHPBar;
     public GameObject playerFlashUI;
     public TextMeshProUGUI enemiesRemainingText;
+    public TextMeshProUGUI killGoalText;
     public TextMeshProUGUI killCountText;
 
     [Header("----- Objective -----")]
@@ -31,6 +32,7 @@ public class gameManager : MonoBehaviour
 
     public bool isPaused;
     float timescaleOrig;
+    public Vector3 playerScaleOrig;
 
     // Start is called before the first frame update
     void Awake()
@@ -40,6 +42,7 @@ public class gameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindGameObjectWithTag("Player Spawn Pos");
+        playerScaleOrig = player.transform.localScale;
     }
 
     // Update is called once per frame
@@ -74,6 +77,7 @@ public class gameManager : MonoBehaviour
     public void updateGameGoal(int enemyCount)
     {
         enemiesRemaining += enemyCount;
+        killGoalText.text = killGoal.ToString("F0");
         enemiesRemainingText.text = enemiesRemaining.ToString("F0");
 
         if(killCount >= killGoal)

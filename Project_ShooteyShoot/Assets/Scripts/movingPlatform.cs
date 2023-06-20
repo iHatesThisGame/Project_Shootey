@@ -60,5 +60,9 @@ public class movingPlatform : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         other.transform.SetParent(null);
+        if (gameManager.instance.player.transform.localScale != gameManager.instance.playerScaleOrig)
+        {
+            gameManager.instance.player.transform.localScale = gameManager.instance.playerScaleOrig; 
+        }
     }
 }
