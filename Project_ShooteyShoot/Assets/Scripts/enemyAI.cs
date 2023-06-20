@@ -7,7 +7,8 @@ using UnityEngine.UIElements;
 public class enemyAI : MonoBehaviour, IDamage
 {
     [Header("----- Components -----")]
-    [SerializeField] Renderer model;
+    [SerializeField] Renderer bodyModel;
+    [SerializeField] Renderer legsModel;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform headPos;
     [SerializeField] Transform shootPos;
@@ -152,9 +153,11 @@ public class enemyAI : MonoBehaviour, IDamage
 
         if (HP <= 0)
         {
+            StopAllCoroutines();
             gameManager.instance.updateGameGoal(-1);
             anim.SetBool("Death", true);
             agent.enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
 
             gameManager.instance.killCount += 1;
             gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
@@ -168,8 +171,10 @@ public class enemyAI : MonoBehaviour, IDamage
 
     IEnumerator flashColor()
     {
-        model.material.color = Color.red;
+        bodyModel.material.color = Color.red;
+        legsModel.material.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        model.material.color = Color.white;
+        bodyModel.material.color = Color.white;
+        legsModel.material.color = Color.white;
     }
 }

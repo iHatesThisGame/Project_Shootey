@@ -7,7 +7,8 @@ public class enemyAI2 : MonoBehaviour, IDamage
 {
 
     [Header("----- Components -----")]
-    [SerializeField] Renderer model;
+    [SerializeField] Renderer bodyModel;
+    [SerializeField] Renderer legsModel;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform headPos;
     [SerializeField] Transform meleePos;
@@ -50,6 +51,8 @@ public class enemyAI2 : MonoBehaviour, IDamage
     {
         if (agent.isActiveAndEnabled)
         {
+
+            anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
             if (playerInRange && !canSeePlayer())
             {
                 StartCoroutine(roam());
@@ -114,6 +117,13 @@ public class enemyAI2 : MonoBehaviour, IDamage
     {
         enemyMelee = true;
         anim.SetTrigger("Melee");
+        
+        yield return new WaitForSeconds(meleePunchRate);
+        enemyMelee = false;
+    }
+
+    private void meleeAttack()
+    {
         GameObject punchObject = Instantiate(punch, meleePos.position, transform.rotation);
 
         Punch punchComponent = punchObject.GetComponent<Punch>();
@@ -122,9 +132,6 @@ public class enemyAI2 : MonoBehaviour, IDamage
         {
             punchComponent.ApplyPunch(gameManager.instance.player);
         }
-
-        yield return new WaitForSeconds(meleePunchRate);
-        enemyMelee = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -152,24 +159,32 @@ public class enemyAI2 : MonoBehaviour, IDamage
     public void takeDamage(int dmg)
     {
         HP -= dmg;
-        agent.SetDestination(gameManager.instance.player.transform.position);
-        StartCoroutine(flashColor());
 
         if (HP <= 0)
         {
+            StopAllCoroutines();
             gameManager.instance.updateGameGoal(-1);
-            Destroy(gameObject);
+            anim.SetBool("Death", true);
+            agent.enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
 
             gameManager.instance.killCount += 1;
             gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
+        }
+        else
+        {
+            agent.SetDestination(gameManager.instance.player.transform.position);
+            StartCoroutine(flashColor());
         }
     }
 
     IEnumerator flashColor()
     {
-        model.material.color = Color.red;
+        bodyModel.material.color = Color.red;
+        legsModel.material.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        model.material.color = Color.yellow;
+        bodyModel.material.color = Color.white;
+        legsModel.material.color = Color.white;
     }
 
 }
