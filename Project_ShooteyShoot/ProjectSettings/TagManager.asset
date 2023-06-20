@@ -8,6 +8,12 @@ TagManager:
   - Level Exit
   - Enemy Shooter Pos
   - Enemy Melee Pos
+  - Red Flag
+  - Blue Flag
+  - Teammate
+  - OpposingTeam
+  - Blue Base
+  - Red Base
   layers:
   - Default
   - TransparentFX
