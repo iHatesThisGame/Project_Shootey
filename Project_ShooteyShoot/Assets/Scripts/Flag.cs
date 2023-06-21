@@ -9,13 +9,10 @@ public class Flag : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ICapture captureable = other.GetComponent<ICapture>();
-        if (other.CompareTag("Player"))
-        { 
-            if (captureable != null)
-            {
-                Destroy(enemyFlag);
-            }
+        ICapture captureable = other.GetComponent<ICapture>(); 
+        if (captureable != null)
+        {
+            Destroy(enemyFlag);
         }
     }
 }

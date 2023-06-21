@@ -48,7 +48,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture
     bool isDashing;
     int playerHPOrig;
     float zoomOrig;
-    bool hasFlag;
 
     private void Start()
     {
@@ -239,7 +238,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture
     }
     public void capture(GameObject flag)
     {
-        hasFlag = true;
         Destroy(flag);
     }
 
