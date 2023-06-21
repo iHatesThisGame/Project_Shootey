@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
 
-public class ctfEnemyAI : MonoBehaviour, IDamage
+public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
 {
     [Header("----- Components -----")]
     [SerializeField] Renderer bodyModel;
@@ -45,13 +45,13 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
         if (agent.isActiveAndEnabled)
         {
             anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-            if (!canSeePlayer() && !hasFlag)
+            if (playerInRange && !canSeePlayer())
             {
                 seekFlag();
             }
-            else if (hasFlag)
+            if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position)
             {
-
+                seekFlag();
             }
         }
     }
@@ -90,6 +90,10 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
                 }
                 return true;
             }
+            else
+            {
+                return false;
+            }
         }
         return false;
     }
@@ -101,6 +105,11 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
         Instantiate(bullet, shootPos.position, transform.rotation);
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
+    }
+    public void capture(GameObject flag)
+    {
+        hasFlag = true;
+        Destroy(flag);
     }
 
     void OnTriggerEnter(Collider other)

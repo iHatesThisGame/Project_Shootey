@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class playerController : MonoBehaviour, IDamage
+public class playerController : MonoBehaviour, IDamage, ICapture
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
@@ -48,6 +48,7 @@ public class playerController : MonoBehaviour, IDamage
     bool isDashing;
     int playerHPOrig;
     float zoomOrig;
+    bool hasFlag;
 
     private void Start()
     {
@@ -176,8 +177,7 @@ public class playerController : MonoBehaviour, IDamage
     {
         isShooting = true;
         anim.SetTrigger("Shoot");
-        RaycastHit hit;
-        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, shootDist))
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out RaycastHit hit, shootDist))
         {
             IDamage damageable = hit.collider.GetComponent<IDamage>();
 
@@ -236,6 +236,11 @@ public class playerController : MonoBehaviour, IDamage
         {
             gameManager.instance.youLose();
         }
+    }
+    public void capture(GameObject flag)
+    {
+        hasFlag = true;
+        Destroy(flag);
     }
 
     IEnumerator playerFlashDamage()
