@@ -36,7 +36,25 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     //[SerializeField] float grenadeCooldown;
     [SerializeField] GameObject grenade;
 
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip[] audJump;
+    [Range(0, 1)][SerializeField] float audJumpVol;
+    [SerializeField] AudioClip[] audDamage;
+    [Range(0, 1)][SerializeField] float audDamageVol;
+    [SerializeField] AudioClip[] audSteps;
+    [Range(0, 1)][SerializeField] float audStepsVol;
+    [SerializeField] AudioClip audGunClick;
+    [Range(0, 1)][SerializeField] float audGunClickVol;
+    [SerializeField] AudioClip audGunshot;
+    [Range(0, 1)][SerializeField] float audGunshotVol;
+    [SerializeField] AudioClip audReload;
+    [Range(0, 1)][SerializeField] float audReloadVol;
+    [SerializeField] AudioClip audSpawned;
+    [Range(0, 1)][SerializeField] float audSpawnedVol;
+
     private int jumpedTimes;
+    bool stepsIsPlaying;
     private bool isSprinting;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -108,10 +126,18 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         anim.SetFloat("Speed", move.normalized.magnitude);
 
         groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
+        if (groundedPlayer)
         {
-            playerVelocity.y = 0f;
-            jumpedTimes = 0;
+            if (!stepsIsPlaying && move.normalized.magnitude > 0.5f)
+            {
+                StartCoroutine(playSteps());
+            }
+
+            if (playerVelocity.y < 0)
+            {
+                playerVelocity.y = 0f;
+                jumpedTimes = 0;
+            }
         }
 
         move = (transform.right * Input.GetAxis("Horizontal")) + (transform.forward * Input.GetAxis("Vertical"));
@@ -120,6 +146,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         // Changes the height position of the player..
         if (Input.GetButtonDown("Jump") && jumpedTimes < jumpMax)
         {
+            aud.PlayOneShot(audJump[Random.Range(0, audJump.Length)], audJumpVol);
             jumpedTimes++;
             playerVelocity.y = jumpHeight;
         }
@@ -173,6 +200,20 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         }
     }
 
+    IEnumerator playSteps()
+    {
+        stepsIsPlaying = true;
+
+        aud.PlayOneShot(audSteps[Random.Range(0, audSteps.Length)], audStepsVol);
+
+        if (!isSprinting)
+            yield return new WaitForSeconds(0.5f);
+        else
+            yield return new WaitForSeconds(0.2f);
+
+        stepsIsPlaying = false;
+    }
+
     void crouch()
     {
         if (Input.GetButtonDown("Crouch"))
@@ -191,6 +232,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         {
             isShooting = true;
             gunList[selectedGun].ammoCur--;
+            aud.PlayOneShot(audGunshot, audGunshotVol);
             updatePlayerUI();
 
             anim.SetTrigger("Shoot");
@@ -254,6 +296,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     public void takeDamage(int dmg)
     {
         HP -= dmg;
+        aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
         updatePlayerUI();
         StartCoroutine(playerFlashDamage());
 
@@ -280,6 +323,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         transform.position = gameManager.instance.playerSpawnPos.transform.position;
         controller.enabled = true;
         HP = playerHPOrig;
+        aud.PlayOneShot(audSpawned, audSpawnedVol);
         updatePlayerUI();
     }
 
@@ -295,6 +339,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         gunModel.GetComponent<MeshRenderer>().material = gunStat.model.GetComponent<MeshRenderer>().sharedMaterial;
 
         selectedGun = gunList.Count - 1;
+        aud.PlayOneShot(audGunClick, audGunClickVol);
         updatePlayerUI();
     }
 
@@ -304,11 +349,13 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         {
             selectedGun++;
             changeGunStats();
+            aud.PlayOneShot(audGunClick, audGunClickVol);
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0 && selectedGun > 0)
         {
             selectedGun--;
             changeGunStats();
+            aud.PlayOneShot(audGunClick, audGunClickVol);
         }
     }
 
@@ -345,6 +392,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
             }
 
             updatePlayerUI();
+            aud.PlayOneShot(audReload, audReloadVol);
         }
     }
 }

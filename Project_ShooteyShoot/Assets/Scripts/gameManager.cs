@@ -32,6 +32,11 @@ public class gameManager : MonoBehaviour
     [Range(1, 1000)] [SerializeField] int killGoal = 5;
     public int killCount;
 
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audPauseSound;
+    [Range(0, 1)][SerializeField] float audPauseSoundVol;
+
     public bool isPaused;
     float timescaleOrig;
     public Vector3 playerScaleOrig;
@@ -52,6 +57,7 @@ public class gameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel") && activeMenu == null)
         {
+            aud.PlayOneShot(audPauseSound, audPauseSoundVol);
             statePaused();
             activeMenu = pauseMenu;
             activeMenu.SetActive(isPaused);
