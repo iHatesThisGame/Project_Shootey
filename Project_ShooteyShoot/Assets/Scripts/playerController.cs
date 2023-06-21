@@ -280,15 +280,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture
         updatePlayerUI();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Level Exit")
-        {
-            SceneManager.LoadScene(1);
-
-        }
-    }
-
     public void gunPickup(gunStats gunStat)
     {
         gunList.Add(gunStat);
