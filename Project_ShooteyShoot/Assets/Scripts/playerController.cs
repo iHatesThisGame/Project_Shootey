@@ -323,6 +323,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         transform.position = gameManager.instance.playerSpawnPos.transform.position;
         controller.enabled = true;
         HP = playerHPOrig;
+
         aud.PlayOneShot(audSpawned, audSpawnedVol);
         updatePlayerUI();
     }

@@ -463,7 +463,7 @@ MonoBehaviour:
   headPos: {fileID: 1432396689270074102}
   shootPos: {fileID: 6792309560748886325}
   anim: {fileID: 1432396689279576968}
-  HP: 10
+  HP: 5
   playerFaceSpeed: 10
   viewConeAngle: 130
   roamDist: 5

@@ -27,10 +27,15 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI ammoMaxText;
     public TextMeshProUGUI ammoCurText;
 
-    [Header("----- Objective -----")]
+    [Header("----- Objectives -----")]
+    public bool Elimination;
+    public GameObject enemiesRemainingLabel;
     public int enemiesRemaining;
+    public bool Survival;
+    public GameObject killCountLabel;
     [Range(1, 1000)] [SerializeField] int killGoal = 5;
     public int killCount;
+    public bool flagCapture;
 
     [Header("----- Audio -----")]
     [SerializeField] AudioSource aud;
@@ -50,6 +55,16 @@ public class gameManager : MonoBehaviour
         playerController = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindGameObjectWithTag("Player Spawn Pos");
         playerScaleOrig = player.transform.localScale;
+
+        if (Elimination)
+        {
+            enemiesRemainingLabel.SetActive(true);
+        }
+
+        if (Survival)
+        {
+            killCountLabel.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -88,7 +103,13 @@ public class gameManager : MonoBehaviour
         killGoalText.text = killGoal.ToString("F0");
         enemiesRemainingText.text = enemiesRemaining.ToString("F0");
 
-        if(killCount >= killGoal)
+        if(Survival && killCount >= killGoal)
+        {
+            //win con met
+            StartCoroutine(youWin());
+        }
+
+        if(Elimination && enemiesRemaining <= 0)
         {
             //win con met
             StartCoroutine(youWin());

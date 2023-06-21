@@ -690,7 +690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1588910417
 RectTransform:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ RectTransform:
   - {fileID: 1163772193}
   - {fileID: 1844142333}
   m_Father: {fileID: 8476050264084728822}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3115,7 +3115,7 @@ RectTransform:
   m_Children:
   - {fileID: 6150891195737497181}
   m_Father: {fileID: 8476050264084728822}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4222,8 +4222,8 @@ RectTransform:
   - {fileID: 3409153795574112966}
   - {fileID: 65534513638579662}
   - {fileID: 177759662314735464}
-  - {fileID: 1588910417}
   - {fileID: 4876557420830969667}
+  - {fileID: 1588910417}
   - {fileID: 1794522530}
   - {fileID: 961555779464207953}
   m_Father: {fileID: 0}
@@ -4261,9 +4261,14 @@ MonoBehaviour:
   killCountText: {fileID: 2077541327}
   ammoMaxText: {fileID: 6897381321385806059}
   ammoCurText: {fileID: 2171504641008415757}
+  Elimination: 0
+  enemiesRemainingLabel: {fileID: 6517311887716953486}
   enemiesRemaining: 0
-  killGoal: 1
+  Survival: 0
+  killCountLabel: {fileID: 1588910416}
+  killGoal: 5
   killCount: 0
+  flagCapture: 0
   aud: {fileID: 1571496456}
   audPauseSound: {fileID: 8300000, guid: 67373babc2efebd4eb02f428455d9389, type: 3}
   audPauseSoundVol: 0.5
@@ -4353,7 +4358,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
