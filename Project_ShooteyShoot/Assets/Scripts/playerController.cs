@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class playerController : MonoBehaviour, IDamage, ICapture
+public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
@@ -187,23 +187,26 @@ public class playerController : MonoBehaviour, IDamage, ICapture
 
     IEnumerator shoot()
     {
-        isShooting = true;
-        gunList[selectedGun].ammoCur--;
-        updatePlayerUI();
-
-        anim.SetTrigger("Shoot");
-        if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out RaycastHit hit, shootDist))
+        if (gunList[selectedGun].ammoCur > 0)
         {
-            IDamage damageable = hit.collider.GetComponent<IDamage>();
+            isShooting = true;
+            gunList[selectedGun].ammoCur--;
+            updatePlayerUI();
 
-            if (damageable != null)
+            anim.SetTrigger("Shoot");
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out RaycastHit hit, shootDist))
             {
-                damageable.takeDamage(shootDamage);
+                IDamage damageable = hit.collider.GetComponent<IDamage>();
+
+                if (damageable != null)
+                {
+                    damageable.takeDamage(shootDamage);
+                }
+                Instantiate(gunList[selectedGun].hitEffect, hit.point, Quaternion.identity);
             }
-            Instantiate(gunList[selectedGun].hitEffect, hit.point, Quaternion.identity);
+            yield return new WaitForSeconds(shootRate);
+            isShooting = false; 
         }
-        yield return new WaitForSeconds(shootRate);
-        isShooting = false;
     }
 
     IEnumerator melee()
@@ -323,6 +326,25 @@ public class playerController : MonoBehaviour, IDamage, ICapture
 
     public void pickupAmmo(int amount, GameObject obj)
     {
+        if(gunList.Count > 0)
+        {
+            int ammoDif = gunList[selectedGun].ammoMax - gunList[selectedGun].ammoCur;
 
+            gunList[selectedGun].ammoCur += amount;
+
+            if (gunList[selectedGun].ammoCur > gunList[selectedGun].ammoMax)
+                gunList[selectedGun].ammoCur = gunList[selectedGun].ammoMax;
+
+            ammoPickup ammopickup = obj.GetComponent<ammoPickup>();
+
+            ammopickup.ammoAmount -= ammoDif;
+
+            if (ammopickup.ammoAmount <= 0)
+            {
+                Destroy(obj);
+            }
+
+            updatePlayerUI();
+        }
     }
 }
