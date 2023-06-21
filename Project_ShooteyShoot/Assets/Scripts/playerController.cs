@@ -13,7 +13,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
     [Range(3, 8)][SerializeField] float playerSpeed;
-    [Range(15, 40)][SerializeField] float dashSpeed;
+    [Range(15, 100)][SerializeField] float dashSpeed;
+    [Range(0.1f, 1)][SerializeField] float dashTime;
     [Range(8, 25)][SerializeField] float jumpHeight;
     [Range(10, 50)][SerializeField] float gravityValue;
     [SerializeField] int jumpMax;
@@ -162,7 +163,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     {
         isDashing = true;
         dashDir = Camera.main.transform.forward * dashSpeed;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(dashTime);
         dashDir = Vector3.zero;
         isDashing = false;
     }

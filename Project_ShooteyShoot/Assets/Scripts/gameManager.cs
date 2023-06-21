@@ -26,16 +26,19 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI killCountText;
     public TextMeshProUGUI ammoMaxText;
     public TextMeshProUGUI ammoCurText;
+    public TextMeshProUGUI timerText;
 
     [Header("----- Objectives -----")]
-    public bool Elimination;
+    public bool elimination;
     public GameObject enemiesRemainingLabel;
     public int enemiesRemaining;
-    public bool Survival;
+    public bool survival;
     public GameObject killCountLabel;
     [Range(1, 1000)] [SerializeField] int killGoal = 5;
     public int killCount;
     public bool flagCapture;
+    public bool courseStarted;
+    public GameObject timerLabel;
 
     [Header("----- Audio -----")]
     [SerializeField] AudioSource aud;
@@ -45,6 +48,7 @@ public class gameManager : MonoBehaviour
     public bool isPaused;
     float timescaleOrig;
     public Vector3 playerScaleOrig;
+    public float currentTime;
 
     // Start is called before the first frame update
     void Awake()
@@ -56,12 +60,12 @@ public class gameManager : MonoBehaviour
         playerSpawnPos = GameObject.FindGameObjectWithTag("Player Spawn Pos");
         playerScaleOrig = player.transform.localScale;
 
-        if (Elimination)
+        if (elimination)
         {
             enemiesRemainingLabel.SetActive(true);
         }
 
-        if (Survival)
+        if (survival)
         {
             killCountLabel.SetActive(true);
         }
@@ -70,6 +74,9 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (courseStarted)
+            timer();
+
         if (Input.GetButtonDown("Cancel") && activeMenu == null)
         {
             aud.PlayOneShot(audPauseSound, audPauseSoundVol);
@@ -103,13 +110,13 @@ public class gameManager : MonoBehaviour
         killGoalText.text = killGoal.ToString("F0");
         enemiesRemainingText.text = enemiesRemaining.ToString("F0");
 
-        if(Survival && killCount >= killGoal)
+        if(survival && killCount >= killGoal)
         {
             //win con met
             StartCoroutine(youWin());
         }
 
-        if(Elimination && enemiesRemaining <= 0)
+        if(elimination && enemiesRemaining <= 0)
         {
             //win con met
             StartCoroutine(youWin());
@@ -129,5 +136,19 @@ public class gameManager : MonoBehaviour
         statePaused();
         activeMenu = loseMenu;
         activeMenu.SetActive(true);
+    }
+
+    public void obstacleCourseFinished()
+    {
+        activeMenu = winMenu;
+        activeMenu.SetActive(true);
+        statePaused();
+    }
+
+    public void timer()
+    {
+        timerLabel.SetActive(true);
+        currentTime += Time.deltaTime;
+        timerText.text = currentTime.ToString("0.00");
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Blue Base
   - Red Base
   - Enemy
+  - Finish Line
   layers:
   - Default
   - TransparentFX

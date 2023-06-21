@@ -20,7 +20,8 @@ public class enemySpawner : MonoBehaviour
         yield return new WaitForSeconds(interval);
         if (gameManager.instance.enemiesRemaining < spawnedLimit)
         {
-            GameObject newEnemy = Instantiate(enemy, enemySpawnPos.position, Quaternion.identity); 
+            GameObject newEnemy = Instantiate(enemy, enemySpawnPos.position, Quaternion.identity);
+            gameManager.instance.enemiesRemaining++;
         }
         StartCoroutine(spawnEnemy(interval, enemy));
     }
