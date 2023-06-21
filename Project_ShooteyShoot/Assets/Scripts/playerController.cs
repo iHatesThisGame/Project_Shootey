@@ -23,10 +23,12 @@ public class playerController : MonoBehaviour, IDamage, ICapture
     [SerializeField] bool sprintToggle;     // true means toggle mode, false means not toggle mode
 
     [Header("----- Gun Stats -----")]
+    [SerializeField] List<gunStats> gunList = new List<gunStats>();
     [Range(0.1f, 3)][SerializeField] float shootRate;
     [Range(1, 10)][SerializeField] int shootDamage;
     [Range(25, 1000)][SerializeField] int shootDist;
-    [SerializeField] GameObject hitEffect;
+    [SerializeField] GameObject gunModel;
+    public int selectedGun;
     [SerializeField] float zoomIn;
 
     [Header("----- Grenade Stats -----")]
@@ -60,21 +62,32 @@ public class playerController : MonoBehaviour, IDamage, ICapture
 
     void Update()
     {
-        movement();
         zoomSight();
 
-        if (Input.GetButton("Shoot") && isShooting == false)
+        if(gameManager.instance.activeMenu == null)
         {
-            StartCoroutine(shoot());
-        }
-        if (Input.GetButton("Melee") && playerMelee == false)
-        {
-            StartCoroutine(melee());
-        }
-        if (Input.GetButtonDown("Throw") && isThrowing == false)
-        {
-            //throwGrenade();
-            StartCoroutine(throwGrenade());
+            movement();
+
+            if(gunList.Count > 0)
+            {
+                changeGun();
+
+                if (Input.GetButton("Shoot") && isShooting == false)
+                {
+                    StartCoroutine(shoot());
+                }
+            }
+
+            if (Input.GetButton("Melee") && playerMelee == false)
+            {
+                StartCoroutine(melee());
+            }
+
+            if (Input.GetButtonDown("Throw") && isThrowing == false)
+            {
+                //throwGrenade();
+                StartCoroutine(throwGrenade());
+            }
         }
     }
 
@@ -175,6 +188,9 @@ public class playerController : MonoBehaviour, IDamage, ICapture
     IEnumerator shoot()
     {
         isShooting = true;
+        gunList[selectedGun].ammoCur--;
+        updatePlayerUI();
+
         anim.SetTrigger("Shoot");
         if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out RaycastHit hit, shootDist))
         {
@@ -184,6 +200,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture
             {
                 damageable.takeDamage(shootDamage);
             }
+            Instantiate(gunList[selectedGun].hitEffect, hit.point, Quaternion.identity);
         }
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
@@ -223,6 +240,12 @@ public class playerController : MonoBehaviour, IDamage, ICapture
     public void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / playerHPOrig;
+
+        if (gunList.Count > 0)
+        {
+            gameManager.instance.ammoCurText.text = gunList[selectedGun].ammoCur.ToString("F0");
+            gameManager.instance.ammoMaxText.text = gunList[selectedGun].ammoMax.ToString("F0");
+        }
     }
 
     public void takeDamage(int dmg)
@@ -264,5 +287,51 @@ public class playerController : MonoBehaviour, IDamage, ICapture
             SceneManager.LoadScene(1);
 
         }
+    }
+
+    public void gunPickup(gunStats gunStat)
+    {
+        gunList.Add(gunStat);
+
+        shootDamage = gunStat.shootDamage;
+        shootDist = gunStat.shootDist;
+        shootRate = gunStat.shootRate;
+
+        gunModel.GetComponent<MeshFilter>().mesh = gunStat.model.GetComponent<MeshFilter>().sharedMesh;
+        gunModel.GetComponent<MeshRenderer>().material = gunStat.model.GetComponent<MeshRenderer>().sharedMaterial;
+
+        selectedGun = gunList.Count - 1;
+        updatePlayerUI();
+    }
+
+    void changeGun()
+    {
+        if(Input.GetAxis("Mouse ScrollWheel") > 0 && selectedGun < gunList.Count - 1)
+        {
+            selectedGun++;
+            changeGunStats();
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && selectedGun > 0)
+        {
+            selectedGun--;
+            changeGunStats();
+        }
+    }
+
+    void changeGunStats()
+    {
+        shootDamage = gunList[selectedGun].shootDamage;
+        shootDist = gunList[selectedGun].shootDist;
+        shootRate = gunList[selectedGun].shootRate;
+
+        gunModel.GetComponent<MeshFilter>().mesh = gunList[selectedGun].model.GetComponent<MeshFilter>().sharedMesh;
+        gunModel.GetComponent<MeshRenderer>().material = gunList[selectedGun].model.GetComponent<MeshRenderer>().sharedMaterial;
+
+        updatePlayerUI();
+    }
+
+    public void pickupAmmo(int amount, GameObject obj)
+    {
+
     }
 }

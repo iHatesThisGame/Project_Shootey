@@ -24,6 +24,8 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI enemiesRemainingText;
     public TextMeshProUGUI killGoalText;
     public TextMeshProUGUI killCountText;
+    public TextMeshProUGUI ammoMaxText;
+    public TextMeshProUGUI ammoCurText;
 
     [Header("----- Objective -----")]
     public int enemiesRemaining;
