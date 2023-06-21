@@ -13,8 +13,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
     [SerializeField] Transform headPos;
     [SerializeField] Transform shootPos;
     [SerializeField] Animator anim;
-    [SerializeField] Transform holdFlagPos;
-    [SerializeField] Transform flagPos;
 
     [Header("----- Enemy Stats -----")]
     [Range(1, 10)][SerializeField] int HP;
@@ -30,15 +28,13 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
     float angleToPlayer;
     bool isShooting;
     Vector3 startingPos;
-    bool hasFlag;
     float stoppingDistanceOrig;
-    Transform focusPos;
+    public bool hasFlag;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager.instance.updateGameGoal(1);
-        flagPos = GameObject.FindGameObjectWithTag("Blue Flag").transform;
         startingPos = transform.position;
         stoppingDistanceOrig = agent.stoppingDistance;
     }
@@ -55,16 +51,8 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
             }
             else if (hasFlag)
             {
-                returnFlag();
-            }
-        }
-    }
 
-    void returnFlag()
-    {
-        if (hasFlag)
-        {
-            focusPos = GameObject.FindGameObjectWithTag("Red Base").transform;
+            }
         }
     }
 
@@ -72,38 +60,11 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
     {
         if (!hasFlag)
         {
-            focusPos = flagPos;
             agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Blue Flag").transform.position);
         }
     }
 
-    void pickupFlag()
-    {
-        flagPos = holdFlagPos;
-    }
-
-    //IEnumerator roam()
-    //{
-    //    if (!destinationChosen && agent.remainingDistance < 0.05f && HP > 0)
-    //    {
-    //        destinationChosen = true;
-
-    //        agent.stoppingDistance = 0;
-
-    //        yield return new WaitForSeconds(roamTimer);
-
-    //        destinationChosen = false;
-
-    //        Vector3 blueFlagPos = Random.insideUnitSphere * roamDist;
-    //        blueFlagPos += startingPos;
-
-    //        NavMeshHit hit;
-    //        NavMesh.SamplePosition(blueFlagPos, out hit, roamDist, 1);
-
-    //        agent.SetDestination(hit.position);
-    //    }
-    //}
 
     bool canSeePlayer()
     {
@@ -112,13 +73,9 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
         playerDir = gameManager.instance.player.transform.position - headPos.position;
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, 0, playerDir.z), transform.forward);
 
-        Debug.DrawRay(headPos.position, playerDir);
-        Debug.Log(angleToPlayer);
-
         RaycastHit hit;
         if (Physics.Raycast(headPos.position, playerDir, out hit) && !hasFlag)
         {
-
             if (hit.collider.CompareTag("Player") && angleToPlayer <= viewConeAngle)
             {
                 agent.SetDestination(gameManager.instance.player.transform.position);
@@ -127,12 +84,10 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
                 {
                     facePlayer();
                 }
-
                 if (!isShooting)
                 {
                     StartCoroutine(shoot());
                 }
-
                 return true;
             }
         }
@@ -153,15 +108,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-        }
-        if (other.CompareTag("Blue Flag") && !hasFlag)
-        {
-            hasFlag = true;
-            pickupFlag();
-        }
-        if (other.CompareTag("Red Base") && hasFlag)
-        {
-            hasFlag = false;
         }
     }
 

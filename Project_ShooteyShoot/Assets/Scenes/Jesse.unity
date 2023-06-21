@@ -408,11 +408,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
---- !u!4 &933194159 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7658905649605522664, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
-  m_PrefabInstance: {fileID: 660104275}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1229402635 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8476050264084728822, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
@@ -536,6 +531,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1692295635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7658905649606011080, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
+  m_PrefabInstance: {fileID: 660104275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1692295637
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692295635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19906016
+  m_Height: 1.6671342
+  m_Direction: 1
+  m_Center: {x: -0.06222562, y: 0.8066215, z: 0.10368117}
 --- !u!4 &1694253459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8588889909692528609, guid: 5fb1d55452d82554a8069d53e5924f16, type: 3}
@@ -1207,14 +1221,13 @@ MonoBehaviour:
   headPos: {fileID: 2430647681220092662}
   shootPos: {fileID: 7789153186002895157}
   anim: {fileID: 2430647681229988744}
-  holdFlagPos: {fileID: 1981189169}
-  flagPos: {fileID: 933194159}
   HP: 5
   playerFaceSpeed: 5
   viewConeAngle: 90
   shootRate: 0.5
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0
+  hasFlag: 0
 --- !u!95 &2430647681230012032
 Animator:
   serializedVersion: 5

@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Flag : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("----- Flag -----")]
+    [SerializeField] GameObject enemyFlag;
 
-    // Update is called once per frame
-    void Update()
+    private GameObject captured;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        ICapture captureable = other.GetComponent<ICapture>();
+        if (other.CompareTag("Enemy"))
+        { 
+            if (captureable != null)
+            {
+                Destroy(enemyFlag);
+            }
+        }
     }
 }
