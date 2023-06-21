@@ -8,7 +8,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
     [SerializeField] Transform throwPos;
-    [SerializeField] Animator anim;
 
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
@@ -124,8 +123,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         if (!isDashing && Input.GetButtonDown("Dash"))
             StartCoroutine(dash());
 
-        anim.SetFloat("Speed", move.normalized.magnitude);
-
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer)
         {
@@ -236,8 +233,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
             aud.PlayOneShot(audGunshot, audGunshotVol);
             updatePlayerUI();
 
-            anim.SetTrigger("Shoot");
-            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out RaycastHit hit, shootDist))
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, shootDist))
             {
                 IDamage damageable = hit.collider.GetComponent<IDamage>();
 
