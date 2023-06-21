@@ -18,7 +18,7 @@ public class enemySpawner : MonoBehaviour
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        if (gameManager.instance.enemiesRemaining <= spawnedLimit)
+        if (gameManager.instance.enemiesRemaining < spawnedLimit)
         {
             GameObject newEnemy = Instantiate(enemy, enemySpawnPos.position, Quaternion.identity); 
         }

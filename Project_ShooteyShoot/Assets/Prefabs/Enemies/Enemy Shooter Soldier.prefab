@@ -544,17 +544,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c2439544f5f3fe4ebe048254837da4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 1432396689275378454}
+  bodyModel: {fileID: 0}
+  legsModel: {fileID: 0}
   agent: {fileID: 1432396689270080688}
   headPos: {fileID: 1432396689270074102}
   shootPos: {fileID: 6792309560748886325}
   anim: {fileID: 1432396689279576968}
   HP: 10
   playerFaceSpeed: 10
-  viewConeAngle: 90
+  viewConeAngle: 130
   roamDist: 5
-  roamTimer: 5
-  shootRate: 0.1
+  roamTimer: 2
+  shootRate: 1
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0
 --- !u!95 &1432396689279576968
