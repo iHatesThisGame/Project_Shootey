@@ -13,6 +13,7 @@ public class Flag : MonoBehaviour
         if (captureable != null)
         {
             Destroy(enemyFlag);
+            gameManager.instance.playerController.hasFlag = true;
         }
     }
 }

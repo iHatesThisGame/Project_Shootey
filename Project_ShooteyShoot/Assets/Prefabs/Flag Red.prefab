@@ -1504,6 +1504,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2565536758516920046}
   - component: {fileID: 2565536758507585806}
+  - component: {fileID: 229617753524263230}
+  - component: {fileID: 5353442678780510336}
+  - component: {fileID: 1253748366}
   m_Layer: 0
   m_Name: Flag Red
   m_TagString: Untagged
@@ -1518,8 +1521,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2565536758516953806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.39, y: 0, z: 167.87}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -5.9785156, y: -1.2397817, z: 61.76799}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1758,7 +1761,7 @@ Transform:
   - {fileID: 2565536758516918332}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2565536758507585806
 Animator:
   serializedVersion: 5
@@ -1780,6 +1783,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &229617753524263230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2565536758516953806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2910c998ff5f79640bd11790cb3dece0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flag: {fileID: 0}
+  hasFlag: 0
+--- !u!114 &5353442678780510336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2565536758516953806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc5719cdd12dbe41b4c0e730e552766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyFlag: {fileID: 2565536758516953806}
+--- !u!136 &1253748366
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2565536758516953806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.09597397
+  m_Height: 1.6993866
+  m_Direction: 1
+  m_Center: {x: -0.00083796185, y: 0.79486215, z: 0}
 --- !u!1 &2565536758516953808
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
-    [SerializeField] Transform throwPos;
 
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
@@ -30,11 +29,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     [SerializeField] GameObject gunModel;
     public int selectedGun;
     [SerializeField] float zoomIn;
-
-    [Header("----- Grenade Stats -----")]
-    [SerializeField] float throwForce;
-    //[SerializeField] float grenadeCooldown;
-    [SerializeField] GameObject grenade;
 
     [Header("----- Audio -----")]
     [SerializeField] AudioSource aud;
@@ -68,6 +62,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     bool isDashing;
     int playerHPOrig;
     float zoomOrig;
+    public bool hasFlag;
 
     private void Start()
     {
@@ -99,12 +94,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
             if (Input.GetButton("Melee") && playerMelee == false)
             {
                 StartCoroutine(melee());
-            }
-
-            if (Input.GetButtonDown("Throw") && isThrowing == false)
-            {
-                //throwGrenade();
-                StartCoroutine(throwGrenade());
             }
         }
     }
@@ -265,21 +254,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         yield return new WaitForSeconds(meleeCooldown);
         playerMelee = false;
     }
-
-    #region throwGrenade attempt
-
-    IEnumerator throwGrenade()
-    {
-        isThrowing = true;
-        Instantiate(grenade, throwPos.position, transform.rotation);
-        Rigidbody rb = grenade.GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * throwForce, ForceMode.Acceleration);
-        yield return new WaitForSeconds(shootRate);
-        isThrowing = false;
-    }
-
-    #endregion
-
     public void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / playerHPOrig;

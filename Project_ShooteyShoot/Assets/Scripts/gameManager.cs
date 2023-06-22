@@ -39,6 +39,7 @@ public class gameManager : MonoBehaviour
     public bool flagCapture;
     public bool courseStarted;
     public GameObject timerLabel;
+    public bool isCaptured;
 
     [Header("----- Audio -----")]
     [SerializeField] AudioSource aud;
@@ -85,6 +86,11 @@ public class gameManager : MonoBehaviour
             activeMenu = pauseMenu;
             activeMenu.SetActive(isPaused);
         }
+
+        if (isCaptured)
+        {
+            StartCoroutine(youWin());
+        }
     }
 
     public void statePaused()
@@ -116,7 +122,6 @@ public class gameManager : MonoBehaviour
             //win con met
             StartCoroutine(youWin());
         }
-
         if(elimination && enemiesRemaining <= 0)
         {
             //win con met
