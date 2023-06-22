@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2446802812195277739}
   - component: {fileID: 2446802812195277750}
   - component: {fileID: 2446802812195277737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy Melee Soldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   HP: 2
   playerFaceSpeed: 10
   viewConeAngle: 130
-  roamDist: 15
+  roamDist: 25
   roamTimer: 2
   meleePunchRate: 0.5
   meleePunchRange: 4

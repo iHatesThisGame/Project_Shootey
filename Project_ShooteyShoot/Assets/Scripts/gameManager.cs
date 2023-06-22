@@ -67,6 +67,7 @@ public class gameManager : MonoBehaviour
 
         if (survival)
         {
+            killGoalText.text = killGoal.ToString("F0");
             killCountLabel.SetActive(true);
         }
     }

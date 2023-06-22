@@ -466,8 +466,8 @@ MonoBehaviour:
   HP: 3
   playerFaceSpeed: 10
   viewConeAngle: 130
-  roamDist: 10
-  roamTimer: 2
+  roamDist: 25
+  roamTimer: 1
   shootRate: 1
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0

@@ -21,7 +21,7 @@ public class enemySpawner : MonoBehaviour
         if (gameManager.instance.enemiesRemaining < spawnedLimit)
         {
             GameObject newEnemy = Instantiate(enemy, enemySpawnPos.position, Quaternion.identity);
-            gameManager.instance.enemiesRemaining++;
+            gameManager.instance.updateGameGoal(1);
         }
         StartCoroutine(spawnEnemy(interval, enemy));
     }

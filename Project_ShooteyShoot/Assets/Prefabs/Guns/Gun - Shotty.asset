@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5907c9068a7713641af914f1e8bc4ebb, type: 3}
   m_Name: Gun - Shotty
   m_EditorClassIdentifier: 
-  shootDist: 50
+  shootDist: 25
   shootRate: 1.5
   shootDamage: 5
   ammoCur: 0
