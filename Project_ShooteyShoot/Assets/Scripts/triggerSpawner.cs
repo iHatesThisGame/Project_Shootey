@@ -17,7 +17,7 @@ public class triggerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager.instance.updateGameGoal(numberToSpawn);
     }
 
     // Update is called once per frame
