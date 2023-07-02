@@ -21,12 +21,14 @@ public class gameManager : MonoBehaviour
     public GameObject checkpointPopup;
     public Image playerHPBar;
     public GameObject playerFlashUI;
+    public GameObject interactPrompt;
     public TextMeshProUGUI enemiesRemainingText;
     public TextMeshProUGUI killGoalText;
     public TextMeshProUGUI killCountText;
     public TextMeshProUGUI ammoMaxText;
     public TextMeshProUGUI ammoCurText;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI interactText;
 
     [Header("----- Objectives -----")]
     public bool elimination;
