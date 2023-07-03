@@ -12,9 +12,17 @@ public class overShield : MonoBehaviour
         IShield shielded = other.GetComponent<IShield>();
         if (shielded != null)
         {
-            Destroy(currOverShield);
-            gameManager.instance.playerController.shieldHP = shieldHP;
-            gameManager.instance.playerController.updatePlayerUI();
+            if (gameManager.instance.playerController.shieldHP < gameManager.instance.playerController.shieldMax)
+            {
+                Destroy(currOverShield);
+                gameManager.instance.playerController.shieldHP = shieldHP;
+                gameManager.instance.playerController.updatePlayerUI();
+                if (gameManager.instance.playerController.shieldHP > gameManager.instance.playerController.shieldMax)
+                {
+                    gameManager.instance.playerController.shieldHP = gameManager.instance.playerController.shieldMax;
+                } 
+            }
+
         }
     }
 }

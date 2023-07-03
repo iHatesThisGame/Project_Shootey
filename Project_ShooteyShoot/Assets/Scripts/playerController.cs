@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
     public int shieldHP;
+    public int shieldMax;
     [Range(3, 8)][SerializeField] float playerSpeed;
     [Range(15, 100)][SerializeField] float dashSpeed;
     [Range(0.1f, 1)][SerializeField] float dashTime;
@@ -304,7 +305,10 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     public void addShield(int addShieldHP)
     {
         shieldHP += addShieldHP;
-        //updatePlayerUI();
+        //if (shieldHP > shieldMax)
+        //{
+        //    shieldHP = shieldMax;
+        //}
     }
 
     IEnumerator playerFlashDamage()
