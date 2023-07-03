@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b764355ae28d4884da8b1bd6052e30d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
   destroyTimer: 3
 --- !u!135 &6516121041778935
 SphereCollider:
@@ -150,7 +150,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.7769345, b: 0, a: 1}
+      key0: {r: 1, g: 0.00000019073488, b: 0, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

@@ -100,6 +100,8 @@ public class bossEnemy : MonoBehaviour, IDamage
         {
             StartCoroutine(ShootFireBurst(directionToPlayer));
             nextFireTime = Time.time + burstDelay;
+
+            SetNewRoamPosition();
         }
     }
 

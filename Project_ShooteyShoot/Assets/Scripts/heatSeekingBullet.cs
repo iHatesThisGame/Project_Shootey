@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class heatSeekingBullet : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
+    [SerializeField] private int damage = 1;
     [SerializeField] private float destroyTimer = 3f;
     private Rigidbody rb;
     private Vector3 direction;
