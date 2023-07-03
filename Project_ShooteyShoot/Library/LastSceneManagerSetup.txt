@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< Updated upstream
 - path: Assets/Scenes/Main Level.unity
-=======
-- path: Assets/Scenes/keyonte Test.unity
->>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
