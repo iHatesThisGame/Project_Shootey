@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-C:\Users\heckc\Documents\GitHub\Project_Shootey\Project_ShooteyShoot
-=======
-C:\Users\Keyonte Davis\Documents\GitHub\Project_Shootey\Project_ShooteyShoot
->>>>>>> Stashed changes
+D:\Unity Projects\Project_Shootey\Project_ShooteyShoot
