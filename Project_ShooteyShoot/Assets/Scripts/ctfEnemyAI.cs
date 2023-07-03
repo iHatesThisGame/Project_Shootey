@@ -109,7 +109,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     public void capture(GameObject flag)
     {
         hasFlag = true;
-        Destroy(flag);
     }
 
     void OnTriggerEnter(Collider other)
