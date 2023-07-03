@@ -16,7 +16,7 @@ MonoBehaviour:
   shootRate: 1.5
   pellets: 8
   shootDamage: 1
-  ammoCur: 4
+  ammoCur: 8
   ammoMax: 8
   model: {fileID: 5855586643228379229, guid: c9841888fa5041d499ada59f73087c6a, type: 3}
   hitEffect: {fileID: 9130091976384886902, guid: edc33c77ccdbbdc4fa552e0e960044b2, type: 3}
