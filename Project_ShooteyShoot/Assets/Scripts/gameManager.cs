@@ -30,6 +30,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI ammoCurText;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI interactText;
+    public TextMeshProUGUI playerScoreText;
 
     [Header("----- Objectives -----")]
     public bool elimination;
@@ -74,6 +75,8 @@ public class gameManager : MonoBehaviour
             killGoalText.text = killGoal.ToString("F0");
             killCountLabel.SetActive(true);
         }
+
+        playerScoreText.text = scoreKeeper.playerScore.ToString();
     }
 
     // Update is called once per frame
@@ -137,6 +140,7 @@ public class gameManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         activeMenu = winMenu;
         activeMenu.SetActive(true);
+        scoreKeeper.playerScore += 500;
         statePaused();
     }
 

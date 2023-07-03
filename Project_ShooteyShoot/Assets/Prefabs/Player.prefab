@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82569358726295438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03817892, y: 1, z: -1.44}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 82569358726012437}
-  throwPos: {fileID: 0}
   HP: 5
   playerSpeed: 8
   dashSpeed: 40
@@ -69,8 +68,6 @@ MonoBehaviour:
   gunModel: {fileID: 7891094590210686457}
   selectedGun: 0
   zoomIn: 15
-  throwForce: 0
-  grenade: {fileID: 0}
   aud: {fileID: 567314573}
   audJump:
   - {fileID: 8300000, guid: bd0bf20b5058b9a4e854a9c40413445e, type: 3}
@@ -105,6 +102,7 @@ MonoBehaviour:
   audSpawned: {fileID: 8300000, guid: 52e78048e4b3f1445a21d82eb9d05a97, type: 3}
   audSpawnedVol: 0.2
   dashDir: {x: 0, y: 0, z: 0}
+  hasFlag: 0
 --- !u!143 &82569358726012437
 CharacterController:
   m_ObjectHideFlags: 0

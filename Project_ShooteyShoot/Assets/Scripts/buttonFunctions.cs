@@ -25,6 +25,7 @@ public class buttonFunctions : MonoBehaviour
     public void loadFirstScene()
     {
         gameManager.instance.stateUnpaused();
+        scoreKeeper.playerScore = 0;
         SceneManager.LoadScene(0);
     }
 
