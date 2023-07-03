@@ -224,16 +224,22 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             aud.PlayOneShot(audGunshot, audGunshotVol);
             updatePlayerUI();
 
-            RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f)), out hit, shootDist))
-            {
-                IDamage damageable = hit.collider.GetComponent<IDamage>();
+            Vector2 direction = new Vector2(0.5f, 0.5f);
 
-                if (damageable != null)
+            RaycastHit hit;
+            for (int i = 0; i < gunList[selectedGun].pellets; i++)
+            {
+                if (Physics.Raycast(Camera.main.ViewportPointToRay(direction), out hit, shootDist))
                 {
-                    damageable.takeDamage(shootDamage);
+                    IDamage damageable = hit.collider.GetComponent<IDamage>();
+
+                    if (damageable != null)
+                    {
+                        damageable.takeDamage(shootDamage);
+                    }
+                    Instantiate(gunList[selectedGun].hitEffect, hit.point, Quaternion.identity);
                 }
-                Instantiate(gunList[selectedGun].hitEffect, hit.point, Quaternion.identity);
+                direction = direction + new Vector2(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f));
             }
             yield return new WaitForSeconds(shootRate);
             isShooting = false; 

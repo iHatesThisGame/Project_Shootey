@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDist: 50
   shootRate: 0.1
+  shootSpread: 0
+  pellets: 1
   shootDamage: 1
   ammoCur: -28
   ammoMax: 10
