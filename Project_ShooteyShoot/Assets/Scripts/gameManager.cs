@@ -20,6 +20,7 @@ public class gameManager : MonoBehaviour
     public GameObject loseMenu;
     public GameObject checkpointPopup;
     public Image playerHPBar;
+    public Image playerOvershieldBar;
     public GameObject playerFlashUI;
     public GameObject interactPrompt;
     public TextMeshProUGUI enemiesRemainingText;

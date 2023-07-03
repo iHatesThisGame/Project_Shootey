@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
+public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
 
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
+    public int shieldHP;
     [Range(3, 8)][SerializeField] float playerSpeed;
     [Range(15, 100)][SerializeField] float dashSpeed;
     [Range(0.1f, 1)][SerializeField] float dashTime;
@@ -55,12 +56,12 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
-    bool isThrowing;
     float sprintSpeed;
     float playerSpeedOrig;
     public Vector3 dashDir;
     bool isDashing;
     int playerHPOrig;
+    int playerShieldOrig;
     float zoomOrig;
     public bool hasFlag;
 
@@ -69,6 +70,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
         playerSpeedOrig = playerSpeed;
         sprintSpeed = playerSpeed * 2;
         playerHPOrig = HP;
+        playerShieldOrig = 10;
         spawnPlayer();
         zoomOrig = Camera.main.fieldOfView;
     }
@@ -257,6 +259,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     public void updatePlayerUI()
     {
         gameManager.instance.playerHPBar.fillAmount = (float)HP / playerHPOrig;
+        gameManager.instance.playerOvershieldBar.fillAmount = (float)shieldHP / playerShieldOrig; 
 
         if (gunList.Count > 0)
         {
@@ -267,10 +270,20 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
 
     public void takeDamage(int dmg)
     {
-        HP -= dmg;
-        aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
-        updatePlayerUI();
-        StartCoroutine(playerFlashDamage());
+        if (shieldHP > 0)
+        {
+            shieldHP -= dmg;
+            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
+            updatePlayerUI();
+            StartCoroutine(playerFlashDamage()); 
+        }
+        else
+        {
+            HP -= dmg;
+            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
+            updatePlayerUI();
+            StartCoroutine(playerFlashDamage());
+        }
 
         if(HP <= 0)
         {
@@ -280,6 +293,12 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo
     public void capture(GameObject flag)
     {
         Destroy(flag);
+    }
+
+    public void addShield(int addShieldHP)
+    {
+        shieldHP += addShieldHP;
+        //updatePlayerUI();
     }
 
     IEnumerator playerFlashDamage()
