@@ -33,4 +33,11 @@ public class buttonFunctions : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void LoadHub()
+    {
+        gameManager.instance.stateUnpaused();
+        scoreKeeper.playerScore = 0;
+        SceneManager.LoadScene("Hub");
+    }
 }
