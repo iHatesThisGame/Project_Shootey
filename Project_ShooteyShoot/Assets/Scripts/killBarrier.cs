@@ -8,6 +8,7 @@ public class killBarrier : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            gameManager.instance.loseMessageText.text = "You tried to fly";
             gameManager.instance.youLose();
         }
     }

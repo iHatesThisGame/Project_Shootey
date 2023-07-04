@@ -74,6 +74,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
         playerShieldOrig = 10;
         spawnPlayer();
         zoomOrig = Camera.main.fieldOfView;
+        updatePlayerUI();
     }
 
     void Update()
@@ -294,6 +295,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 
         if(HP <= 0)
         {
+            gameManager.instance.loseMessageText.text = "You were killed";
             gameManager.instance.youLose();
         }
     }

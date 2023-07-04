@@ -31,6 +31,8 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI interactText;
     public TextMeshProUGUI playerScoreText;
+    public TextMeshProUGUI winMessageText;
+    public TextMeshProUGUI loseMessageText;
 
     [Header("----- Objectives -----")]
     public bool elimination;
@@ -95,6 +97,7 @@ public class gameManager : MonoBehaviour
 
         if (isCaptured)
         {
+            winMessageText.text = "Flag Captured";
             StartCoroutine(youWin());
         }
     }
@@ -126,11 +129,13 @@ public class gameManager : MonoBehaviour
         if(survival && killCount >= killGoal)
         {
             //win con met
+            winMessageText.text = "You Survived";
             StartCoroutine(youWin());
         }
         if(elimination && enemiesRemaining <= 0)
         {
             //win con met
+            winMessageText.text = "Enemies Eliminated";
             StartCoroutine(youWin());
         }
     }
@@ -138,9 +143,10 @@ public class gameManager : MonoBehaviour
     IEnumerator youWin()
     {
         yield return new WaitForSeconds(2);
+        scoreKeeper.playerScore += 500;
+        instance.playerScoreText.text = scoreKeeper.playerScore.ToString();
         activeMenu = winMenu;
         activeMenu.SetActive(true);
-        scoreKeeper.playerScore += 500;
         statePaused();
     }
 
@@ -153,6 +159,8 @@ public class gameManager : MonoBehaviour
 
     public void obstacleCourseFinished()
     {
+        scoreKeeper.playerScore += 500;
+        playerScoreText.text = scoreKeeper.playerScore.ToString();
         activeMenu = winMenu;
         activeMenu.SetActive(true);
         statePaused();

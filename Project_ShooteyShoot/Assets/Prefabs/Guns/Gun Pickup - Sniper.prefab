@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1827576689361852845}
   - component: {fileID: 4519410712004685159}
   - component: {fileID: 1827576689361852844}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gun Pickup - Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
