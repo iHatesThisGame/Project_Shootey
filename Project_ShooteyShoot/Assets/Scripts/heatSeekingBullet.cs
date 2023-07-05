@@ -6,15 +6,26 @@ public class heatSeekingBullet : MonoBehaviour
 {
     [SerializeField] private int damage = 1;
     [SerializeField] private float destroyTimer = 3f;
+
+    [SerializeField] private AudioClip laserSound;
     private Rigidbody rb;
     private Vector3 direction;
     public float speed { get; set; } = 100f;
+    private AudioSource audioSource;
 
     private void Start()
     {
         Destroy(gameObject, destroyTimer);
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.forward * speed;
+
+        Destroy(gameObject, destroyTimer);
+        rb = GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * speed;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = laserSound;
+        audioSource.playOnAwake = false;
     }
 
     private void Update()
@@ -30,6 +41,8 @@ public class heatSeekingBullet : MonoBehaviour
         {
             damageable.takeDamage(damage);
         }
+
+        audioSource.Play();
 
         Destroy(gameObject);
     }
