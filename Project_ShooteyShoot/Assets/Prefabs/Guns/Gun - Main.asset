@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDist: 100
   shootRate: 0.3
-  shootSpread: 0
   pellets: 1
   shootDamage: 1
-  ammoCur: 0
-  ammoMax: 15
+  ammoCur: 25
+  ammoMax: 25
   model: {fileID: 2336555170174120158, guid: 41b1038c4481a854092ac3410e44f57d, type: 3}
   hitEffect: {fileID: 9130091976384886902, guid: 95e49197dcec8dd4cbf417d01d58ef96, type: 3}
