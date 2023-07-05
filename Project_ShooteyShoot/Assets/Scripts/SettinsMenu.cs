@@ -10,6 +10,7 @@ public class SettinsMenu : MonoBehaviour
     Resolution[] resolutions;
     [SerializeField] TMP_Dropdown resDropdown;
 
+
     public void Start()
     {
         resolutions = Screen.resolutions;
@@ -32,6 +33,7 @@ public class SettinsMenu : MonoBehaviour
 
     }
 
+
     public void SetVolume(float vol)
     {
 
@@ -47,4 +49,6 @@ public class SettinsMenu : MonoBehaviour
         Resolution resolution = resolutions[resIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
+
+
 }
