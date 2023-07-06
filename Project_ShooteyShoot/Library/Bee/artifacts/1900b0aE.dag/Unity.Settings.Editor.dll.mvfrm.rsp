@@ -2,6 +2,7 @@ Library\Bee\artifacts\mvdfrm\UnityEditor.TestRunner.ref.dll_193EC4CE382CBFB3.mvf
 Library\Bee\artifacts\mvdfrm\UnityEditor.UI.ref.dll_4C98D3F7040CD4F5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.TestRunner.ref.dll_E55D0F7C63F01D9E.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.UI.ref.dll_08FEAA520A2EFD60.mvfrm
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Library\Bee\artifacts\mvdfrm\UnityEditor.Graphs.dll_DD4231E39BA13570.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.CoreModule.dll_ACA91FBAC5C5693E.mvfrm
@@ -95,6 +96,8 @@ Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.YamlDotNet.dll_98550E33A288A4
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.TextureAssets.dll_2F733787635602E9.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_49C23514D351B510.mvfrm
 =======
+=======
+>>>>>>> Stashed changes
 Library\Bee\artifacts\mvdfrm\UnityEditor.Graphs.dll_5CDC79D9341F08DE.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.CoreModule.dll_018A56FC53762AAC.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.DeviceSimulatorModule.dll_25CE8958A1B956D5.mvfrm
@@ -185,5 +188,9 @@ Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_2A6E98AB49F46E76.
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.IonicZip.dll_A7E0EF1B8F79156C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.YamlDotNet.dll_15BA35407D2420D0.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.TextureAssets.dll_ACD85E943DF17EC8.mvfrm
+<<<<<<< Updated upstream
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_C7275C21ADED30EF.mvfrm
 >>>>>>> 6bc6976e10655f10f8fc5144351510de8889ad07
+=======
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_C7275C21ADED30EF.mvfrm
+>>>>>>> Stashed changes

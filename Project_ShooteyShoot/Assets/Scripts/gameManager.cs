@@ -138,7 +138,8 @@ public class gameManager : MonoBehaviour
             winMessageText.text = "Enemies Eliminated";
             StartCoroutine(youWin());
         }
-        if (GameObject.FindGameObjectWithTag("Red Flag").transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && GameObject.FindGameObjectWithTag("Red Flag").transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
+        if (gameManager.instance.playerController.hasFlag == true && gameManager.instance.player.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z
+            && gameManager.instance.player.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
         {
             //win con met
             winMessageText.text = "Flag Captured";
@@ -148,7 +149,7 @@ public class gameManager : MonoBehaviour
 
     IEnumerator youWin()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         scoreKeeper.playerScore += 500;
         instance.playerScoreText.text = scoreKeeper.playerScore.ToString();
         activeMenu = winMenu;

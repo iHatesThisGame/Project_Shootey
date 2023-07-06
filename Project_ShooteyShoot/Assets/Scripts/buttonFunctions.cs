@@ -40,4 +40,16 @@ public class buttonFunctions : MonoBehaviour
         scoreKeeper.playerScore = 0;
         SceneManager.LoadScene("Hub");
     }
+
+    public void loadLevel2()
+    {
+        gameManager.instance.stateUnpaused();
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void loadLevel3()
+    {
+        gameManager.instance.stateUnpaused();
+        SceneManager.LoadScene("Level 3");
+    }
 }

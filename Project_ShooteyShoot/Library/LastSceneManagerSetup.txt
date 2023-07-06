@@ -1,13 +1,5 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: Assets/Scenes/Level 3.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Riley Test.unity
-=======
-- path: Assets/Scenes/Level 3.unity
->>>>>>> 6bc6976e10655f10f8fc5144351510de8889ad07
->>>>>>> Stashed changes
+- path: Assets/Scenes/Level 1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -12,7 +12,7 @@ public class LevelSelectMenu : MonoBehaviour
 
     public void Survival()
     {
-        SceneManager.LoadScene("Survival");
+        SceneManager.LoadScene("Main Level");
     }
 
     public void ObstacleCourse()

@@ -405,7 +405,7 @@ MonoBehaviour:
   headPos: {fileID: 7766686652458104116}
   firePoint: {fileID: 1632982532365320734}
   HP: 5
-  movementSpeed: 20
+  movementSpeed: 10
   rotationSpeed: 100
   minDistanceToPlayer: 30
   roamRadius: 40
