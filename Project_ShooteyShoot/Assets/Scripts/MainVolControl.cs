@@ -13,6 +13,10 @@ public class MainVolControl : MonoBehaviour
     [SerializeField] Toggle toggle;
     private bool disableToggleEvent;
 
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip PreviewSound;
+    [Range(0, 1)] [SerializeField] float audPreviewSoundVol;
+
     private void Awake()
     {
         slider.onValueChanged.AddListener(SlideValChange);
@@ -42,6 +46,7 @@ public class MainVolControl : MonoBehaviour
         disableToggleEvent = true;
         toggle.isOn = slider.value > slider.minValue;
         disableToggleEvent = false;
+        aud.PlayOneShot(PreviewSound, audPreviewSoundVol);
     }
 
     private void OnDisable()
