@@ -3468,9 +3468,9 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: db75dc1549f5c2e418444e75bba0d0be, type: 2}
   slider: {fileID: 704127151}
   toggle: {fileID: 974566576}
-  aud: {fileID: 0}
-  PreviewSound: {fileID: 0}
-  audPreviewSoundVol: 0
+  aud: {fileID: 1781439761}
+  PreviewSound: {fileID: 8300000, guid: 67373babc2efebd4eb02f428455d9389, type: 3}
+  audPreviewSoundVol: 1
 --- !u!1 &717887871
 GameObject:
   m_ObjectHideFlags: 0
@@ -10631,9 +10631,9 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: db75dc1549f5c2e418444e75bba0d0be, type: 2}
   slider: {fileID: 1784456160}
   toggle: {fileID: 1217389849}
-  aud: {fileID: 0}
-  PreviewSound: {fileID: 0}
-  audPreviewSoundVol: 0
+  aud: {fileID: 1781439761}
+  PreviewSound: {fileID: 8300000, guid: 67373babc2efebd4eb02f428455d9389, type: 3}
+  audPreviewSoundVol: 1
 --- !u!1 &1784518901
 GameObject:
   m_ObjectHideFlags: 0
