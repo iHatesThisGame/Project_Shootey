@@ -63,6 +63,14 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
             agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Blue Flag").transform.position);
         }
+        if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
+        {
+            hasFlag = true;
+        }
+        if (hasFlag)
+        {
+            agent.SetDestination(GameObject.FindGameObjectWithTag("Red Flag").transform.position);
+        }
     }
 
 
