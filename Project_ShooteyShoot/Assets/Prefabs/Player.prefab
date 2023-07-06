@@ -51,6 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 82569358726012437}
   HP: 5
+  shieldHP: 0
+  shieldMax: 10
   playerSpeed: 8
   dashSpeed: 40
   dashTime: 0.3
