@@ -140,6 +140,7 @@ public class gameManager : MonoBehaviour
         }
         if (GameObject.FindGameObjectWithTag("Red Flag").transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && GameObject.FindGameObjectWithTag("Red Flag").transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
         {
+            //win con met
             winMessageText.text = "Flag Captured";
             StartCoroutine(youWin());
         }
