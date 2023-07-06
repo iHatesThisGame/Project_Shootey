@@ -56,12 +56,6 @@ public class bossEnemy : MonoBehaviour, IDamage
             playerSpotted = true;
         }
 
-        Quaternion targetBodyRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0f, directionToPlayer.z));
-        headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
-
-        Quaternion targetGunRotation = Quaternion.LookRotation(directionToPlayer);
-        headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetGunRotation, gunRotationSpeed * Time.deltaTime);
-
         if (playerSpotted || isFollowingPlayer)
         {
             agent.SetDestination(playerTransform.position);
@@ -78,6 +72,9 @@ public class bossEnemy : MonoBehaviour, IDamage
 
         if (isFollowingPlayer)
         {
+            Quaternion targetBodyRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0f, directionToPlayer.z));
+            headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
+
             transform.Translate(directionToPlayer * movementSpeed * Time.deltaTime);
         }
         else
@@ -90,6 +87,9 @@ public class bossEnemy : MonoBehaviour, IDamage
 
             Vector3 directionToRoamPosition = roamPosition - transform.position;
             directionToRoamPosition.Normalize();
+            Quaternion targetBodyRotation = Quaternion.LookRotation(new Vector3(directionToRoamPosition.x, 0f, directionToRoamPosition.z));
+            headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
+
             transform.Translate(directionToRoamPosition * movementSpeed * Time.deltaTime);
         }
 
@@ -151,6 +151,7 @@ public class bossEnemy : MonoBehaviour, IDamage
             bulletComponent.speed = bulletSpeed;
             bulletComponent.SetDirection(directionToPlayer);
         }
+        SetNewRoamPosition();
     }
 
 

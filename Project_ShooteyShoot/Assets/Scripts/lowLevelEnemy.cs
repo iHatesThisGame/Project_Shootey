@@ -28,9 +28,6 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
     [Range(1, 360)][SerializeField] float gunRotationSpeed;
     [Range(1, 100)][SerializeField] float bulletSpeed;
 
-
-
-
     private Transform playerTransform;
     private float originalY;
     private float nextFireTime;
@@ -154,7 +151,6 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
             bulletComponent.speed = bulletSpeed;
             bulletComponent.SetDirection(directionToPlayer);
         }
-
         SetNewRoamPosition();
     }
 
