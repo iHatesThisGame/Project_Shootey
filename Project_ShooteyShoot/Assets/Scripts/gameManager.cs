@@ -138,6 +138,11 @@ public class gameManager : MonoBehaviour
             winMessageText.text = "Enemies Eliminated";
             StartCoroutine(youWin());
         }
+        if (GameObject.FindGameObjectWithTag("Red Flag").transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && GameObject.FindGameObjectWithTag("Red Flag").transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
+        {
+            winMessageText.text = "Flag Captured";
+            StartCoroutine(youWin());
+        }
     }
 
     IEnumerator youWin()

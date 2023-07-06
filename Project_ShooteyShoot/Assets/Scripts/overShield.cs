@@ -22,7 +22,6 @@ public class overShield : MonoBehaviour
                     gameManager.instance.playerController.shieldHP = gameManager.instance.playerController.shieldMax;
                 } 
             }
-
         }
     }
 }
