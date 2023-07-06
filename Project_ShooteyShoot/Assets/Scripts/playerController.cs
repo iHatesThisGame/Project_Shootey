@@ -7,7 +7,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
-    [SerializeField] ParticleSystem sprintEffect;
+    //[SerializeField] ParticleSystem sprintEffect;
 
     [Header("----- Player Stats -----")]
     [Range(1, 100)][SerializeField] int HP;
@@ -192,16 +192,16 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
         }
 
 
-        if (isSprinting && move != Vector3.zero)
-        {
-            if (!sprintEffect.isPlaying) 
-                sprintEffect.Play(); // turns on sprint effect
-        }
-        else
-        {
-            if (sprintEffect.isPlaying) 
-                sprintEffect.Stop(); //turns off sprint effect
-        }
+        //if (isSprinting && move != Vector3.zero)
+        //{
+        //    if (!sprintEffect.isPlaying) 
+        //        sprintEffect.Play(); // turns on sprint effect
+        //}
+        //else
+        //{
+        //    if (sprintEffect.isPlaying) 
+        //        sprintEffect.Stop(); //turns off sprint effect
+        //}
 
     }
 

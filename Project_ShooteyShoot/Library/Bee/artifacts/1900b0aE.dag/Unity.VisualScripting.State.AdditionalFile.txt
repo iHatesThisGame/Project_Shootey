@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-D:\Git\Project_Shootey\Project_ShooteyShoot
-=======
-C:\Users\heckc\Documents\GitHub\Project_Shootey\Project_ShooteyShoot
->>>>>>> 6bc6976e10655f10f8fc5144351510de8889ad07
-=======
-C:\Users\heckc\Documents\GitHub\Project_Shootey\Project_ShooteyShoot
->>>>>>> Stashed changes
+D:\Unity Projects\Project_Shootey\Project_ShooteyShoot
