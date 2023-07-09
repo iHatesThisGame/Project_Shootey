@@ -19,6 +19,7 @@ public class gameManager : MonoBehaviour
     public GameObject winMenu;
     public GameObject loseMenu;
     public GameObject checkpointPopup;
+    public GameObject messagePromptPopup;
     public Image playerHPBar;
     public Image playerOvershieldBar;
     public GameObject playerFlashUI;
@@ -33,6 +34,7 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI playerScoreText;
     public TextMeshProUGUI winMessageText;
     public TextMeshProUGUI loseMessageText;
+    public TextMeshProUGUI messagePromptText;
 
     [Header("----- Objectives -----")]
     public bool elimination;
