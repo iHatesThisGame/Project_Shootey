@@ -38,7 +38,7 @@ public class buttonFunctions : MonoBehaviour
     {
         gameManager.instance.stateUnpaused();
         scoreKeeper.playerScore = 0;
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void loadLevel2()
