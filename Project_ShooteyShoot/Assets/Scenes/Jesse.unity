@@ -358,10 +358,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag Blue
       objectReference: {fileID: 0}
-    - target: {fileID: 7658905649606011080, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
-      propertyPath: m_TagString
-      value: Blue Flag
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
 --- !u!1001 &669495632
@@ -596,38 +592,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1692295635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7658905649606011080, guid: a77b43acdf8aa454298923289d602f8e, type: 3}
-  m_PrefabInstance: {fileID: 660104275}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1692295637
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692295635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 1.7
-  m_Direction: 1
-  m_Center: {x: -0.06222562, y: 0.8, z: 0.10368117}
---- !u!114 &1692295640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692295635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc5719cdd12dbe41b4c0e730e552766, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyFlag: {fileID: 1692295635}
 --- !u!4 &1694253459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8588889909692528609, guid: 5fb1d55452d82554a8069d53e5924f16, type: 3}
