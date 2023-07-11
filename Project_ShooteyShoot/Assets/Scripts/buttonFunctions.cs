@@ -38,7 +38,7 @@ public class buttonFunctions : MonoBehaviour
     {
         gameManager.instance.stateUnpaused();
         scoreKeeper.playerScore = 0;
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Hub");
     }
 
     public void loadLevel2()
@@ -51,5 +51,11 @@ public class buttonFunctions : MonoBehaviour
     {
         gameManager.instance.stateUnpaused();
         SceneManager.LoadScene("Level 3");
+    }
+
+    public void loadMainMenu()
+    {
+        gameManager.instance.stateUnpaused();
+        SceneManager.LoadScene("Main Menu");
     }
 }

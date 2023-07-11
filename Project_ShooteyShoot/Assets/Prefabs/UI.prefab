@@ -259,7 +259,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: resume
+        m_MethodName: loadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -663,7 +663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: resume
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2751,7 +2751,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: resume
+        m_MethodName: quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3308,7 +3308,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: loadLevel2
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4616,7 +4616,7 @@ GameObject:
   - component: {fileID: 3876774601496768379}
   - component: {fileID: 5071588615752330290}
   m_Layer: 5
-  m_Name: Hub
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4727,7 +4727,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: LoadHub
+        m_MethodName: loadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11167,7 +11167,7 @@ GameObject:
   - component: {fileID: 1997683274592440726}
   - component: {fileID: 3541442601275309749}
   m_Layer: 5
-  m_Name: Hub
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11278,7 +11278,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8476050264084728820}
         m_TargetAssemblyTypeName: buttonFunctions, Assembly-CSharp
-        m_MethodName: LoadHub
+        m_MethodName: loadMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
