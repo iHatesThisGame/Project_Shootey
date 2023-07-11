@@ -35,6 +35,7 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
     private bool isFollowingPlayer = false;
     private Vector3 roamPosition;
     private float nextRoamChangeTime;
+    private Rigidbody rb;
 
 
     private void Start()
@@ -44,6 +45,9 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
         nextFireTime = Time.time + 1f;
         nextRoamChangeTime = Time.time + roamChangeInterval;
         SetNewRoamPosition();
+        rb = GetComponent<Rigidbody>();
+        rb.useGravity = false;
+
     }
 
     private void Update()
@@ -76,7 +80,9 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
             Quaternion targetBodyRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0f, directionToPlayer.z));
             headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
 
-            transform.Translate(directionToPlayer * movementSpeed * Time.deltaTime);
+            Vector3 newPosition = transform.position + directionToPlayer * movementSpeed * Time.deltaTime;
+            newPosition.y = originalY; 
+            rb.MovePosition(newPosition);
         }
         else
         {
@@ -160,15 +166,6 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
     {
         Vector2 randomPoint = Random.insideUnitCircle * roamRadius;
         roamPosition = transform.position + new Vector3(randomPoint.x, 0f, randomPoint.y);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Default"))
-        {
-        
-            agent.enabled = false;
-        }
     }
 
 }
