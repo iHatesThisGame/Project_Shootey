@@ -27,7 +27,8 @@ public class buttonFunctions : MonoBehaviour
         gameManager.instance.stateUnpaused();
         scoreKeeper.playerScore = 0;
 
-        if (SceneManager.GetActiveScene().name == "Level 3")
+        if (SceneManager.GetActiveScene().name == "Level 3" || SceneManager.GetActiveScene().name == "Flag Capture"
+            || SceneManager.GetActiveScene().name == "Obstacle Course")
         {
             SceneManager.LoadScene("Main Menu");
         }
