@@ -10,7 +10,10 @@ public class showFlag : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        hasFlag = true;
-        flag.enabled = true;
+        if (other.CompareTag("Player"))
+        {
+            hasFlag = true;
+            flag.enabled = true;
+        }
     }
 }
