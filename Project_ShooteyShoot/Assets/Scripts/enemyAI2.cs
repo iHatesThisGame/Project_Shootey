@@ -159,13 +159,14 @@ public class enemyAI2 : MonoBehaviour, IDamage
         if (HP <= 0)
         {
             StopAllCoroutines();
+            gameManager.instance.killCount += 1;
             gameManager.instance.updateGameGoal(-1);
+            gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
+
+            anim.ResetTrigger("Melee");
             anim.SetBool("Death", true);
             agent.enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
-
-            gameManager.instance.killCount += 1;
-            gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
         }
         else
         {
