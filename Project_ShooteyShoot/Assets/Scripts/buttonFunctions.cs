@@ -22,11 +22,19 @@ public class buttonFunctions : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void loadFirstScene()
+    public void Continue()
     {
         gameManager.instance.stateUnpaused();
         scoreKeeper.playerScore = 0;
-        SceneManager.LoadScene(0);
+
+        if (SceneManager.GetActiveScene().name == "Level 3")
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void quit()
