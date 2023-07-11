@@ -36,6 +36,7 @@ public class bossEnemy : MonoBehaviour, IDamage
     private Vector3 roamPosition;
     private float nextRoamChangeTime;
 
+
     private void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
@@ -159,5 +160,13 @@ public class bossEnemy : MonoBehaviour, IDamage
     {
         Vector2 randomPoint = Random.insideUnitCircle * roamRadius;
         roamPosition = transform.position + new Vector3(randomPoint.x, 0f, randomPoint.y);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Default"))
+        {
+            agent.enabled = false;
+        }
     }
 }
