@@ -45,11 +45,11 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         if (agent.isActiveAndEnabled)
         {
             anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-            if (playerInRange && !canSeePlayer())
+            if (!canSeePlayer())
             {
                 seekFlag();
             }
-            if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position)
+            if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position && GameObject.FindGameObjectWithTag("Blue Flag") != null)
             {
                 seekFlag();
             }
@@ -62,14 +62,19 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         {
             agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Blue Flag").transform.position);
-        }
-        if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
-        {
-            hasFlag = true;
+            if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
+            {
+                hasFlag = true;
+            }
         }
         if (hasFlag)
         {
+            agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Red Flag").transform.position);
+            if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Red Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Red Flag").transform.position.x)
+            {
+                hasFlag = false;
+            }
         }
     }
 
@@ -108,9 +113,11 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
 
     IEnumerator shoot()
     {
+        Vector3 direction = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f));
+        Vector3 tempShootPos = shootPos.position += direction;
         isShooting = true;
         anim.SetTrigger("Shoot");
-        Instantiate(bullet, shootPos.position, transform.rotation);
+        Instantiate(bullet, tempShootPos, transform.rotation);
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }

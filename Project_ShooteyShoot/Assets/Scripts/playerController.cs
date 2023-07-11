@@ -10,7 +10,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [SerializeField] ParticleSystem sprintEffect;
 
     [Header("----- Player Stats -----")]
-    [Range(1, 100)][SerializeField] int HP;
+    public int HP;
     public int shieldHP;
     public int shieldMax;
     [Range(3, 8)][SerializeField] float playerSpeed;
@@ -62,7 +62,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     float playerSpeedOrig;
     public Vector3 dashDir;
     bool isDashing;
-    int playerHPOrig;
+    public int playerHPOrig;
     int playerShieldOrig;
     float zoomOrig;
     public bool hasFlag;

@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 8630037933444336130}
   m_Layer: 7
   m_Name: 'Enemy CTF '
-  m_TagString: Enemy
+  m_TagString: CTF Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,7 +380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8630037933444627332}
-  m_LocalRotation: {x: -0, y: -0.99252707, z: -0, w: 0.12202487}
+  m_LocalRotation: {x: 0, y: -0.992527, z: 0, w: 0.12202532}
   m_LocalPosition: {x: 12.58, y: 0.00000011920929, z: 55.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

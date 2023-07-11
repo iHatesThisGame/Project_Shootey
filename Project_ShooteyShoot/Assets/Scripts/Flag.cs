@@ -14,5 +14,9 @@ public class Flag : MonoBehaviour
             Destroy(enemyFlag);
             gameManager.instance.playerController.hasFlag = true; 
         }
+        if (!other.CompareTag("CTF Enemy"))
+        {
+            Destroy(enemyFlag);
+        }
     }
 }
