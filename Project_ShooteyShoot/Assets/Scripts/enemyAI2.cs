@@ -65,7 +65,7 @@ public class enemyAI2 : MonoBehaviour, IDamage
 
     IEnumerator roam()
     {
-        if (!destinationChosen && agent.remainingDistance < 0.05f)
+        if (!destinationChosen && agent.remainingDistance < 0.05f && HP > 0)
         {
             destinationChosen = true;
 
@@ -98,12 +98,9 @@ public class enemyAI2 : MonoBehaviour, IDamage
             {
                 agent.SetDestination(gameManager.instance.player.transform.position);
 
-                if (agent.remainingDistance <= agent.stoppingDistance)
+                if (agent.remainingDistance <= agent.stoppingDistance && !enemyMelee)
                 {
                     facePlayer();
-                }
-                if (!enemyMelee)
-                {
                     StartCoroutine(melee());
                 }
                 return true;
