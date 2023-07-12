@@ -106,7 +106,11 @@ MonoBehaviour:
   audReloadVol: 0.5
   audSpawned: {fileID: 8300000, guid: 52e78048e4b3f1445a21d82eb9d05a97, type: 3}
   audSpawnedVol: 0.2
+  sprintSpeed: 0
+  playerSpeedOrig: 0
   dashDir: {x: 0, y: 0, z: 0}
+  playerHPOrig: 0
+  playerShieldOrig: 0
   hasFlag: 0
 --- !u!143 &82569358726012437
 CharacterController:
@@ -5060,6 +5064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406481934550034243}
+  - component: {fileID: 2288261614846481119}
   - component: {fileID: 5865594922873972966}
   - component: {fileID: 8539441481753828396}
   m_Layer: 0
@@ -5084,6 +5089,18 @@ Transform:
   m_Father: {fileID: 8829222580094411512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &2288261614846481119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891094590210686457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3121e9b4109c7845be51af0043179ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &5865594922873972966
 MeshFilter:
   m_ObjectHideFlags: 0
