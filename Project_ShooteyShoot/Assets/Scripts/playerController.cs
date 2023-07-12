@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
+public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield, IDataPersistance
 {
     [Header("----- Components -----")]
     [SerializeField] CharacterController controller;
@@ -409,5 +409,19 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             updatePlayerUI();
             aud.PlayOneShot(audReload, audReloadVol);
         }
+    }
+
+    public void LoadData(GameData data)
+    {
+        this.HP = data.playerHP;
+        this.shieldHP = data.shieldHP;
+        this.gunList = data.gunList;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.playerHP = this.HP;
+        data.shieldHP = this.shieldHP;
+        data.gunList = this.gunList;
     }
 }
