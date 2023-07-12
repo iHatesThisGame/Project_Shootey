@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 567314573}
   - component: {fileID: 509325503}
   - component: {fileID: 509325502}
+  - component: {fileID: 1242625332}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -53,9 +54,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 82569358726012437}
   sprintEffect: {fileID: 509325503}
-  HP: 5
+  HP: 10
   shieldHP: 0
-  shieldMax: 10
+  shieldMax: 50
   playerSpeed: 8
   dashSpeed: 40
   dashTime: 0.3
@@ -68,7 +69,7 @@ MonoBehaviour:
   sprintToggle: 0
   gunList: []
   shootRate: 0.5
-  shootDamage: 5
+  shootDamage: 2
   shootDist: 25
   gunModel: {fileID: 7891094590210686457}
   selectedGun: 0
@@ -5055,6 +5056,20 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!136 &1242625332
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82569358726295438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7891094590210686457
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5116,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3121e9b4109c7845be51af0043179ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upwardForce: 0.5
+  backwardForce: 0.1
+  recoilDuration: 0.1
+  shakeDuration: 0.1
+  shakeIntensity: 0.1
 --- !u!33 &5865594922873972966
 MeshFilter:
   m_ObjectHideFlags: 0

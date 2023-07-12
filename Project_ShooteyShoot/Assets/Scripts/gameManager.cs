@@ -23,6 +23,8 @@ public class gameManager : MonoBehaviour
     public Image playerHPBar;
     public Image playerOvershieldBar;
     public GameObject playerFlashUI;
+    public GameObject playerDamageBoost;
+    public GameObject playerSpeedBoost;
     public GameObject interactPrompt;
     public TextMeshProUGUI enemiesRemainingText;
     public TextMeshProUGUI killGoalText;

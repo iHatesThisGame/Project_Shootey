@@ -8,6 +8,11 @@ public class damageBoost : MonoBehaviour
     [SerializeField] int boostAmount;
     [SerializeField] int duration;
 
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audPickup;
+    [Range(0, 1)][SerializeField] float audPickupVol;
+
     Vector3 despawn = new Vector3(-50, -50, -50);
 
     public void OnTriggerEnter(Collider other)
@@ -20,10 +25,14 @@ public class damageBoost : MonoBehaviour
 
     public IEnumerator PowerupSequence()
     {
+        aud.PlayOneShot(audPickup, audPickupVol);
+
         damagePowerup.transform.position -= despawn;
         gameManager.instance.playerController.shootDamage *= boostAmount;
+        gameManager.instance.playerDamageBoost.SetActive(true);
         yield return new WaitForSeconds(duration);
         gameManager.instance.playerController.shootDamage /= boostAmount;
+        gameManager.instance.playerDamageBoost.SetActive(false);
         Destroy(damagePowerup);
     }
 }
