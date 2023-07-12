@@ -43,15 +43,13 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     {
         if (agent.isActiveAndEnabled)
         {
+            anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
+
             if (!playerInRange)
             {
                 if (GameObject.FindGameObjectWithTag("Blue Flag") != null)
                 {
-                    anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-                    //if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position)
-                    //{
-                        seekFlag();
-                    //}
+                    seekFlag();
                 }
             }
             if (playerInRange)
@@ -103,6 +101,7 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
                 }
                 if (!isShooting)
                 {
+
                     StartCoroutine(shoot());
                 }
                 return true;
@@ -116,12 +115,9 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     }
     IEnumerator shoot()
     {
-    //    Vector3 direction = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f));
-    //    Vector3 tempShootPos = shootPos.position += direction;
-
         isShooting = true;
         anim.SetTrigger("Shoot");
-        Instantiate(bullet, shootPos.position, transform.rotation);
+        Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
