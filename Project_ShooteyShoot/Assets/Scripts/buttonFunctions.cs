@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class buttonFunctions : MonoBehaviour
+public class buttonFunctions : MonoBehaviour, IDataPersistance
 {
     public void resume()
     {
@@ -25,7 +25,7 @@ public class buttonFunctions : MonoBehaviour
     public void Continue()
     {
         gameManager.instance.stateUnpaused();
-        scoreKeeper.playerScore = 0;
+        
 
         if (SceneManager.GetActiveScene().name == "Level 3" || SceneManager.GetActiveScene().name == "Flag Capture"
             || SceneManager.GetActiveScene().name == "Obstacle Course")
@@ -66,5 +66,16 @@ public class buttonFunctions : MonoBehaviour
     {
         gameManager.instance.stateUnpaused();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void LoadData(GameData data)
+    {
+        gameManager.instance.stateUnpaused();
+        SceneManager.LoadScene(data.sceneName);
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.sceneName = SceneManager.GetActiveScene().name;
     }
 }
