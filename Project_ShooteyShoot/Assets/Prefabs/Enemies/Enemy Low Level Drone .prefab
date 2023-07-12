@@ -572,7 +572,7 @@ MonoBehaviour:
   agent: {fileID: 4694373642335763363}
   headPos: {fileID: 4694373642335763389}
   firePoint: {fileID: 4342762374934350999}
-  HP: 2
+  HP: 1
   movementSpeed: 10
   rotationSpeed: 100
   minDistanceToPlayer: 30
