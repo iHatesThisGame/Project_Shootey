@@ -10,10 +10,10 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [SerializeField] ParticleSystem sprintEffect;
 
     [Header("----- Player Stats -----")]
-    public int HP;
-    public int shieldHP;
-    public int shieldMax;
-    [Range(3, 8)][SerializeField] float playerSpeed;
+    [SerializeField] public int HP;
+    [SerializeField] public int shieldHP;
+    [SerializeField] public int shieldMax;
+    [Range(3, 8)][SerializeField] public float playerSpeed;
     [Range(15, 100)][SerializeField] float dashSpeed;
     [Range(0.1f, 1)][SerializeField] float dashTime;
     [Range(8, 25)][SerializeField] float jumpHeight;
@@ -58,12 +58,12 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     private Vector3 move;
     bool isShooting;
     bool playerMelee;
-    float sprintSpeed;
-    float playerSpeedOrig;
+    public float sprintSpeed;
+    public float playerSpeedOrig;
     public Vector3 dashDir;
     bool isDashing;
     public int playerHPOrig;
-    int playerShieldOrig;
+    public int playerShieldOrig;
     float zoomOrig;
     public bool hasFlag;
 
@@ -158,7 +158,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
         dashDir = Vector3.zero;
         isDashing = false;
     }
-
     private void sprint()
     {
         if (isSprinting)
@@ -191,7 +190,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             }
         }
 
-
         if (isSprinting && move != Vector3.zero)
         {
             if (!sprintEffect.isPlaying) 
@@ -202,7 +200,6 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             if (sprintEffect.isPlaying) 
                 sprintEffect.Stop(); //turns off sprint effect
         }
-
     }
 
     IEnumerator playSteps()
