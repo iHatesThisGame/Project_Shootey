@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePowerup: {fileID: 5381459258628981377}
+  boostAmount: 2
+  duration: 5
 --- !u!33 &5381459258628981378
 MeshFilter:
   m_ObjectHideFlags: 0

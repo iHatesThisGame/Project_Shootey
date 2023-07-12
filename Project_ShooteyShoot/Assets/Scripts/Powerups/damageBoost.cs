@@ -5,6 +5,8 @@ using UnityEngine;
 public class damageBoost : MonoBehaviour
 {
     [SerializeField] GameObject damagePowerup;
+    [SerializeField] int boostAmount;
+    [SerializeField] int duration;
 
     Vector3 despawn = new Vector3(-50, -50, -50);
 
@@ -19,9 +21,9 @@ public class damageBoost : MonoBehaviour
     public IEnumerator PowerupSequence()
     {
         damagePowerup.transform.position -= despawn;
-        gameManager.instance.playerController.shootDamage *= 2;
-        yield return new WaitForSeconds(5);
-        gameManager.instance.playerController.shootDamage /= 2;
+        gameManager.instance.playerController.shootDamage *= boostAmount;
+        yield return new WaitForSeconds(duration);
+        gameManager.instance.playerController.shootDamage /= boostAmount;
         Destroy(damagePowerup);
     }
 }

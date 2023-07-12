@@ -5,6 +5,8 @@ using UnityEngine;
 public class speedBoost : MonoBehaviour
 {
     [SerializeField] GameObject speedPowerup;
+    [SerializeField] int boostAmount;
+    [SerializeField] int duration;
 
     Vector3 despawn = new Vector3 (-50, -50, -50);
 
@@ -19,11 +21,11 @@ public class speedBoost : MonoBehaviour
     public IEnumerator PowerupSequence()
     {
         speedPowerup.transform.position -= despawn;
-        gameManager.instance.playerController.playerSpeedOrig *= 2;
-        gameManager.instance.playerController.sprintSpeed *= 2;
-        yield return new WaitForSeconds(5);
-        gameManager.instance.playerController.playerSpeedOrig /= 2;
-        gameManager.instance.playerController.sprintSpeed /= 2;
+        gameManager.instance.playerController.playerSpeedOrig *= boostAmount;
+        gameManager.instance.playerController.sprintSpeed *= boostAmount;
+        yield return new WaitForSeconds(duration);
+        gameManager.instance.playerController.playerSpeedOrig /= boostAmount;
+        gameManager.instance.playerController.sprintSpeed /= boostAmount;
         Destroy(speedPowerup);
     }
 }
