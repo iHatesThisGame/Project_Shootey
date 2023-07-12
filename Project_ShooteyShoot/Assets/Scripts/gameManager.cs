@@ -120,7 +120,7 @@ public class gameManager : MonoBehaviour
         if (courseStarted)
             timer();
 
-        if (Input.GetButtonDown("Cancel") && activeMenu == null)
+        if (Input.GetButtonDown("Pause") && activeMenu == null)
         {
             aud.PlayOneShot(audPauseSound, audPauseSoundVol);
             statePaused();
