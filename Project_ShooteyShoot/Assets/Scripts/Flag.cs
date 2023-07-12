@@ -5,18 +5,18 @@ using UnityEngine;
 public class Flag : MonoBehaviour
 {
     [Header("----- Flag -----")]
-    [SerializeField] GameObject enemyFlag;
+    [SerializeField] GameObject flag;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(enemyFlag);
-            gameManager.instance.playerController.hasFlag = true; 
+            Destroy(flag);
+            gameManager.instance.playerController.hasFlag = true;
         }
-        if (!other.CompareTag("CTF Enemy"))
+        if (other.CompareTag("CTF Enemy"))
         {
-            Destroy(enemyFlag);
+            Destroy(flag);
         }
     }
 }

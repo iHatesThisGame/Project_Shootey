@@ -35,6 +35,7 @@ public class bossEnemy : MonoBehaviour, IDamage
     private bool isFollowingPlayer = false;
     private Vector3 roamPosition;
     private float nextRoamChangeTime;
+    private Rigidbody rb;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class bossEnemy : MonoBehaviour, IDamage
         originalY = transform.position.y;
         nextFireTime = Time.time + 1f;
         nextRoamChangeTime = Time.time + roamChangeInterval;
+        rb = GetComponent<Rigidbody>();
         SetNewRoamPosition();
     }
 
@@ -75,7 +77,9 @@ public class bossEnemy : MonoBehaviour, IDamage
             Quaternion targetBodyRotation = Quaternion.LookRotation(new Vector3(directionToPlayer.x, 0f, directionToPlayer.z));
             headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
 
-            transform.Translate(directionToPlayer * movementSpeed * Time.deltaTime);
+            Vector3 newPosition = transform.position + directionToPlayer * movementSpeed * Time.deltaTime;
+            newPosition.y = originalY; 
+            rb.MovePosition(newPosition);
         }
         else
         {

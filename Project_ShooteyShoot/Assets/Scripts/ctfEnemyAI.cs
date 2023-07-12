@@ -38,47 +38,51 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         startingPos = transform.position;
         stoppingDistanceOrig = agent.stoppingDistance;
     }
-
     // Update is called once per frame
     void Update()
     {
         if (agent.isActiveAndEnabled)
         {
-            anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-            if (!canSeePlayer())
+            if (!playerInRange)
             {
-                seekFlag();
+                if (GameObject.FindGameObjectWithTag("Blue Flag") != null)
+                {
+                    anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
+                    //if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position)
+                    //{
+                        seekFlag();
+                    //}
+                }
             }
-            if (agent.destination != GameObject.FindGameObjectWithTag("Blue Flag").transform.position && GameObject.FindGameObjectWithTag("Blue Flag") != null)
+            if (playerInRange)
             {
-                seekFlag();
+                agent.stoppingDistance = stoppingDistanceOrig;
+                canSeePlayer();
             }
         }
     }
-
     void seekFlag()
     {
         if (!hasFlag)
         {
-            agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Blue Flag").transform.position);
+            agent.stoppingDistance = 0;
             if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
             {
+                Destroy(GameObject.FindGameObjectWithTag("Blue Flag"));
                 hasFlag = true;
             }
         }
         if (hasFlag)
         {
-            agent.stoppingDistance = 0;
             agent.SetDestination(GameObject.FindGameObjectWithTag("Red Flag").transform.position);
+            agent.stoppingDistance = 0;
             if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Red Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Red Flag").transform.position.x)
             {
                 hasFlag = false;
             }
         }
     }
-
-
     bool canSeePlayer()
     {
         agent.stoppingDistance = stoppingDistanceOrig;
@@ -87,7 +91,7 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         angleToPlayer = Vector3.Angle(new Vector3(playerDir.x, 0, playerDir.z), transform.forward);
 
         RaycastHit hit;
-        if (Physics.Raycast(headPos.position, playerDir, out hit) && !hasFlag)
+        if (Physics.Raycast(headPos.position, playerDir, out hit) && playerInRange)
         {
             if (hit.collider.CompareTag("Player") && angleToPlayer <= viewConeAngle)
             {
@@ -110,14 +114,14 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         }
         return false;
     }
-
     IEnumerator shoot()
     {
-        Vector3 direction = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f));
-        Vector3 tempShootPos = shootPos.position += direction;
+    //    Vector3 direction = new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f));
+    //    Vector3 tempShootPos = shootPos.position += direction;
+
         isShooting = true;
         anim.SetTrigger("Shoot");
-        Instantiate(bullet, tempShootPos, transform.rotation);
+        Instantiate(bullet, shootPos.position, transform.rotation);
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
@@ -125,7 +129,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     {
         hasFlag = true;
     }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -133,7 +136,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
             playerInRange = true;
         }
     }
-
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -141,13 +143,11 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
             playerInRange = false;
         }
     }
-
     void facePlayer()
     {
         Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, 0, playerDir.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * playerFaceSpeed);
     }
-
     public void takeDamage(int dmg)
     {
         HP -= dmg;
@@ -169,7 +169,6 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
             StartCoroutine(flashColor());
         }
     }
-
     IEnumerator flashColor()
     {
         bodyModel.material.color = Color.red;
