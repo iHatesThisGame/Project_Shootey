@@ -414,7 +414,8 @@ MonoBehaviour:
   HP: 5
   playerFaceSpeed: 5
   viewConeAngle: 90
-  shootRate: 1
+  burstRounds: 3
+  shootRate: 3
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0
   hasFlag: 0

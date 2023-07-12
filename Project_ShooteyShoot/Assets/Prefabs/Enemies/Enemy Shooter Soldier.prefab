@@ -469,7 +469,8 @@ MonoBehaviour:
   viewConeAngle: 130
   roamDist: 25
   roamTimer: 1
-  shootRate: 1
+  burstRounds: 3
+  shootRate: 3
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
   playerInRange: 0
 --- !u!95 &1432396689279576968

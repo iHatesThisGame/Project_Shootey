@@ -20,6 +20,7 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     [Range(1, 360)][SerializeField] int viewConeAngle;
 
     [Header("----- Weapon Stats -----")]
+    [SerializeField] float burstRounds;
     [SerializeField] float shootRate;
     [SerializeField] GameObject bullet;
 
@@ -116,8 +117,12 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
     IEnumerator shoot()
     {
         isShooting = true;
-        anim.SetTrigger("Shoot");
-        Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
+        for (int i = 0; i < burstRounds; i++)
+        {
+            anim.SetTrigger("Shoot");
+            Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
+            yield return new WaitForSeconds(0.05f);
+        }
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }

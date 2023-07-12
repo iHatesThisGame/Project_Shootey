@@ -16,13 +16,13 @@ public class enemyAI : MonoBehaviour, IDamage
 
     [Header("----- Enemy Stats -----")]
     [Range(1, 10)] [SerializeField] int HP;
-    //[Range(1, 10)] [SerializeField] float speed;
     [Range(1, 10)] [SerializeField] int playerFaceSpeed;
     [Range(1, 360)] [SerializeField] int viewConeAngle;
     [Range(1, 100)] [SerializeField] int roamDist;
     [Range(0, 10)] [SerializeField] int roamTimer;
 
     [Header("----- Weapon Stats -----")]
+    [SerializeField] float burstRounds;
     [SerializeField] float shootRate;
     [SerializeField] GameObject bullet;
 
@@ -117,8 +117,12 @@ public class enemyAI : MonoBehaviour, IDamage
     IEnumerator shoot()
     {
         isShooting = true;
-        anim.SetTrigger("Shoot");
-        Instantiate(bullet, shootPos.position, transform.rotation);
+        for (int i = 0; i < burstRounds; i++)
+        {
+            anim.SetTrigger("Shoot");
+            Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
+            yield return new WaitForSeconds(0.05f);
+        }
         yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
