@@ -107,7 +107,6 @@ public class enemyAI : MonoBehaviour, IDamage
                 {
                     StartCoroutine(shoot());
                 }
-
                 return true;
             }
 
