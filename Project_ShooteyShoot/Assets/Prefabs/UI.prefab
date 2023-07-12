@@ -11296,7 +11296,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8476050264084728822}
   - component: {fileID: 8476050264084728823}
-  - component: {fileID: 1396639771509176148}
   - component: {fileID: 8476050264084728820}
   - component: {fileID: 8476050264084728809}
   - component: {fileID: 8476050264084728808}
@@ -11404,33 +11403,16 @@ MonoBehaviour:
   isPaused: 0
   playerScaleOrig: {x: 0, y: 0, z: 0}
   currentTime: 0
---- !u!114 &1396639771509176148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8476050264084728810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5f47e0cc1db2144f9d04990acae5a4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   parMasterVol: MasterVolume
   parMusicVol: MusicVolume
   parSFXVol: SFXVolume
-  masterMixer: {fileID: 0}
-  musicMixer: {fileID: 0}
-  sfxMixer: {fileID: 0}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
-  masterToggle: {fileID: 0}
-  musicToggle: {fileID: 0}
-  sfxToggle: {fileID: 0}
-  aud: {fileID: 0}
-  PreviewSound: {fileID: 0}
-  audPreviewSoundVol: 0
+  mixer: {fileID: 24100000, guid: db75dc1549f5c2e418444e75bba0d0be, type: 2}
+  masterSlider: {fileID: 2588909681993310877}
+  musicSlider: {fileID: 5919736254860595776}
+  sfxSlider: {fileID: 2721606041971232302}
+  masterToggle: {fileID: 7644528117868411107}
+  musicToggle: {fileID: 8585086705791264895}
+  sfxToggle: {fileID: 5976900092377649918}
 --- !u!114 &8476050264084728820
 MonoBehaviour:
   m_ObjectHideFlags: 0
