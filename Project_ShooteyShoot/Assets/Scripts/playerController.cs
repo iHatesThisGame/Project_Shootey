@@ -153,7 +153,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     IEnumerator dash()
     {
         isDashing = true;
-        dashDir = Camera.main.transform.forward * dashSpeed;
+        dashDir = transform.forward * dashSpeed;
         yield return new WaitForSeconds(dashTime);
         dashDir = Vector3.zero;
         isDashing = false;
