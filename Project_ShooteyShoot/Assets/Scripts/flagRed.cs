@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flag : MonoBehaviour
+public class flagRed : MonoBehaviour
 {
     [Header("----- Flag -----")]
     [SerializeField] GameObject flag;
@@ -13,10 +13,6 @@ public class Flag : MonoBehaviour
         {
             Destroy(flag);
             gameManager.instance.playerController.hasFlag = true;
-        }
-        if (other.CompareTag("CTF Enemy"))
-        {
-            Destroy(flag);
         }
     }
 }
