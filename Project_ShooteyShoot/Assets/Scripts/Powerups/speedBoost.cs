@@ -24,6 +24,6 @@ public class speedBoost : MonoBehaviour
         yield return new WaitForSeconds(5);
         gameManager.instance.playerController.playerSpeedOrig /= 2;
         gameManager.instance.playerController.sprintSpeed /= 2;
-        Destroy(gameObject);
+        Destroy(speedPowerup);
     }
 }
