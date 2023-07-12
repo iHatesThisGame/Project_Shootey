@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33447562967316150}
   - component: {fileID: 23130383540318262}
   - component: {fileID: 95741040405987190}
+  - component: {fileID: -4750639373682512266}
   m_Layer: 0
   m_Name: coil
   m_TagString: Untagged
@@ -105,3 +106,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &-4750639373682512266
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130628688242790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 22126b7ccf9d3b14580eeebc7a42bd64, type: 3}
