@@ -695,6 +695,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2288261614846481119, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
+      propertyPath: gunData
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2288261614846481119, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: upwardForce
       value: -0.2
       objectReference: {fileID: 0}
