@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class buttonFunctions : MonoBehaviour, IDataPersistance
+public class buttonFunctions : MonoBehaviour//, IDataPersistance
 {
     public void resume()
     {
@@ -68,14 +68,14 @@ public class buttonFunctions : MonoBehaviour, IDataPersistance
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void LoadData(GameData data)
-    {
-        gameManager.instance.stateUnpaused();
-        SceneManager.LoadScene(data.sceneName);
-    }
+    //public void LoadData(GameData data)
+    //{
+    //    gameManager.instance.stateUnpaused();
+    //    SceneManager.LoadScene(data.sceneName);
+    //}
 
-    public void SaveData(GameData data)
-    {
-        data.sceneName = SceneManager.GetActiveScene().name;
-    }
+    //public void SaveData(GameData data)
+    //{
+     //   data.sceneName = SceneManager.GetActiveScene().name;
+    //}
 }

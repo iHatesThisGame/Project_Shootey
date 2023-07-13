@@ -9,7 +9,7 @@ public class GameData
     public int shieldHP;
     public List<gunStats> gunList = new List<gunStats>();
     public int score;
-    public string sceneName;
+    //public string sceneName;
 
     public GameData()
     {
@@ -17,6 +17,6 @@ public class GameData
         this.shieldHP = 0;
         this.gunList = new List<gunStats>();
         this.score = 0;
-        this.sceneName = "Main Menu";
+        //this.sceneName = "Main Menu";
     }
 }
