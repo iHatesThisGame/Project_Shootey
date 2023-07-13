@@ -417,7 +417,14 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 
     public void LoadData(GameData data)
     {
-        this.HP = data.playerHP;
+        if (data.playerHP <= 0)
+        {
+            this.HP = 10;
+        }
+        else
+        {
+            this.HP = data.playerHP;
+        }
         this.shieldHP = data.shieldHP;
         this.gunList = data.gunList;
     }

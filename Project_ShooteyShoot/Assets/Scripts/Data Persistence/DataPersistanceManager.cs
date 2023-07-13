@@ -20,7 +20,7 @@ public class DataPersistanceManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("found more than one data manager");
+            
             NewGame();
         }
         instance = this;
