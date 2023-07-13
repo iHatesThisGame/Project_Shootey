@@ -49,6 +49,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [Range(0, 1)][SerializeField] float audReloadVol;
     [SerializeField] AudioClip audSpawned;
     [Range(0, 1)][SerializeField] float audSpawnedVol;
+    [SerializeField] AudioClip audPickup;
+    [Range(0, 1)] [SerializeField] float audPickupVol;
 
     private int jumpedTimes;
     bool stepsIsPlaying;
@@ -317,7 +319,9 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 
     public void addShield(int addShieldHP)
     {
+        aud.PlayOneShot(audPickup, audPickupVol);
         shieldHP += addShieldHP;
+        
         //if (shieldHP > shieldMax)
         //{
         //    shieldHP = shieldMax;

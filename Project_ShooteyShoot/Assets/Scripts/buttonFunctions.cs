@@ -65,7 +65,10 @@ public class buttonFunctions : MonoBehaviour//, IDataPersistance
     public void loadMainMenu()
     {
         gameManager.instance.stateUnpaused();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         SceneManager.LoadScene("Main Menu");
+
     }
 
     //public void LoadData(GameData data)

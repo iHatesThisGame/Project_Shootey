@@ -119,7 +119,7 @@ MonoBehaviour:
   audReload: {fileID: 8300000, guid: 21cb9659a82bfe24e863c66a6217694e, type: 3}
   audReloadVol: 0.6
   audSpawned: {fileID: 8300000, guid: 52e78048e4b3f1445a21d82eb9d05a97, type: 3}
-  audSpawnedVol: 0.3
+  audSpawnedVol: 0.2
   sprintSpeed: 0
   playerSpeedOrig: 0
   dashDir: {x: 0, y: 0, z: 0}
@@ -5129,7 +5129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3121e9b4109c7845be51af0043179ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upwardForce: 0.5
+  upwardForce: 0.1
   backwardForce: 0.1
   recoilDuration: 0.1
   shakeDuration: 0.1

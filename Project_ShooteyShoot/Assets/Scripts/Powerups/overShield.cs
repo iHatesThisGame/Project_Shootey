@@ -7,10 +7,10 @@ public class overShield : MonoBehaviour
     [SerializeField] int shieldHP;
     [SerializeField] GameObject currOverShield;
 
-    [Header("----- Audio -----")]
-    [SerializeField] AudioSource aud;
-    [SerializeField] AudioClip audPickup;
-    [Range(0, 1)][SerializeField] float audPickupVol;
+    //[Header("----- Audio -----")]
+    //[SerializeField] AudioSource aud;
+    //[SerializeField] AudioClip audPickup;
+    //[Range(0, 1)][SerializeField] float audPickupVol;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +19,7 @@ public class overShield : MonoBehaviour
         {
             if (gameManager.instance.playerController.shieldHP < gameManager.instance.playerController.shieldMax)
             {
-                aud.PlayOneShot(audPickup, audPickupVol);
+                //aud.PlayOneShot(audPickup, audPickupVol);
 
                 Destroy(currOverShield);
                 gameManager.instance.playerController.shieldHP = shieldHP;
