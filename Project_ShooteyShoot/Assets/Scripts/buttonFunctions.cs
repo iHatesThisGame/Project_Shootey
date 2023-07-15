@@ -25,11 +25,13 @@ public class buttonFunctions : MonoBehaviour//, IDataPersistance
     public void Continue()
     {
         gameManager.instance.stateUnpaused();
-        
 
-        if (SceneManager.GetActiveScene().name == "Level 3" || SceneManager.GetActiveScene().name == "Flag Capture"
-            || SceneManager.GetActiveScene().name == "Obstacle Course")
+        if (SceneManager.GetActiveScene().name == "Level 3" || 
+            SceneManager.GetActiveScene().name == "Flag Capture" ||
+            SceneManager.GetActiveScene().name == "Obstacle Course")
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
             SceneManager.LoadScene("Main Menu");
         }
         else
