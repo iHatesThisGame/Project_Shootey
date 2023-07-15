@@ -21,6 +21,11 @@ public class enemyAI : MonoBehaviour, IDamage
     [Range(1, 100)] [SerializeField] int roamDist;
     [Range(0, 10)] [SerializeField] int roamTimer;
 
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audGunshot;
+    [Range(0, 1)][SerializeField] float audGunshotVol;
+
     [Header("----- Weapon Stats -----")]
     [SerializeField] float burstRounds;
     [SerializeField] float shootRate;
@@ -120,6 +125,7 @@ public class enemyAI : MonoBehaviour, IDamage
         {
             anim.SetTrigger("Shoot");
             Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
+            aud.PlayOneShot(audGunshot, audGunshotVol);
             yield return new WaitForSeconds(0.05f);
         }
         yield return new WaitForSeconds(shootRate);
