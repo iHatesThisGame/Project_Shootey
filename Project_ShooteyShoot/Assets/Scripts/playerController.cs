@@ -426,13 +426,11 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             this.HP = data.playerHP;
         }
         this.shieldHP = data.shieldHP;
-        this.gunList = data.gunList;
     }
 
     public void SaveData(GameData data)
     {
         data.playerHP = this.HP;
         data.shieldHP = this.shieldHP;
-        data.gunList = this.gunList;
     }
 }
