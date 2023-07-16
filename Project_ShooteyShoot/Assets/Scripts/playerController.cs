@@ -248,7 +248,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
                 {
                     IDamage damageable = hit.collider.GetComponent<IDamage>();
 
-                    if (damageable != null)
+                    if (damageable != null && !hit.collider.CompareTag("Player"))
                     {
                         damageable.takeDamage(shootDamage);
                     }
