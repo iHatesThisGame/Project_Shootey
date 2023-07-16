@@ -7554,6 +7554,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dc0f4151d18ddca45a93f839542ee6a8, type: 2}
+    - target: {fileID: 2496359099050299852, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
+      propertyPath: audDoorOpenVol
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2496359099050303027, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_Name
       value: Doorway
@@ -8089,6 +8093,10 @@ PrefabInstance:
     - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: audReloadVol
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
+      propertyPath: audGunshotVol
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: audSpawnedVol

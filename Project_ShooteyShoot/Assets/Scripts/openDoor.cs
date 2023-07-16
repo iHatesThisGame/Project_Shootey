@@ -14,15 +14,11 @@ public class openDoor : MonoBehaviour
     [Range(0, 1)][SerializeField] float audDoorOpenVol;
 
     bool doorInRange;
+    bool isOpen = false;
 
     void Update()
     {
-        if (Input.GetButton("Interact") && doorInRange == true)
-        {
-            door.SetActive(false);
-            aud.PlayOneShot(audDoorOpen, audDoorOpenVol);
-            gameManager.instance.interactPrompt.SetActive(false);
-        }
+        OpenDoor();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,8 +37,23 @@ public class openDoor : MonoBehaviour
         {
             doorInRange = false;
             door.SetActive(true);
+            isOpen = false;
             gameManager.instance.interactPrompt.SetActive(false);
             gameManager.instance.interactText.text = ("E");
+        }
+    }
+
+    private void OpenDoor()
+    {
+        if (Input.GetButtonDown("Interact") && doorInRange == true)
+        {
+            if (isOpen == false)
+            {
+                aud.PlayOneShot(audDoorOpen, audDoorOpenVol);
+            }
+            door.SetActive(false);
+            isOpen = true;
+            gameManager.instance.interactPrompt.SetActive(false);
         }
     }
 }

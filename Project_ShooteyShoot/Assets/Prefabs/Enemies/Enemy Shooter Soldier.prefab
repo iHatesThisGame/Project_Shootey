@@ -472,7 +472,7 @@ MonoBehaviour:
   roamTimer: 1
   aud: {fileID: -2142072859614986273}
   audGunshot: {fileID: 8300000, guid: b6131e9b86842014fb1505561a078a0d, type: 3}
-  audGunshotVol: 0.5
+  audGunshotVol: 0.2
   burstRounds: 3
   shootRate: 3
   bullet: {fileID: 3614040104025759462, guid: 9270cfd7d4cd3cf4b8c6dfb7a61f86a4, type: 3}
@@ -556,9 +556,9 @@ AudioSource:
   m_GameObject: {fileID: 1432396689270371624}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8333618476561749535, guid: db75dc1549f5c2e418444e75bba0d0be, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -568,9 +568,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 50
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -603,7 +603,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
