@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 677199114191453196}
   - component: {fileID: 5894647661519201240}
   - component: {fileID: 1088543686686094524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PickUp Overshield
   m_TagString: Untagged
   m_Icon: {fileID: 0}

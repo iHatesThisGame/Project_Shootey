@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8992722012573654766}
   - component: {fileID: 4857155609820549166}
   - component: {fileID: 755379396}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PickUp SpeedBoost
   m_TagString: Untagged
   m_Icon: {fileID: 0}

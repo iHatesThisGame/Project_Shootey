@@ -539,6 +539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doorway
       objectReference: {fileID: 0}
+    - target: {fileID: 2496359099050303027, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3547266215724804842, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2539,6 +2543,10 @@ PrefabInstance:
     - target: {fileID: 2496359099050303027, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_Name
       value: Doorway (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496359099050303027, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3547266215724804842, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12561,6 +12569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098166431}
     m_Modifications:
+    - target: {fileID: 8992722012573654752, guid: 15d156f534a326a4ab2a7d4e021e0869, type: 3}
+      propertyPath: audPickupVol
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8992722012573654753, guid: 15d156f534a326a4ab2a7d4e021e0869, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -15713,9 +15725,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overshield
       objectReference: {fileID: 0}
+    - target: {fileID: 677199114191453194, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 677199114191453197, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
       propertyPath: m_Radius
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 677199114191453198, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
+      propertyPath: audPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: 35fbad8cdde724f11ba6481f1e64af71, type: 3}
+    - target: {fileID: 677199114191453198, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
+      propertyPath: audPickupVol
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 677199114191453201, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
       propertyPath: m_RootOrder
@@ -15761,6 +15785,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1088543686686094524, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088543686686094524, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8333618476561749535, guid: db75dc1549f5c2e418444e75bba0d0be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 134c5d8b2558d454cac2ae2a5386773f, type: 3}
 --- !u!4 &561177233999597311 stripped

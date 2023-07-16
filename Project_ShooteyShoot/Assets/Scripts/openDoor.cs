@@ -41,7 +41,6 @@ public class openDoor : MonoBehaviour
         {
             doorInRange = false;
             door.SetActive(true);
-            aud.PlayOneShot(audDoorOpen, audDoorOpenVol);
             gameManager.instance.interactPrompt.SetActive(false);
             gameManager.instance.interactText.text = ("E");
         }
