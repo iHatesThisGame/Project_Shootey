@@ -65,22 +65,22 @@ public class ctfEnemyAI : MonoBehaviour, IDamage, ICapture
         if (!hasFlag)
         {
             agent.SetDestination(GameObject.FindGameObjectWithTag("Blue Flag").transform.position);
-            agent.stoppingDistance = 0;
+            agent.stoppingDistance = 5;
             if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
             {
-                Destroy(GameObject.FindGameObjectWithTag("Blue Flag"));
+                // Destroy(GameObject.FindGameObjectWithTag("Blue Flag"));
                 hasFlag = true;
             }
         }
-        if (hasFlag)
-        {
-            agent.SetDestination(GameObject.FindGameObjectWithTag("Red Flag").transform.position);
-            agent.stoppingDistance = 0;
-            if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Red Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Red Flag").transform.position.x)
-            {
-                hasFlag = false;
-            }
-        }
+        //if (hasFlag)
+        //{
+        //    agent.SetDestination(GameObject.FindGameObjectWithTag("Red Flag").transform.position);
+        //    agent.stoppingDistance = 0;
+        //    if (agent.transform.position.z == GameObject.FindGameObjectWithTag("Red Flag").transform.position.z && agent.transform.position.x == GameObject.FindGameObjectWithTag("Red Flag").transform.position.x)
+        //    {
+        //        hasFlag = false;
+        //    }
+        //}
     }
     bool canSeePlayer()
     {
