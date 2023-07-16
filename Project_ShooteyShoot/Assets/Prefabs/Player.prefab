@@ -69,7 +69,7 @@ MonoBehaviour:
   sprintEffect: {fileID: 509325503}
   HP: 10
   shieldHP: 0
-  shieldMax: 50
+  shieldMax: 10
   playerSpeed: 8
   dashSpeed: 40
   dashTime: 0.3
@@ -120,6 +120,8 @@ MonoBehaviour:
   audReloadVol: 0.6
   audSpawned: {fileID: 8300000, guid: 52e78048e4b3f1445a21d82eb9d05a97, type: 3}
   audSpawnedVol: 0.2
+  audPickup: {fileID: 0}
+  audPickupVol: 0
   sprintSpeed: 0
   playerSpeedOrig: 0
   dashDir: {x: 0, y: 0, z: 0}

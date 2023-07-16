@@ -417,6 +417,11 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 
     public void LoadData(GameData data)
     {
+        if (data.playerHP > 10)
+            data.playerHP = 10;
+        if (data.shieldHP > this.shieldMax)
+            data.shieldHP = this.shieldMax;
+
         if (data.playerHP <= 0)
         {
             this.HP = 10;
@@ -426,6 +431,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             this.HP = data.playerHP;
         }
         this.shieldHP = data.shieldHP;
+
+        updatePlayerUI();
     }
 
     public void SaveData(GameData data)
