@@ -11,8 +11,9 @@ public class sceneLoader : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneToLoad);
-
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            SceneManager.LoadScene("Main Menu");
         }
     }
 

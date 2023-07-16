@@ -66,7 +66,7 @@ MonoBehaviour:
   duration: 5
   aud: {fileID: 755379396}
   audPickup: {fileID: 8300000, guid: 35fbad8cdde724f11ba6481f1e64af71, type: 3}
-  audPickupVol: 1
+  audPickupVol: 0.3
 --- !u!33 &8992722012573654767
 MeshFilter:
   m_ObjectHideFlags: 0

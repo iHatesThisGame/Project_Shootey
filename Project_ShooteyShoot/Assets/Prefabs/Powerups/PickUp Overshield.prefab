@@ -65,7 +65,7 @@ MonoBehaviour:
   currOverShield: {fileID: 677199114191453194}
   aud: {fileID: 1088543686686094524}
   audPickup: {fileID: 8300000, guid: 77ea6813eafb24218955eb3a26fe40fb, type: 3}
-  audPickupVol: 1
+  audPickupVol: 0.3
 --- !u!33 &677199114191453199
 MeshFilter:
   m_ObjectHideFlags: 0
