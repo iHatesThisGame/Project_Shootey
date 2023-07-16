@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677199114191453201}
+  - component: {fileID: 4400227305354945627}
   - component: {fileID: 677199114191453198}
   - component: {fileID: 677199114191453199}
   - component: {fileID: 677199114191453196}
   - component: {fileID: 5894647661519201240}
-  - component: {fileID: 5894647661519201241}
   - component: {fileID: 1088543686686094524}
   m_Layer: 0
   m_Name: PickUp Overshield
@@ -30,13 +30,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677199114191453194}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 100.000015, y: 100.000015, z: 100.00003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &4400227305354945627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677199114191453194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b059a10fe969c459cc05dca04a8803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &677199114191453198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,27 +129,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.017919814, y: 0.01791982, z: 0.0058251917}
   m_Center: {x: 0.000000027008355, y: -0.00023805123, z: 0}
---- !u!95 &5894647661519201241
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677199114191453194}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40cfe5f4633028844aad80696856c136, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &1088543686686094524
 AudioSource:
   m_ObjectHideFlags: 0
