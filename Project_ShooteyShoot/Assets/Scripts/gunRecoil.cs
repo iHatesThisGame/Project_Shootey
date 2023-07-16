@@ -111,26 +111,29 @@ public class gunRecoil : MonoBehaviour
     // Coroutine for shaking the screen
     private IEnumerator ShakeScreenCoroutine()
     {
-        while (isShooting) // Continue shaking the screen while shooting
+        if (Cursor.lockState == CursorLockMode.Locked)
         {
-            float elapsedTime = 0f; // Elapsed time since the start of the coroutine
-
-            while (elapsedTime < shakeDuration)
+            while (isShooting) // Continue shaking the screen while shooting
             {
-                float shakeOffsetX = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the X-axis
-                float shakeOffsetY = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the Y-axis
-                float shakeOffsetZ = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the Z-axis
+                float elapsedTime = 0f; // Elapsed time since the start of the coroutine
 
-                Vector3 shakeOffset = new Vector3(shakeOffsetX, shakeOffsetY, shakeOffsetZ); // Combine the shake offsets into a vector
-                Camera.main.transform.localPosition = originalCameraPosition + shakeOffset; // Apply the shake offset to the camera position
+                while (elapsedTime < shakeDuration)
+                {
+                    float shakeOffsetX = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the X-axis
+                    float shakeOffsetY = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the Y-axis
+                    float shakeOffsetZ = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the Z-axis
 
-                elapsedTime += Time.deltaTime; // Increase the elapsed time
+                    Vector3 shakeOffset = new Vector3(shakeOffsetX, shakeOffsetY, shakeOffsetZ); // Combine the shake offsets into a vector
+                    Camera.main.transform.localPosition = originalCameraPosition + shakeOffset; // Apply the shake offset to the camera position
+
+                    elapsedTime += Time.deltaTime; // Increase the elapsed time
+                    yield return null; // Wait for the next frame
+                }
+
+                Camera.main.transform.localPosition = originalCameraPosition; // Reset the camera position to the original position
+
                 yield return null; // Wait for the next frame
-            }
-
-            Camera.main.transform.localPosition = originalCameraPosition; // Reset the camera position to the original position
-
-            yield return null; // Wait for the next frame
+            } 
         }
     }
 }
