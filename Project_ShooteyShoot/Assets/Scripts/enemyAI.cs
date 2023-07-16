@@ -25,6 +25,8 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip audGunshot;
     [Range(0, 1)][SerializeField] float audGunshotVol;
+    [SerializeField] AudioClip[] audDamage;
+    [Range(0, 1)][SerializeField] float audDamageVol;
 
     [Header("----- Weapon Stats -----")]
     [SerializeField] float burstRounds;
@@ -121,14 +123,14 @@ public class enemyAI : MonoBehaviour, IDamage
     IEnumerator shoot()
     {
         isShooting = true;
+        yield return new WaitForSeconds(shootRate);
         for (int i = 0; i < burstRounds; i++)
         {
             anim.SetTrigger("Shoot");
             Instantiate(bullet, shootPos.position, shootPos.transform.rotation);
             aud.PlayOneShot(audGunshot, audGunshotVol);
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.1f);
         }
-        yield return new WaitForSeconds(shootRate);
         isShooting = false;
     }
 
@@ -170,6 +172,7 @@ public class enemyAI : MonoBehaviour, IDamage
         }
         else
         {
+            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
             agent.SetDestination(gameManager.instance.player.transform.position);
             StartCoroutine(flashColor());
         }

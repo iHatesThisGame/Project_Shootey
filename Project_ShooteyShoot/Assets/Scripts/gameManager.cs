@@ -56,6 +56,10 @@ public class gameManager : MonoBehaviour
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip audPauseSound;
     [Range(0, 1)][SerializeField] float audPauseSoundVol;
+    [SerializeField] AudioClip audWinSound;
+    [Range(0, 1)][SerializeField] float audWinSoundVol;
+    [SerializeField] AudioClip audLoseSound;
+    [Range(0, 1)][SerializeField] float audLoseSoundVol;
 
     public bool isPaused;
     float timescaleOrig;
@@ -186,6 +190,7 @@ public class gameManager : MonoBehaviour
     IEnumerator youWin()
     {
         yield return new WaitForSeconds(0.5f);
+        aud.PlayOneShot(audWinSound, audWinSoundVol);
         scoreKeeper.playerScore += 500;
         instance.playerScoreText.text = scoreKeeper.playerScore.ToString();
         activeMenu = winMenu;
@@ -195,6 +200,7 @@ public class gameManager : MonoBehaviour
 
     public void youLose()
     {
+        aud.PlayOneShot(audLoseSound, audLoseSoundVol);
         statePaused();
         activeMenu = loseMenu;
         activeMenu.SetActive(true);

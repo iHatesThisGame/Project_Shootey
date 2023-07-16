@@ -54,6 +54,7 @@ public class overShield : MonoBehaviour
         {
             gameManager.instance.playerController.shieldHP = gameManager.instance.playerController.shieldMax;
         }
+        gameManager.instance.playerController.updatePlayerUI();
         yield return new WaitForSeconds(1);
         Destroy(currOverShield);
     }
