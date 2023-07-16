@@ -320,7 +320,11 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     public void addShield(int addShieldHP)
     {
         aud.PlayOneShot(audPickup, audPickupVol);
-        shieldHP += addShieldHP;
+        if(shieldHP < shieldMax)
+        {
+            shieldHP += addShieldHP;
+        }    
+           
         
         //if (shieldHP > shieldMax)
         //{

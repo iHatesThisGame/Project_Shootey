@@ -124,12 +124,20 @@ public class gameManager : MonoBehaviour
         if (courseStarted)
             timer();
 
-        if (Input.GetButtonDown("Pause") && activeMenu == null)
+        if (Input.GetButtonDown("Pause"))
         {
-            aud.PlayOneShot(audPauseSound, audPauseSoundVol);
-            statePaused();
-            activeMenu = pauseMenu;
-            activeMenu.SetActive(isPaused);
+            if(activeMenu == null)
+            {
+                aud.PlayOneShot(audPauseSound, audPauseSoundVol);
+                statePaused();
+                activeMenu = pauseMenu;
+                activeMenu.SetActive(isPaused);
+            }
+            else
+            {
+                stateUnpaused();
+            }
+            
         }
 
         if (isCaptured)
