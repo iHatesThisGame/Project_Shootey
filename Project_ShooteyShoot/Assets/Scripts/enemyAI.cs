@@ -163,18 +163,21 @@ public class enemyAI : MonoBehaviour, IDamage
         if (HP <= 0)
         {
             StopAllCoroutines();
+            StartCoroutine(flashColor());
             gameManager.instance.killCount += 1;
             gameManager.instance.updateGameGoal(-1);
             gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
+
             anim.SetBool("Death", true);
             agent.enabled = false;
             GetComponent<CapsuleCollider>().enabled = false;
         }
         else
         {
-            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
-            agent.SetDestination(gameManager.instance.player.transform.position);
             StartCoroutine(flashColor());
+            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
+            facePlayer();
+            agent.SetDestination(gameManager.instance.player.transform.position);
         }
     }
 

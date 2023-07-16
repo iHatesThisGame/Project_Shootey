@@ -11267,6 +11267,10 @@ MonoBehaviour:
   aud: {fileID: 1571496456}
   audPauseSound: {fileID: 8300000, guid: 67373babc2efebd4eb02f428455d9389, type: 3}
   audPauseSoundVol: 0.5
+  audWinSound: {fileID: 8300000, guid: 7478151cf36724a7dada558f746c3633, type: 3}
+  audWinSoundVol: 0.5
+  audLoseSound: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+  audLoseSoundVol: 0.5
   isPaused: 0
   playerScaleOrig: {x: 0, y: 0, z: 0}
   currentTime: 0

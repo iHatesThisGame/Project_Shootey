@@ -21,7 +21,12 @@ public class enemyAI2 : MonoBehaviour, IDamage
     [Range(1, 360)][SerializeField] int viewConeAngle;
     [Range(1, 100)][SerializeField] int roamDist;
     [Range(0, 10)][SerializeField] int roamTimer;
-    
+
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip[] audDamage;
+    [Range(0, 1)][SerializeField] float audDamageVol;
+
 
     [Header("----- Weapon Stats -----")]
     [SerializeField] float meleePunchRate;
@@ -158,6 +163,7 @@ public class enemyAI2 : MonoBehaviour, IDamage
         if (HP <= 0)
         {
             StopAllCoroutines();
+            StartCoroutine(flashColor());
             gameManager.instance.killCount += 1;
             gameManager.instance.updateGameGoal(-1);
             gameManager.instance.killCountText.text = gameManager.instance.killCount.ToString("F0");
@@ -169,9 +175,10 @@ public class enemyAI2 : MonoBehaviour, IDamage
         }
         else
         {
+            StartCoroutine(flashColor());
+            aud.PlayOneShot(audDamage[Random.Range(0, audDamage.Length)], audDamageVol);
             facePlayer();
             agent.SetDestination(gameManager.instance.player.transform.position);
-            StartCoroutine(flashColor());
         }
     }
 
