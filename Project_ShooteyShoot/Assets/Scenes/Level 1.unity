@@ -8030,6 +8030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 509325503, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
+      propertyPath: ShapeModule.m_Position.z
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 82569358726012436, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -8098,7 +8102,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8228033707315512391, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
 --- !u!1001 &1394486166
 PrefabInstance:
