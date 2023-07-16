@@ -25,7 +25,6 @@ public class enemyAI2 : MonoBehaviour, IDamage
 
     [Header("----- Weapon Stats -----")]
     [SerializeField] float meleePunchRate;
-    [SerializeField] float meleePunchRange;
     [SerializeField] int meleePunchDamage;
     [SerializeField] GameObject punch;
 
@@ -170,6 +169,7 @@ public class enemyAI2 : MonoBehaviour, IDamage
         }
         else
         {
+            facePlayer();
             agent.SetDestination(gameManager.instance.player.transform.position);
             StartCoroutine(flashColor());
         }

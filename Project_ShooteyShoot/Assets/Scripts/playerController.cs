@@ -25,7 +25,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [SerializeField] bool sprintToggle;     // true means toggle mode, false means not toggle mode
 
     [Header("----- Gun Stats -----")]
-    [SerializeField] List<gunStats> gunList = new List<gunStats>();
+    [SerializeField] public List<gunStats> gunList = new List<gunStats>();
     [Range(0.1f, 3)][SerializeField] float shootRate;
     [Range(1, 10)][SerializeField] public int shootDamage;
     [Range(25, 1000)][SerializeField] int shootDist;

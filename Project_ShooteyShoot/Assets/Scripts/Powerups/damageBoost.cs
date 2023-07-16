@@ -31,7 +31,7 @@ public class damageBoost : MonoBehaviour
         gameManager.instance.playerController.shootDamage *= boostAmount;
         gameManager.instance.playerDamageBoost.SetActive(true);
         yield return new WaitForSeconds(duration);
-        gameManager.instance.playerController.shootDamage /= boostAmount;
+        gameManager.instance.playerController.shootDamage = gameManager.instance.playerController.gunList[gameManager.instance.playerController.selectedGun].shootDamage;
         gameManager.instance.playerDamageBoost.SetActive(false);
         Destroy(damagePowerup);
     }

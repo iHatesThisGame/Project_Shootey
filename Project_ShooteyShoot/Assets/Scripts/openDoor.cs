@@ -7,6 +7,12 @@ using UnityEngine;
 public class openDoor : MonoBehaviour
 {
     [SerializeField] GameObject door;
+
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audDoorOpen;
+    [Range(0, 1)][SerializeField] float audDoorOpenVol;
+
     bool doorInRange;
 
     void Update()
@@ -14,6 +20,7 @@ public class openDoor : MonoBehaviour
         if (Input.GetButton("Interact") && doorInRange == true)
         {
             door.SetActive(false);
+            aud.PlayOneShot(audDoorOpen, audDoorOpenVol);
             gameManager.instance.interactPrompt.SetActive(false);
         }
     }
@@ -34,6 +41,7 @@ public class openDoor : MonoBehaviour
         {
             doorInRange = false;
             door.SetActive(true);
+            aud.PlayOneShot(audDoorOpen, audDoorOpenVol);
             gameManager.instance.interactPrompt.SetActive(false);
             gameManager.instance.interactText.text = ("E");
         }

@@ -10,7 +10,7 @@ public class heatSeekingBullet : MonoBehaviour
     [SerializeField] private AudioClip laserSound;
     private Rigidbody rb;
     private Vector3 direction;
-    public float speed { get; set; } = 100f;
+    public float speed { get; set; } = 5f;
     private AudioSource audioSource;
 
     private void Start()
