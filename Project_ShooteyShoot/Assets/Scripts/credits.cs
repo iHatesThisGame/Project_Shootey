@@ -13,6 +13,16 @@ public class credits : MonoBehaviour
         StartCoroutine(RollCredits());
     }
 
+    private void Update()
+    {
+        if (Input.GetButton("Pause"))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            SceneManager.LoadScene("Main Menu");
+        }
+    }
+
     IEnumerator RollCredits()
     {
         yield return new WaitForSeconds(creditsDuration);

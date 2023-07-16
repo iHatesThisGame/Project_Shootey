@@ -30,9 +30,7 @@ public class buttonFunctions : MonoBehaviour//, IDataPersistance
             SceneManager.GetActiveScene().name == "Flag Capture" ||
             SceneManager.GetActiveScene().name == "Obstacle Course")
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.Confined;
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Credits");
         }
         else
         {

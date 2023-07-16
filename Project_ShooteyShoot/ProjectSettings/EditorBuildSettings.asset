@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Flag Capture.unity
     guid: 982e25554efe71945b14d1252134beb7
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f4691c873a2e5014f88b45a255eac6ed
   m_configObjects: {}
