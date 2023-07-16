@@ -50,6 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPack: {fileID: 7292900719687067514}
+  aud: {fileID: -9189833598290002589}
+  audPickup: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
+  audPickupVol: 1
 --- !u!33 &1502729950319776536
 MeshFilter:
   m_ObjectHideFlags: 0
