@@ -547,7 +547,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4694373642336118687}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
@@ -575,11 +575,12 @@ MonoBehaviour:
   HP: 1
   movementSpeed: 10
   rotationSpeed: 100
-  minDistanceToPlayer: 30
+  minDistanceToPlayer: 8.2
   roamRadius: 40
   roamChangeInterval: 10.4
   hoverHeight: 1
   hoverSpeed: 1
+  chaseSpeed: 11.5
   heatSeekingBulletPrefab: {fileID: 5658119927099004316, guid: f0d446024fc5ec247b95ec4d2e5617fa, type: 3}
   burstDelay: 2
   burstCount: 3
@@ -626,7 +627,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
 --- !u!136 &4694373642335763388
 CapsuleCollider:

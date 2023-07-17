@@ -20,6 +20,7 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
     [Range(1, 100)][SerializeField] float roamChangeInterval;
     [Range(1, 100)][SerializeField] float hoverHeight;
     [Range(1, 100)][SerializeField] float hoverSpeed;
+    [Range(1, 100)][SerializeField] float chaseSpeed;
 
     [Header("----- Weapon Stats -----")]
     [SerializeField] GameObject heatSeekingBulletPrefab;
@@ -68,10 +69,12 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
             if (distanceToPlayer > minDistanceToPlayer)
             {
                 isFollowingPlayer = true;
+                agent.speed = chaseSpeed;
             }
             else
             {
                 isFollowingPlayer = false;
+                agent.speed = movementSpeed;
             }
         }
 
@@ -81,7 +84,7 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
             headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetBodyRotation, rotationSpeed * Time.deltaTime);
 
             Vector3 newPosition = transform.position + directionToPlayer * movementSpeed * Time.deltaTime;
-            newPosition.y = originalY; 
+            newPosition.y = originalY;
             rb.MovePosition(newPosition);
         }
         else
@@ -125,6 +128,17 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
             isFollowingPlayer = true;
             agent.SetDestination(playerTransform.position);
             StartCoroutine(flashColor());
+
+            StartCoroutine(KeepChasingPlayer());
+        }
+    }
+
+    IEnumerator KeepChasingPlayer()
+    {
+        while (isFollowingPlayer)
+        {
+            agent.SetDestination(playerTransform.position);
+            yield return null;
         }
     }
 
@@ -147,17 +161,33 @@ public class lowLevelEnemy : MonoBehaviour, IDamage
     private void ShootFire(Vector3 direction)
     {
         Vector3 directionToPlayer = playerTransform.position - firePoint.position;
-        Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
 
-        headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-        GameObject bulletObj = Instantiate(heatSeekingBulletPrefab, firePoint.position, targetRotation);
-        heatSeekingBullet bulletComponent = bulletObj.GetComponent<heatSeekingBullet>();
-        if (bulletComponent != null)
+        RaycastHit hit;
+        if (Physics.Raycast(firePoint.position, directionToPlayer, out hit))
         {
-            bulletComponent.speed = bulletSpeed;
-            bulletComponent.SetDirection(directionToPlayer);
+            if (hit.collider.CompareTag("Player"))
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+                headPos.rotation = Quaternion.RotateTowards(headPos.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+                RaycastHit obstacleHit;
+                if (!Physics.Raycast(firePoint.position, directionToPlayer, out obstacleHit, Mathf.Infinity, LayerMask.GetMask("Obstacle")))
+                {
+                    GameObject bulletObj = Instantiate(heatSeekingBulletPrefab, firePoint.position, targetRotation);
+                    heatSeekingBullet bulletComponent = bulletObj.GetComponent<heatSeekingBullet>();
+                    if (bulletComponent != null)
+                    {
+                        bulletComponent.speed = bulletSpeed;
+                        bulletComponent.SetDirection(directionToPlayer);
+                    }
+                }
+            }
+            else
+            {
+                SetNewRoamPosition();
+            }
         }
+
         SetNewRoamPosition();
     }
 

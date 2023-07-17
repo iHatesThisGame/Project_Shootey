@@ -5131,11 +5131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3121e9b4109c7845be51af0043179ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upwardForce: 0.1
-  backwardForce: 0.1
+  upwardForce: -0.2
+  backwardForce: -0.2
   recoilDuration: 0.1
   shakeDuration: 0.1
-  shakeIntensity: 0.1
+  shakeIntensity: 0.2
 --- !u!33 &5865594922873972966
 MeshFilter:
   m_ObjectHideFlags: 0
