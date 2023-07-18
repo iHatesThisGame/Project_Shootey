@@ -145,8 +145,9 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             playerVelocity.y = jumpHeight;
         }
 
-        sprint();
         crouch();
+        sprint();
+        
 
         playerVelocity.y -= gravityValue * Time.deltaTime;
         controller.Move((playerVelocity + dashDir) * Time.deltaTime);
@@ -222,6 +223,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     {
         if (Input.GetButtonDown("Crouch"))
         {
+            
             controller.height = .5f;
         }
         if (Input.GetButtonUp("Crouch"))
