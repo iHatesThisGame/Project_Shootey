@@ -133,7 +133,7 @@ public class gameManager : MonoBehaviour
                 activeMenu = pauseMenu;
                 activeMenu.SetActive(isPaused);
             }
-            else
+            else if (activeMenu == pauseMenu)
             {
                 stateUnpaused();
             }
