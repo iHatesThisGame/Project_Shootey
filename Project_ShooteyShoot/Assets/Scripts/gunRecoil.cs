@@ -124,7 +124,7 @@ public class gunRecoil : MonoBehaviour
                     float shakeOffsetZ = Random.Range(-shakeIntensity, shakeIntensity); // Random shake offset along the Z-axis
 
                     Vector3 shakeOffset = new Vector3(shakeOffsetX, shakeOffsetY, shakeOffsetZ); // Combine the shake offsets into a vector
-                    Camera.main.transform.localPosition = originalCameraPosition + shakeOffset; // Apply the shake offset to the camera position
+                    //Camera.main.transform.localPosition = originalCameraPosition + shakeOffset; // Apply the shake offset to the camera position
 
                     elapsedTime += Time.deltaTime; // Increase the elapsed time
                     yield return null; // Wait for the next frame
