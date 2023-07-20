@@ -32,6 +32,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [SerializeField] public GameObject gunModel;
     public int selectedGun;
     [SerializeField] float zoomIn;
+    [SerializeField] Transform gunPos;
+    [SerializeField] Vector3 gunRecoil;
 
     [Header("----- Audio -----")]
     [SerializeField] AudioSource aud;
@@ -51,6 +53,10 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     [Range(0, 1)][SerializeField] float audSpawnedVol;
     [SerializeField] AudioClip audPickup;
     [Range(0, 1)] [SerializeField] float audPickupVol;
+
+    [SerializeField] float recoilSpeed;
+    float startTime;
+    float journeyLength;
 
     private int jumpedTimes;
     bool stepsIsPlaying;
@@ -244,6 +250,8 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             Vector2 direction = new Vector2(0.5f, 0.5f);
 
             RaycastHit hit;
+            StartCoroutine(recoil());
+
             for (int i = 0; i < gunList[selectedGun].pellets; i++)
             {
                 if (Physics.Raycast(Camera.main.ViewportPointToRay(direction), out hit, shootDist))
@@ -261,6 +269,25 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
             yield return new WaitForSeconds(shootRate);
             isShooting = false; 
         }
+    }
+
+    //void recoil()
+    //{
+    //    gunPos.transform.position = gunPos.transform.position + gunRecoil;
+    //    //gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position + gunRecoil, Time.deltaTime * 0.5f);
+    //}
+    //void endRecoil()
+    //{
+    //    gunPos.transform.position = gunPos.transform.position - gunRecoil;
+    //    //gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position - gunRecoil, Time.deltaTime * 0.5f);
+    //}
+    IEnumerator recoil()
+    {
+        //gunPos.transform.position = gunPos.transform.position + gunRecoil;
+        gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position + gunRecoil, Time.deltaTime * 60);
+        yield return new WaitForSeconds(0.05f);
+        gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position - gunRecoil, Time.deltaTime * 60);
+        //gunPos.transform.position = gunPos.transform.position - gunRecoil;
     }
 
     IEnumerator melee()

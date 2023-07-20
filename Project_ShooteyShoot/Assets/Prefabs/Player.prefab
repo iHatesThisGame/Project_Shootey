@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 82569358726012436}
-  - component: {fileID: 8631752284575523125}
   - component: {fileID: 82569358726012650}
   - component: {fileID: 82569358726012437}
   - component: {fileID: 6576445449141803665}
@@ -41,18 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8631752284575523125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82569358726295438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc40fb1464bade04a8bb00896d5461a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &82569358726012650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +74,8 @@ MonoBehaviour:
   gunModel: {fileID: 7891094590210686457}
   selectedGun: 0
   zoomIn: 15
+  gunPos: {fileID: 7406481934550034243}
+  gunRecoil: {x: 0, y: 0.1, z: -0.01}
   aud: {fileID: 567314573}
   audJump:
   - {fileID: 8300000, guid: bd0bf20b5058b9a4e854a9c40413445e, type: 3}
@@ -122,6 +111,7 @@ MonoBehaviour:
   audSpawnedVol: 0.2
   audPickup: {fileID: 0}
   audPickupVol: 0
+  recoilSpeed: 0
   sprintSpeed: 0
   playerSpeedOrig: 0
   dashDir: {x: 0, y: 0, z: 0}
@@ -5094,7 +5084,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406481934550034243}
-  - component: {fileID: 2288261614846481119}
   - component: {fileID: 5865594922873972966}
   - component: {fileID: 8539441481753828396}
   m_Layer: 0
@@ -5119,23 +5108,6 @@ Transform:
   m_Father: {fileID: 8829222580094411512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!114 &2288261614846481119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7891094590210686457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3121e9b4109c7845be51af0043179ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upwardForce: -0.2
-  backwardForce: -0.2
-  recoilDuration: 0.1
-  shakeDuration: 0.1
-  shakeIntensity: 0.2
 --- !u!33 &5865594922873972966
 MeshFilter:
   m_ObjectHideFlags: 0
