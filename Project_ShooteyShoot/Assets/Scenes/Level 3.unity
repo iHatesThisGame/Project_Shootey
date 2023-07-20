@@ -497,6 +497,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3702216520736770214, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7777,6 +7785,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3702216520736770214, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12424,6 +12440,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3702216520736770214, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -13717,6 +13741,14 @@ PrefabInstance:
     - target: {fileID: 3296449152905565677, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702216520736770212, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3702216520736770214, guid: bee2678f73c12ef409c14dc142e024af, type: 3}
       propertyPath: m_Materials.Array.data[0]

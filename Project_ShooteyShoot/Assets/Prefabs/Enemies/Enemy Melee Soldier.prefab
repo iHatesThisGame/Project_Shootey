@@ -94,7 +94,7 @@ MonoBehaviour:
   anim: {fileID: 2446802812195277738}
   HP: 2
   playerFaceSpeed: 10
-  viewConeAngle: 130
+  viewConeAngle: 360
   roamDist: 25
   roamTimer: 2
   aud: {fileID: 8059020252351622773}
@@ -178,7 +178,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 25
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &8059020252351622773
 AudioSource:
