@@ -271,23 +271,11 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
         }
     }
 
-    //void recoil()
-    //{
-    //    gunPos.transform.position = gunPos.transform.position + gunRecoil;
-    //    //gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position + gunRecoil, Time.deltaTime * 0.5f);
-    //}
-    //void endRecoil()
-    //{
-    //    gunPos.transform.position = gunPos.transform.position - gunRecoil;
-    //    //gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position - gunRecoil, Time.deltaTime * 0.5f);
-    //}
     IEnumerator recoil()
     {
-        //gunPos.transform.position = gunPos.transform.position + gunRecoil;
         gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position + gunRecoil, Time.deltaTime * 60);
         yield return new WaitForSeconds(0.05f);
         gunPos.transform.position = Vector3.Lerp(gunPos.transform.position, gunPos.transform.position - gunRecoil, Time.deltaTime * 60);
-        //gunPos.transform.position = gunPos.transform.position - gunRecoil;
     }
 
     IEnumerator melee()
@@ -352,13 +340,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
         if(shieldHP < shieldMax)
         {
             shieldHP += addShieldHP;
-        }    
-           
-        
-        //if (shieldHP > shieldMax)
-        //{
-        //    shieldHP = shieldMax;
-        //}
+        }
     }
 
     IEnumerator playerFlashDamage()
