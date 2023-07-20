@@ -79,6 +79,7 @@ public class gameManager : MonoBehaviour
     private bool disableMasterToggleEvent;
     private bool disableMusicToggleEvent;
     private bool disableSFXToggleEvent;
+    private bool hasWon;
 
 
     void Awake()
@@ -108,6 +109,7 @@ public class gameManager : MonoBehaviour
         musicToggle.onValueChanged.AddListener(ToggleMMusicValChange);
         sfxSlider.onValueChanged.AddListener(SFXSlideValChange);
         sfxToggle.onValueChanged.AddListener(ToggleSFXValChange);
+        hasWon = false;
     }
     // Start is called before the first frame update
     void Start()
@@ -143,7 +145,7 @@ public class gameManager : MonoBehaviour
         if (isCaptured)
         {
             winMessageText.text = "Flag Captured";
-            youWin();
+            StartCoroutine(youWin());
         }
     }
 
@@ -178,28 +180,33 @@ public class gameManager : MonoBehaviour
         {
             //win con met
             winMessageText.text = "You Survived";
-            youWin();
+            StartCoroutine(youWin());
         }
         if(elimination && enemiesRemaining <= 0)
         {
             //win con met
             winMessageText.text = "Enemies Eliminated";
-            youWin();
+            StartCoroutine(youWin());
         }
         if (gameManager.instance.playerController.hasFlag == true && gameManager.instance.player.transform.position.z == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.z
             && gameManager.instance.player.transform.position.x == GameObject.FindGameObjectWithTag("Blue Flag").transform.position.x)
         {
             //win con met
             winMessageText.text = "Flag Captured";
-            youWin();
+            StartCoroutine(youWin());
         }
     }
 
-    public void youWin()
+    IEnumerator youWin()
     {
-        aud.PlayOneShot(audWinSound, audWinSoundVol);
-        scoreKeeper.playerScore += 500;
-        instance.playerScoreText.text = scoreKeeper.playerScore.ToString();
+        yield return new WaitForSeconds(0.1f);
+        if(hasWon == false)
+        {
+            aud.PlayOneShot(audWinSound, audWinSoundVol);
+            scoreKeeper.playerScore += 500;
+            instance.playerScoreText.text = scoreKeeper.playerScore.ToString();
+            hasWon = true;
+        }
         activeMenu = winMenu;
         activeMenu.SetActive(true);
         statePaused();
