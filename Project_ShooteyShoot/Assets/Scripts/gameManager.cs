@@ -245,7 +245,7 @@ public class gameManager : MonoBehaviour
 
         if (enableSound)
         {
-            masterSlider.value = 0;
+            masterSlider.value = .8f;
         }
         else
         {
@@ -255,7 +255,7 @@ public class gameManager : MonoBehaviour
 
     private void MasterSlideValChange(float val)
     {
-        mixer.SetFloat(parMasterVol, val);
+        mixer.SetFloat(parMasterVol, Mathf.Log10(val) * 20);
         disableMasterToggleEvent = true;
         masterToggle.isOn = masterSlider.value > masterSlider.minValue;
         disableMasterToggleEvent = false;
@@ -271,7 +271,7 @@ public class gameManager : MonoBehaviour
 
         if (enableSound)
         {
-            musicSlider.value = 0;
+            musicSlider.value = .8f;
         }
         else
         {
@@ -281,7 +281,7 @@ public class gameManager : MonoBehaviour
 
     private void MusicSlideValChange(float val)
     {
-        mixer.SetFloat(parMusicVol, val);
+        mixer.SetFloat(parMusicVol, Mathf.Log10(val) * 20);
         disableMusicToggleEvent = true;
         musicToggle.isOn = musicSlider.value > musicSlider.minValue;
         disableMusicToggleEvent = false;
@@ -297,7 +297,7 @@ public class gameManager : MonoBehaviour
 
         if (enableSound)
         {
-            sfxSlider.value = 0;
+            sfxSlider.value = .8f;
         }
         else
         {
@@ -307,7 +307,7 @@ public class gameManager : MonoBehaviour
 
     private void SFXSlideValChange(float val)
     {
-        mixer.SetFloat(parSFXVol, val);
+        mixer.SetFloat(parSFXVol, Mathf.Log10(val) * 20);
         disableSFXToggleEvent = true;
         sfxToggle.isOn = sfxSlider.value > sfxSlider.minValue;
         disableSFXToggleEvent = false;

@@ -42,6 +42,12 @@ public class SettinsMenu : MonoBehaviour
     public void SetFullscreen(bool isFull)
     {
         Screen.fullScreen = isFull;
+
+        if (isFull == true)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void SetRes(int resIndex)
