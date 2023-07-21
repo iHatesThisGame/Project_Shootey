@@ -29,6 +29,11 @@ public class bossEnemy : MonoBehaviour, IDamage
     [Range(1, 360)][SerializeField] float gunRotationSpeed;
     [Range(1, 100)][SerializeField] float bulletSpeed;
 
+    [Header("----- Audio -----")]
+    [SerializeField] AudioSource aud;
+    [SerializeField] AudioClip audHSBSound;
+    [Range(0, 1)] [SerializeField] float audHSBSoundVol;
+
     private Transform playerTransform;
     private float originalY;
     private float nextFireTime;
@@ -172,6 +177,7 @@ public class bossEnemy : MonoBehaviour, IDamage
                 {
                     GameObject bulletObj = Instantiate(heatSeekingBulletPrefab, firePoint.position, targetRotation);
                     heatSeekingBullet bulletComponent = bulletObj.GetComponent<heatSeekingBullet>();
+                    aud.PlayOneShot(audHSBSound, audHSBSoundVol);
                     if (bulletComponent != null)
                     {
                         bulletComponent.speed = bulletSpeed;
