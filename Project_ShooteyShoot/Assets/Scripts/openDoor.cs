@@ -28,8 +28,7 @@ public class openDoor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             doorInRange = true;
-            gameManager.instance.interactText.text = ("E to Open");
-            gameManager.instance.interactPrompt.SetActive(true);
+            
         }
     }
 
@@ -40,8 +39,7 @@ public class openDoor : MonoBehaviour
             doorInRange = false;
             door.SetActive(true);
             isOpen = false;
-            gameManager.instance.interactPrompt.SetActive(false);
-            gameManager.instance.interactText.text = ("E");
+            
         }
     }
 
@@ -71,10 +69,15 @@ public class openDoor : MonoBehaviour
             {
                 //Debug.Log("Tag works");
                 isFacingDoor = true;
+                gameManager.instance.interactText.text = ("E to Open");
+                gameManager.instance.interactPrompt.SetActive(true);
             }
             else
             {
+
                 isFacingDoor = false;
+                gameManager.instance.interactPrompt.SetActive(false);
+                gameManager.instance.interactText.text = ("E");
             }
            
         }
