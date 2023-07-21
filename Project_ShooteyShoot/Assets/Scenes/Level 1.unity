@@ -12183,6 +12183,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224156659}
     m_Modifications:
+    - target: {fileID: 2432157112119650409, guid: 8e5c3451d4b571e40aed15540c8d00d6, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2432157112119650413, guid: 8e5c3451d4b571e40aed15540c8d00d6, type: 3}
       propertyPath: m_Name
       value: DroneClipFloor
