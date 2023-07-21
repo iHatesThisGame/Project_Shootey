@@ -74,6 +74,7 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     public int playerShieldOrig;
     float zoomOrig;
     public bool hasFlag;
+    private bool isCrouching;
 
     private void Start()
     {
@@ -169,45 +170,48 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
     }
     private void sprint()
     {
-        if (isSprinting)
+        if (!isCrouching)
         {
-            playerSpeed = sprintSpeed;
-        }
-        if (!isSprinting)
-        {
-            playerSpeed = playerSpeedOrig;
-        }
-
-        if (!sprintToggle)
-        {
-            if (Input.GetButton("Sprint"))
+            if (isSprinting)
             {
-                isSprinting = true;
+                playerSpeed = sprintSpeed;
+            }
+            if (!isSprinting)
+            {
+                playerSpeed = playerSpeedOrig;
+            }
+
+            if (!sprintToggle)
+            {
+                if (Input.GetButton("Sprint"))
+                {
+                    isSprinting = true;
+                }
+                else
+                {
+                    isSprinting = false;
+                }
+            }
+
+            if (sprintToggle)
+            {
+                // Sprint functionality
+                if (Input.GetButtonDown("Sprint"))
+                {
+                    isSprinting = !isSprinting;
+                }
+            }
+
+            if (isSprinting && move != Vector3.zero)
+            {
+                if (!sprintEffect.isPlaying)
+                    sprintEffect.Play(); // turns on sprint effect
             }
             else
             {
-                isSprinting = false;
+                if (sprintEffect.isPlaying)
+                    sprintEffect.Stop(); //turns off sprint effect
             }
-        }
-
-        if (sprintToggle)
-        {
-            // Sprint functionality
-            if (Input.GetButtonDown("Sprint"))
-            {
-                isSprinting = !isSprinting;
-            }
-        }
-
-        if (isSprinting && move != Vector3.zero)
-        {
-            if (!sprintEffect.isPlaying) 
-               sprintEffect.Play(); // turns on sprint effect
-        }
-        else
-        {
-            if (sprintEffect.isPlaying) 
-                sprintEffect.Stop(); //turns off sprint effect
         }
     }
 
@@ -227,14 +231,19 @@ public class playerController : MonoBehaviour, IDamage, ICapture, IAmmo, IShield
 
     void crouch()
     {
-        if (Input.GetButtonDown("Crouch"))
+        if (!isSprinting)
         {
-            
-            controller.height = .5f;
-        }
-        if (Input.GetButtonUp("Crouch"))
-        {
-            controller.height = 2f;
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                isCrouching = true;
+                controller.height = .5f;
+            }
+            if (Input.GetButtonUp("Crouch"))
+            {
+                isCrouching = false;
+                controller.height = 2f;
+            }
         }
     }
 
