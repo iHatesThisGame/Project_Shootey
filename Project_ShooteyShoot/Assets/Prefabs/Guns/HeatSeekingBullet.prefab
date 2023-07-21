@@ -51,6 +51,7 @@ MonoBehaviour:
   damage: 1
   destroyTimer: 3
   laserSound: {fileID: 8300000, guid: 27ff2917290f302499c1d59f54a24020, type: 3}
+  audioSource: {fileID: 3719798797505360757}
 --- !u!135 &5658119927099004319
 SphereCollider:
   m_ObjectHideFlags: 0

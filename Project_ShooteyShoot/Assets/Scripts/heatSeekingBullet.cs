@@ -11,7 +11,7 @@ public class heatSeekingBullet : MonoBehaviour
     private Rigidbody rb;
     private Vector3 direction;
     public float speed { get; set; } = 5f;
-    private AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
 
     private void Start()
     {
