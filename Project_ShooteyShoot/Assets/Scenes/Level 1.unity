@@ -7503,10 +7503,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1543603150}
     m_Modifications:
-    - target: {fileID: 173064325163542219, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a6ba928c16e7c53499cb5c67bddfd083, type: 2}
     - target: {fileID: 966098435024564768, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7551,26 +7547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1526127542499194656, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dc0f4151d18ddca45a93f839542ee6a8, type: 2}
-    - target: {fileID: 2496359099050299852, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
-      propertyPath: audDoorOpenVol
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2496359099050303027, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
       propertyPath: m_Name
       value: Doorway
       objectReference: {fileID: 0}
-    - target: {fileID: 3547266215724804842, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 71cc7b13bf92a5342ac40e8e89e730af, type: 2}
-    - target: {fileID: 5731880722242586733, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 71cc7b13bf92a5342ac40e8e89e730af, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9932ef06ee83b2143b69770b3ad19231, type: 3}
 --- !u!4 &1289903803 stripped

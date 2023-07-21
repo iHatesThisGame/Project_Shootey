@@ -12,12 +12,14 @@ public class openDoor : MonoBehaviour
     [SerializeField] AudioSource aud;
     [SerializeField] AudioClip audDoorOpen;
     [Range(0, 1)][SerializeField] float audDoorOpenVol;
-
+    
     bool doorInRange;
     bool isOpen = false;
+    bool isFacingDoor;
 
     void Update()
     {
+        FacingDoor();
         OpenDoor();
     }
 
@@ -45,7 +47,7 @@ public class openDoor : MonoBehaviour
 
     private void OpenDoor()
     {
-        if (Input.GetButtonDown("Interact") && doorInRange == true)
+        if (Input.GetButtonDown("Interact") && doorInRange == true && isFacingDoor == true)
         {
             if (isOpen == false)
             {
@@ -54,6 +56,27 @@ public class openDoor : MonoBehaviour
             door.SetActive(false);
             isOpen = true;
             gameManager.instance.interactPrompt.SetActive(false);
+        }
+    }
+
+    public void FacingDoor()
+    {
+        var direction = transform.TransformDirection(Vector3.forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(Camera.main.ViewportPointToRay(direction), out hit, 5))
+        {
+            //Debug.Log("Raycast works");
+            if (hit.collider.name == "Door")
+            {
+                //Debug.Log("Tag works");
+                isFacingDoor = true;
+            }
+            else
+            {
+                isFacingDoor = false;
+            }
+           
         }
     }
 }

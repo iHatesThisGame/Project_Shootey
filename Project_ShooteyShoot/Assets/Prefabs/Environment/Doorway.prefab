@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 4438834426674223668}
   m_Layer: 10
   m_Name: Doorway
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   door: {fileID: 1526127542499194662}
   aud: {fileID: 4438834426674223668}
   audDoorOpen: {fileID: 8300000, guid: 2592c80aa84852342966091a84315cf7, type: 3}
-  audDoorOpenVol: 0.5
+  audDoorOpenVol: 1
 --- !u!65 &4150118535236095345
 BoxCollider:
   m_ObjectHideFlags: 0
