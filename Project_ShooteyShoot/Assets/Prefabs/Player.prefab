@@ -102,15 +102,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6575d25f98df7a640807cefd9843564d, type: 3}
   audStepsVol: 0.1
   audGunClick: {fileID: 8300000, guid: 8df3fb6913f7ead40a6a0497b5739991, type: 3}
-  audGunClickVol: 0.6
+  audGunClickVol: 0.5
   audGunshot: {fileID: 8300000, guid: b6131e9b86842014fb1505561a078a0d, type: 3}
-  audGunshotVol: 0.5
+  audGunshotVol: 1
   audReload: {fileID: 8300000, guid: 21cb9659a82bfe24e863c66a6217694e, type: 3}
-  audReloadVol: 0.6
+  audReloadVol: 0.5
   audSpawned: {fileID: 8300000, guid: 52e78048e4b3f1445a21d82eb9d05a97, type: 3}
-  audSpawnedVol: 0.2
-  audPickup: {fileID: 0}
-  audPickupVol: 0
+  audSpawnedVol: 0.05
+  audPickup: {fileID: 8300000, guid: 80e397195ea2940b69ee7bdbded856a5, type: 3}
+  audPickupVol: 0.5
   recoilSpeed: 0
   sprintSpeed: 0
   playerSpeedOrig: 0
@@ -5205,7 +5205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0129a80e3f6e3f14fb4171d1d53d7d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 500
+  sensitivity: 600
+  sensitivitySlider: {fileID: 0}
+  parSensitivity: Mouse Sensitivity
   lockVerMin: -90
   lockVerMax: 90
   inverY: 0

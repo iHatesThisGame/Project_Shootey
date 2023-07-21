@@ -7584,10 +7584,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5221672140484964624, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1403324317}
     - target: {fileID: 8476050264084728810, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
       propertyPath: m_Name
       value: UI
@@ -8038,10 +8034,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 509325503, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: ShapeModule.m_Position.z
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 82569358726012436, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -8086,36 +8078,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audPickup
-      value: 
-      objectReference: {fileID: 8300000, guid: 80e397195ea2940b69ee7bdbded856a5, type: 3}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audPickupVol
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audReloadVol
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audGunshotVol
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audSpawnedVol
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 82569358726012650, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
-      propertyPath: audGunClickVol
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 82569358726295438, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8228033707315512391, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
+    - target: {fileID: 8829222580094411513, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
+      propertyPath: sensitivitySlider
+      value: 
+      objectReference: {fileID: 1615707625}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3933052123599314ea9e5ab5bcf16413, type: 3}
 --- !u!1001 &1394486166
 PrefabInstance:
@@ -8206,17 +8177,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aebbe5aab701d71489b12aff409239ac, type: 3}
---- !u!114 &1403324317 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1428316847040392510, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
-  m_PrefabInstance: {fileID: 1305862487}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1414013669
 GameObject:
   m_ObjectHideFlags: 0
@@ -9464,6 +9424,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 183201841470285562, guid: 9583cebdbbb4e084f958918ae8d4e107, type: 3}
   m_PrefabInstance: {fileID: 1595060082}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1615707625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8828690669812315032, guid: 67fc221b1c5463b4bb13cc94dbd0c81a, type: 3}
+  m_PrefabInstance: {fileID: 1305862487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1631602505
 PrefabInstance:
   m_ObjectHideFlags: 0

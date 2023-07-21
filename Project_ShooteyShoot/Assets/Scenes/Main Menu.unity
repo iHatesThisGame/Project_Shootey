@@ -9475,6 +9475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784518902}
+  - component: {fileID: 1784518905}
   - component: {fileID: 1784518903}
   - component: {fileID: 1784518904}
   m_Layer: 5
@@ -9551,10 +9552,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 729932933}
   m_HandleRect: {fileID: 866414281}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 10
-  m_WholeNumbers: 0
-  m_Value: -10
+  m_MinValue: 10
+  m_MaxValue: 1000
+  m_WholeNumbers: 1
+  m_Value: 600
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9570,6 +9571,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c24e7c84fa7aa48960f395617f04aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1784518905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784518901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0129a80e3f6e3f14fb4171d1d53d7d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 600
+  sensitivitySlider: {fileID: 1784518903}
+  parSensitivity: Mouse Sensitivity
+  lockVerMin: -90
+  lockVerMax: 90
+  inverY: 0
 --- !u!1 &1787705523
 GameObject:
   m_ObjectHideFlags: 0
