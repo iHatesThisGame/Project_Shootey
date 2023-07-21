@@ -680,6 +680,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
 --- !u!1 &175928874
@@ -2825,6 +2833,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
 --- !u!4 &903042492 stripped
@@ -3579,6 +3595,14 @@ PrefabInstance:
     - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
       propertyPath: m_Name
       value: Bumper (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763450667216718989, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9adba1b4257c5c44f98a1be29f7d20e9, type: 3}
