@@ -46,16 +46,19 @@ public class overShield : MonoBehaviour
 
     public IEnumerator PowerupSequence()
     {
-        aud.PlayOneShot(audPickup, audPickupVol);
-
-        currOverShield.transform.position -= despawn;
-        gameManager.instance.playerController.shieldHP += shieldHP;
-        if (gameManager.instance.playerController.shieldHP > gameManager.instance.playerController.shieldMax)
+        if (gameManager.instance.playerController.shieldHP < gameManager.instance.playerController.shieldMax)
         {
-            gameManager.instance.playerController.shieldHP = gameManager.instance.playerController.shieldMax;
+            aud.PlayOneShot(audPickup, audPickupVol);
+
+            currOverShield.transform.position -= despawn;
+            gameManager.instance.playerController.shieldHP += shieldHP;
+            if (gameManager.instance.playerController.shieldHP > gameManager.instance.playerController.shieldMax)
+            {
+                gameManager.instance.playerController.shieldHP = gameManager.instance.playerController.shieldMax;
+            }
+            gameManager.instance.playerController.updatePlayerUI();
+            yield return new WaitForSeconds(1);
+            Destroy(currOverShield);
         }
-        gameManager.instance.playerController.updatePlayerUI();
-        yield return new WaitForSeconds(1);
-        Destroy(currOverShield);
     }
 }
