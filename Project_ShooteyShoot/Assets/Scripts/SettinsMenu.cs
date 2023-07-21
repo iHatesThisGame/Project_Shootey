@@ -9,7 +9,19 @@ public class SettinsMenu : MonoBehaviour
 {
     Resolution[] resolutions;
     [SerializeField] TMP_Dropdown resDropdown;
+    [SerializeField] int sensitivity;
+    [SerializeField] Slider sensitivitySlider;
+    [SerializeField] string parSensitivity = "Mouse Sensitivity";
 
+    private void Awake()
+    {
+        sensitivitySlider.onValueChanged.AddListener(SensSlideValChange);
+    }
+
+    public void SensSlideValChange(float arg0)
+    {
+        sensitivity = (int)sensitivitySlider.value;
+    }
 
     public void Start()
     {
@@ -31,6 +43,13 @@ public class SettinsMenu : MonoBehaviour
         resDropdown.value = currResIndex;
         resDropdown.RefreshShownValue();
 
+        PlayerPrefs.GetFloat(parSensitivity, sensitivitySlider.value);
+
+    }
+
+    private void OnDisable()
+    {
+        PlayerPrefs.SetFloat(parSensitivity, sensitivitySlider.value);
     }
 
 
@@ -55,6 +74,8 @@ public class SettinsMenu : MonoBehaviour
         Resolution resolution = resolutions[resIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
+
+
 
 
 }

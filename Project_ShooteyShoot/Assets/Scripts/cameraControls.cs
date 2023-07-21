@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class cameraControls : MonoBehaviour
 {
-    public int sensitivity;
+    [SerializeField] int sensitivity;
     [SerializeField] Slider sensitivitySlider;
     [SerializeField] string parSensitivity = "Mouse Sensitivity";
     [SerializeField] int lockVerMin;
@@ -19,7 +19,7 @@ public class cameraControls : MonoBehaviour
         sensitivitySlider.onValueChanged.AddListener(SensSlideValChange);
     }
 
-    private void SensSlideValChange(float arg0)
+    public void SensSlideValChange(float arg0)
     {
         sensitivity = (int)sensitivitySlider.value;
     }
