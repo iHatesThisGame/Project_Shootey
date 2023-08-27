@@ -16,7 +16,7 @@ public class cameraControls : MonoBehaviour
 
     private void Awake()
     {
-        sensitivitySlider.onValueChanged.AddListener(SensSlideValChange);
+        //sensitivitySlider.onValueChanged.AddListener(SensSlideValChange);
     }
 
     public void SensSlideValChange(float arg0)
